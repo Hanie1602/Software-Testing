@@ -1,0 +1,4 @@
+G:\Visual Studio\Workspace\Source\NUnit Test Demo\NewTesting\UniteTestingTutorial\obj\Debug\net8.0\Bank.GeneratedMSBuildEditorConfig.editorconfig
+G:\Visual Studio\Workspace\Source\NUnit Test Demo\NewTesting\UniteTestingTutorial\obj\Debug\net8.0\Bank.AssemblyInfoInputs.cache
+G:\Visual Studio\Workspace\Source\NUnit Test Demo\NewTesting\UniteTestingTutorial\obj\Debug\net8.0\Bank.AssemblyInfo.cs
+G:\Visual Studio\Workspace\Source\NUnit Test Demo\NewTesting\UniteTestingTutorial\obj\Debug\net8.0\Bank.csproj.CoreCompileInputs.cache
