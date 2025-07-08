@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Baloo Paaji 2";
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	display: block;
+	background-color: #b2b2b2;
+}
+
+.booking {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.booking__title {
+	background: #eee;
+}
+
+.booking__dentist {
+	display: flex;
+	align-items: center;
+	width: 1280px;
+	margin: 0 auto;
+	gap: 15px;
+}
+
+.booking__dentist img {
+	width: 120px;
+	height: 120px;
+}
+
+.booking__dentist__info .sub-title {
+	color: #666;
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 155%; /* 3.1rem */
+	letter-spacing: 0.01rem;
+}
+
+.booking__dentist__info .name {
+	color: #337ab7;
+	font-size: 2.1rem;
+	font-weight: 700;
+	line-height: 155%; /* 3.255rem */
+	letter-spacing: 0.0105rem;
+}
+
+.booking__dentist__info .work {
+	color: #666;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 155%; /* 3.1rem */
+	letter-spacing: 0.01rem;
+}
+
+.booking__detail {
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.booking__detail input,
+.booking__detail select {
+	width: 100%;
+	font-size: 2.5rem;
+	padding: 10px;
+}
+
+.booking__detail select {
+	appearance: none;
+}
+
+.booking__detail .address {
+	margin-bottom: 30px;
+}
+
+.booking__detail input:not(:first-of-type),
+.booking__detail select,
+.booking__detail textarea {
+	margin-top: 30px;
+}
+
+.booking__detail button {
+	margin-top: 30px;
+	width: 100%;
+	color: #fff;
+	font-size: 2.6rem;
+	font-weight: bold;
+	padding: 10px 30px;
+	background: #ffc419;
+	border: none;
+	outline: none;
+}
+
+.booking__detail button:hover {
+	background: #ffd145;
+}
+
+.booking__detail .price {
+	background: #f6f6f6;
+	padding: 20px 20px;
+	margin-top: 30px;
+}
+
+.booking__detail .price p {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 2rem;
+}

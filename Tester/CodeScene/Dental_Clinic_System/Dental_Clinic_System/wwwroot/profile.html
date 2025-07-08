@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dental Care | login</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/footer.css" />
+		<link rel="stylesheet" href="./assets/css/profile.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__navbar">
+				<a href="#!">
+					<img src="./assets/images/logo.png" class="navbar__logo" alt="logo" />
+				</a>
+				<ul class="navbar__list">
+					<li>
+						<a href="./index.html">Trang chủ</a>
+					</li>
+					<li>
+						<a href="./about.html">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="./clinic.html">Phòng khám</a>
+					</li>
+					<li>
+						<a href="./speciality.html">Chuyên khoa</a>
+					</li>
+					<li>
+						<a href="#!">Blogs</a>
+					</li>
+					<li>
+						<a href="./contact.html">Liên hệ</a>
+					</li>
+				</ul>
+				<div class="navbar__auth">
+					<!-- <a href="/" class="navbar__auth__avatar">
+                    <img src="images/avatar.jpg" alt="" />
+                </a>
+                <a href="/" class="navbar__auth__booking"> Đặt lịch khám </a> -->
+					<a href="./login.html" class="navbar__auth__login"> Đăng nhập </a>
+					<a href="./register.html" class="navbar__auth__register"> Đăng ký </a>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="profile">
+				<div class="d-flex">
+					<ul class="nav sidebar">
+						<li>
+							<a class="nav-link active" data-bs-toggle="tab" href="#account"
+								>Quản lý tài khoản</a
+							>
+						</li>
+						<li>
+							<a class="nav-link" data-bs-toggle="tab" href="#repass"
+								>Đổi mật khẩu</a
+							>
+						</li>
+						<li>
+							<a class="nav-link" data-bs-toggle="tab" href="#history"
+								>Lịch sử đặt khám</a
+							>
+						</li>
+					</ul>
+					<div class="profile__content tab-content">
+						<div id="account" class="tab-pane fade show active">
+							<h2>Quản lý tài khoản</h2>
+							<div class="profile__warn">(*) Thông tin bắt buộc nhập</div>
+							<form class="d-flex account__content__wrapper">
+								<div style="width: 50%">
+									<label for="firstname">Tên (Có dấu) <sup>*</sup></label
+									><br /><input
+										type="text"
+										name="firstname"
+										id="firstname"
+										placeholder="Tên"
+										style="width: 100%"
+									/>
+								</div>
+								<div style="width: 50%">
+									<label for="lastname"
+										>Họ và tên đệm (Có dấu) <sup>*</sup></label
+									><br /><input
+										type="text"
+										name="lastname"
+										id="lastname"
+										placeholder="Họ và tên đệm"
+										style="width: 100%"
+									/>
+								</div>
+								<div style="width: 50%">
+									<label for="phone">Số điện thoại <sup>*</sup></label
+									><br /><input
+										type="text"
+										name="phone"
+										id="phone"
+										placeholder="Vui lòng nhập số điện thoại ..."
+										style="width: 100%"
+									/>
+								</div>
+								<div style="width: 50%">
+									<label for="gender">Giới tính <sup>*</sup></label
+									><br />
+									<select name="gender" id="gender" style="width: 100%">
+										<option value="" disabled selected>
+											Chọn giới tính ...
+										</option>
+										<option value="male">Nam</option>
+										<option value="female">Nữ</option>
+									</select>
+								</div>
+								<div style="width: 50%">
+									<label for="mail">Email <sup>*</sup></label
+									><br /><input
+										type="email"
+										name="mail"
+										id="mail"
+										placeholder="Nhập địa chỉ email để nhận thông tin lịch khám"
+										style="width: 100%"
+									/>
+								</div>
+								<div style="width: 50%">
+									<label for="birth">Ngày sinh <sup>*</sup></label
+									><br /><input
+										type="date"
+										name="birth"
+										id="birth"
+										placeholder="Vui lòng nhập ngày sinh"
+										style="width: 100%"
+									/>
+								</div>
+								<div style="width: 50%">
+									<label for="province">Tỉnh / Thành phố <sup>*</sup></label
+									><br />
+									<select name="province" id="province">
+										<option value="hcm">Ho Chi Minh</option>
+										<option value="hn">Ha Noi</option>
+									</select>
+								</div>
+								<div style="width: 25%" class="district">
+									<label for="district">Quận / Huyện <sup>*</sup></label
+									><br />
+									<select name="district" id="district">
+										<option value="tduc">Thu Duc</option>
+										<option value="bdinh">Ba Dinh</option>
+									</select>
+								</div>
+								<div style="width: 25%" class="ward">
+									<label for="ward">Phường / Xã <sup>*</sup></label
+									><br />
+									<select name="ward" id="ward">
+										<option value="ltrung">Linh Trung</option>
+										<option value="btho">Binh Tho</option>
+									</select>
+								</div>
+								<div style="width: 100%" class="address">
+									<label for="address">Địa chỉ <sup>*</sup></label
+									><br /><input
+										type="text"
+										name="address"
+										id="address"
+										placeholder="Nhập địa chỉ"
+										style="width: 100%"
+									/>
+								</div>
+								<div class="submit__button">
+									<button type="reset" class="reset">Nhập lại</button>
+									<button type="submit" class="submit">Tạo mới</button>
+								</div>
+							</form>
+						</div>
+						<div id="repass" class="tab-pane fade">
+							<h2>Đổi mật khẩu</h2>
+							<div class="repass__content__wrapper">
+								<div style="width: 100%">
+									<label for="pass">Mật khẩu</label><br /><input
+										type="password"
+										name="pass"
+										id="pass"
+										placeholder="Nhập mật khẩu"
+										style="width: 100%"
+									/>
+								</div>
+								<div style="width: 100%">
+									<label for="firstname">Mật khẩu mới</label><br /><input
+										type="text"
+										name="firstname"
+										id="firstname"
+										placeholder="Nhập mật khẩu mới"
+										style="width: 100%"
+									/>
+								</div>
+								<div style="width: 100%">
+									<label for="firstname">Nhập lại mật khẩu</label><br /><input
+										type="text"
+										name="firstname"
+										id="firstname"
+										placeholder="Nhập lại mật khẩu"
+										style="width: 100%"
+									/>
+								</div>
+								<div class="submit__button">
+									<button type="reset" class="reset">Nhập lại</button>
+									<button type="submit" class="submit">Tạo mới</button>
+								</div>
+							</div>
+						</div>
+						<div id="history" class="tab-pane fade">
+							<h2>Lịch sử đặt khám</h2>
+							<div class="history__management">
+								<table class="table table-striped" style="font-size: 2rem">
+									<thead>
+										<tr>
+											<th style="text-align: center">STT</th>
+											<th>Nha sĩ</th>
+											<th>Chuyên Khoa</th>
+											<th>Ngày hẹn</th>
+											<th>Giờ hẹn</th>
+											<th>Giá tiền</th>
+											<th>Trạng thái</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr style="vertical-align: middle">
+											<td style="text-align: center">1</td>
+											<td>Hoà</td>
+											<td>Nha khoa tổng quát</td>
+											<td>2024-05-22</td>
+											<td>10:00-10:30</td>
+											<td>10.000.000</td>
+											<td><p class="status">Chờ xác nhận</p></td>
+										</tr>
+
+										<tr style="vertical-align: middle">
+											<td style="text-align: center">2</td>
+											<td>Hoà</td>
+											<td>Nha khoa tổng quát</td>
+											<td>2024-05-22</td>
+											<td>10:00-10:30</td>
+											<td>10.000.000</td>
+											<td><p class="status complete">Đã khám</p></td>
+										</tr>
+
+										<tr style="vertical-align: middle">
+											<td style="text-align: center">3</td>
+											<td>Hoà</td>
+											<td>Nha khoa tổng quát</td>
+											<td>2024-05-22</td>
+											<td>10:00-10:30</td>
+											<td>10.000.000</td>
+											<td><p class="status deny">Huỷ Khám</p></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__navigation">
+				<a href="/">
+					<img src="./assets/images/logo.png" class="navbar__logo" alt="logo" />
+				</a>
+				<ul class="footer__navigation__list">
+					<li>
+						<a href="/#">Trang chủ</a>
+					</li>
+					<li>
+						<a href="#!">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="#!">Chuyên khoa</a>
+					</li>
+					<li>
+						<a href="#!">Nha Khoa</a>
+					</li>
+					<li>
+						<a href="#!">Blogs</a>
+					</li>
+					<li>
+						<a href="#!">Liên hệ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__separate"></div>
+			<div class="footer__condition__social">
+				<p class="footer__condition__social--copyright">® 2024 Dental Care</p>
+				<div class="footer__condition__social--media">
+					<a href="#!">
+						<img src="./assets/images/facebook.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/instagram.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/youtube.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/linkedin.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/X.png" alt="facebook" />
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/53f42380b0.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dental Care | login</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/footer.css" />
+		<link rel="stylesheet" href="./assets/css/dentistry.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__navbar">
+				<a href="#!">
+					<img src="./assets/images/logo.png" class="navbar__logo" alt="logo" />
+				</a>
+				<ul class="navbar__list">
+					<li>
+						<a href="./index.html">Trang chủ</a>
+					</li>
+					<li>
+						<a href="./about.html">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="./clinic.html">Phòng khám</a>
+					</li>
+					<li>
+						<a href="./speciality.html">Chuyên khoa</a>
+					</li>
+					<li>
+						<a href="#!">Blogs</a>
+					</li>
+					<li>
+						<a href="./contact.html">Liên hệ</a>
+					</li>
+				</ul>
+				<div class="navbar__auth">
+					<!-- <a href="/" class="navbar__auth__avatar">
+                    <img src="images/avatar.jpg" alt="" />
+                </a>
+                <a href="/" class="navbar__auth__booking"> Đặt lịch khám </a> -->
+					<a href="./login.html" class="navbar__auth__login"> Đăng nhập </a>
+					<a href="./register.html" class="navbar__auth__register"> Đăng ký </a>
+				</div>
+			</nav>
+		</header>
+
+		<div class="dentistry">
+			<h1 class="dentistry__title text-center fw-bold">Nha Khoa tổng quát</h1>
+			<div class="text-center">
+				<img src="./assets/images/separate.png" alt="" />
+			</div>
+			<h2 class="dentistry__subtitle text-center">Mô tả</h2>
+			<div class="text-center">
+				<img src="./assets/images/separate-02.png" alt="" />
+			</div>
+			<p class="dentistry__desc">
+				Nha khoa tổng quát là phân ngành trong lĩnh vực nha khoa tập trung vào
+				chăm sóc và điều trị các vấn đề răng miệng phổ biến như kiểm tra định
+				kỳ, làm sạch răng, điều trị các vấn đề về sâu răng và viêm nướu. Các
+				dịch vụ của nha khoa tổng quát giúp duy trì sức khỏe toàn diện cho răng
+				miệng và hỗ trợ trong việc phòng ngừa các vấn đề nha khoa phức tạp hơn.
+			</p>
+			<div class="dentistry__wrapper">
+				<div class="d-flex justify-content-between">
+					<h2 class="dentistry__dentist">Nha Sĩ uy tín</h2>
+					<div class="dentistry__sort">
+						<span>Sort by: </span>
+						<select name="location" id="">
+							<option value="all">Toàn quốc</option>
+							<option value="hcm">Hồ Chí Minh</option>
+							<option value="hn">Hà Nội</option>
+						</select>
+					</div>
+				</div>
+				<img src="./assets/images/separate-01.png" alt="" />
+				<div class="dentistry__info">
+					<div class="dentistry__info__card d-flex">
+						<div class="dentistry__info__card--dentist">
+							<div class="dentistry__info__card--detist__profile d-flex">
+								<div class="view__more">
+									<img src="./assets/images/dentist4.png" alt="" />
+									<a href="./dentist.html" class="view__more__profile"
+										>Xem thêm</a
+									>
+								</div>
+								<div class="details">
+									<p class="name">Bác sĩ Chuyên khoa | Trần Thị Mỹ Nga</p>
+									<p class="desc">
+										Hơn 11 năm kinh nghiệm lĩnh vực niềng răng chỉnh nha chuyên
+										sâu và điều trị răng hàm mặt tại TP. HCMTốt nghiệp Bác sĩ
+										Răng Hàm Mặt Đại học Y Dược TP. HCM
+									</p>
+									<p class="location">
+										<i class="fa-solid fa-location-dot"></i
+										><span>Hồ Chí Minh</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="separate"></div>
+						<div class="dentistry__info__card--schedule">
+							<select name="calendar" id="">
+								<option value="Thứ 4 - 22/05">Thứ 4 - 22/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 5 - 23/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 6 - 24/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 7 - 25/05</option>
+								<option value="Thứ 4 - 22/05">CN - 26/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 2 - 27/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 3 - 28/05</option>
+							</select>
+							<p class="sub-title">
+								<i class="fa-regular fa-calendar"></i>Đặt lịch khám
+							</p>
+							<div class="card--schedule__wrapper">
+								<a href="./booking.html">08:00 - 08:30</a>
+								<a href="./booking.html">08:30 - 09:00</a>
+								<a href="./booking.html">09:00 - 09:30</a>
+								<a href="./booking.html">09:30 - 10:00</a>
+								<a href="./booking.html">10:00 - 10:30</a>
+								<a href="./booking.html">10:30 - 11:00</a>
+								<a href="./booking.html">11:00 - 11:30</a>
+								<a href="./booking.html">11:30 - 12:00</a>
+								<a href="./booking.html">13:30 - 14:00</a>
+								<a href="./booking.html">14:00 - 14:30</a>
+							</div>
+							<p class="note">
+								Chọn <i class="fa-regular fa-hand-point-up"></i> và đặt.
+								&#10088;Phí đặt lịch ...&#10089;
+							</p>
+							<hr />
+							<p class="clinic__address">ĐỊA CHỈ KHÁM</p>
+							<p class="clinic__name">Nha Khoa Trồng Răng Sài Gòn</p>
+							<p class="clinic__address__detail">
+								470 - 472 Lê Hồng Phong, Phường 1, Quận 10, TP. Hồ Chí Minh
+							</p>
+						</div>
+					</div>
+					<div class="dentistry__info__card d-flex">
+						<div class="dentistry__info__card--dentist">
+							<div class="dentistry__info__card--detist__profile d-flex">
+								<div class="view__more">
+									<img src="./assets/images/dentist4.png" alt="" />
+									<a href="./dentist.html" class="view__more__profile"
+										>Xem thêm</a
+									>
+								</div>
+								<div class="details">
+									<p class="name">Bác sĩ Chuyên khoa | Trần Thị Mỹ Nga</p>
+									<p class="desc">
+										Hơn 11 năm kinh nghiệm lĩnh vực niềng răng chỉnh nha chuyên
+										sâu và điều trị răng hàm mặt tại TP. HCMTốt nghiệp Bác sĩ
+										Răng Hàm Mặt Đại học Y Dược TP. HCM
+									</p>
+									<p class="location">
+										<i class="fa-solid fa-location-dot"></i
+										><span>Hồ Chí Minh</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="dentistry__info__card--schedule">
+							<select name="calendar" id="">
+								<option value="Thứ 4 - 22/05">Thứ 4 - 22/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 5 - 23/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 6 - 24/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 7 - 25/05</option>
+								<option value="Thứ 4 - 22/05">CN - 26/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 2 - 27/05</option>
+								<option value="Thứ 4 - 22/05">Thứ 3 - 28/05</option>
+							</select>
+							<p class="sub-title">
+								<i class="fa-regular fa-calendar"></i>Đặt lịch khám
+							</p>
+							<div class="card--schedule__wrapper">
+								<a href="./booking.html">08:00 - 08:30</a>
+								<a href="./booking.html">08:30 - 09:00</a>
+								<a href="./booking.html">09:00 - 09:30</a>
+								<a href="./booking.html">09:30 - 10:00</a>
+								<a href="./booking.html">10:00 - 10:30</a>
+								<a href="./booking.html">10:30 - 11:00</a>
+								<a href="./booking.html">11:00 - 11:30</a>
+								<a href="./booking.html">11:30 - 12:00</a>
+								<a href="./booking.html">13:30 - 14:00</a>
+								<a href="./booking.html">14:00 - 14:30</a>
+							</div>
+							<p class="note">
+								Chọn <i class="fa-regular fa-hand-point-up"></i> và đặt.
+								&#10088;Phí đặt lịch ...&#10089;
+							</p>
+							<hr />
+							<p class="clinic__address">ĐỊA CHỈ KHÁM</p>
+							<p class="clinic__name">Nha Khoa Trồng Răng Sài Gòn</p>
+							<p class="clinic__address__detail">
+								470 - 472 Lê Hồng Phong, Phường 1, Quận 10, TP. Hồ Chí Minh
+							</p>
+						</div>
+						<div class="separate"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer__navigation">
+				<a href="/">
+					<img src="./assets/images/logo.png" class="navbar__logo" alt="logo" />
+				</a>
+				<ul class="footer__navigation__list">
+					<li>
+						<a href="/#">Trang chủ</a>
+					</li>
+					<li>
+						<a href="#!">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="#!">Chuyên khoa</a>
+					</li>
+					<li>
+						<a href="#!">Nha Khoa</a>
+					</li>
+					<li>
+						<a href="#!">Blogs</a>
+					</li>
+					<li>
+						<a href="#!">Liên hệ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__separate"></div>
+			<div class="footer__condition__social">
+				<p class="footer__condition__social--copyright">® 2024 Dental Care</p>
+				<div class="footer__condition__social--media">
+					<a href="#!">
+						<img src="./assets/images/facebook.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/instagram.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/youtube.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/linkedin.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/X.png" alt="facebook" />
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/53f42380b0.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

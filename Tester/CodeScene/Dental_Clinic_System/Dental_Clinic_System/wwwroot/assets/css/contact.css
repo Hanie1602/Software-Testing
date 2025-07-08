@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Baloo Paaji 2";
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	display: block;
+	background-color: #b2b2b2;
+}
+
+.contact__title {
+	font-size: 6.2rem;
+	margin-top: 80px;
+}
+
+.contact__desc {
+	margin-top: 15px;
+	text-align: center;
+	color: #3c4959;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.79rem */
+	letter-spacing: 0.027rem;
+}
+
+.contact__form {
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 64px;
+}
+
+.contact__form p {
+	color: #3c4959;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 155%; /* 2.79rem */
+	letter-spacing: 0.027rem;
+	margin-bottom: 10px;
+}
+
+.contact__form input,
+.contact__form textarea {
+	margin-bottom: 10px;
+	width: 100%;
+	height: 55px;
+	border-radius: 10px;
+	padding: 10px 20px;
+	font-size: 2rem;
+	border: 1px solid #d9d9d9;
+}
+
+.contact__form input:focus {
+	border-color: #47bfff;
+	box-shadow: 0 0 0 4px rgba(29, 161, 242, 0.2);
+	outline: 0;
+}
+
+.contact__form textarea {
+	height: 300px;
+}
+
+.contact__form button {
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 155%; /* 2.48rem */
+	letter-spacing: 0.024rem;
+	border-radius: 10px;
+	background: #1376f8;
+	padding: 15px 30px;
+	margin-top: 30px;
+}
+
+.contact__form button:hover {
+	opacity: 0.9;
+}

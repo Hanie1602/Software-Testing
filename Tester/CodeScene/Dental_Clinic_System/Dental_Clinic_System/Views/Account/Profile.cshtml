@@ -1,0 +1,605 @@
+﻿@using System.Security.Claims
+@using System.Globalization
+@using Dental_Clinic_System.Helper
+@model Dental_Clinic_System.ViewModels.PatientVM
+@{
+    ViewData["Title"] = "Profile";
+    // var firstname = Context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Surname)?.Value;
+
+    // var lastname = Context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.GivenName)?.Value;
+
+    // var mobilePhone = Context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+    // var email = Context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+
+    // var gender = Context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Gender)?.Value;
+
+    // var address = Context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.StreetAddress)?.Value;
+    // if (mobilePhone is null) Console.WriteLine("NO mobilephone");
+
+    var appointments = ViewBag.Appointment as List<Dental_Clinic_System.Models.Data.Appointment>;
+    int index = 1; // Initialize the counter
+}
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Care | login</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    @* <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+    rel="stylesheet" /> *@
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/assets/css/profile.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="profile">
+            <div class="d-flex">
+                <ul class="nav sidebar">
+                    <li>
+                        <a class="nav-link active" data-bs-toggle="tab" href="#account">Quản lý tài khoản</a>
+                    </li>
+                    @if (User.Identity.IsAuthenticated && (User.Identity as ClaimsIdentity)?.Claims.Any(c => c.Issuer == "Google") == false)
+                    {
+                        <li>
+                            <a class="nav-link" data-bs-toggle="tab" href="#repass">Đổi mật khẩu</a>
+                        </li>
+                    }
+                    <li>
+                        <a class="nav-link" data-bs-toggle="tab" href="#history">Lịch sử đặt khám</a>
+                    </li>
+                </ul>
+                <div class="profile__content tab-content">
+                    <div id="account" class="tab-pane fade show active">
+                        <h2>Quản lý tài khoản</h2>
+                        @if (TempData["ChangePasswordMessageSuccessfully"] != null)
+                        {
+                            <div class="alert alert-success">
+                                @TempData["ChangePasswordMessageSuccessfully"]
+                            </div>
+                        }
+
+                        @if (TempData["ChangePasswordMessageFailed"] != null)
+                        {
+                            <div class="alert alert-danger">
+                                @TempData["ChangePasswordMessageFailed"]
+                            </div>
+                        }
+
+                        @if (TempData["EmailError"] != null)
+                        {
+                            <div class="alert alert-danger">
+                                @TempData["EmailError"]
+                            </div>
+                        }
+
+                        @if (TempData["PhoneNumberError"] != null)
+                        {
+                            <div class="alert alert-danger">
+                                @TempData["PhoneNumberError"]
+                            </div>
+                        }
+
+                        @if (TempData["EmailChangeMessage"] != null)
+                        {
+                            <div class="alert alert-info">
+                                @TempData["EmailChangeMessage"]
+                            </div>
+                        }
+
+                        <div class="profile__warn">(*) Thông tin bắt buộc nhập</div>
+                        <form asp-action="profile" method="POST" class="d-flex account__content__wrapper">
+
+                            <div style="width: 50%">
+                                <label for="firstname">Họ <sup>*</sup></label><br /><input type="text"
+                                                                                           id="firstname"
+                                                                                           placeholder="Họ"
+                                                                                           value="@Model.FirstName"
+                                                                                           asp-for="@Model.FirstName"
+                                                                                           style="width: 100%" />
+                                <span class="text-danger" asp-validation-for="FirstName"></span>
+                            </div>
+                            <div style="width: 50%">
+                                <label for="lastname">Tên <sup>*</sup></label><br /><input type="text"
+                                                                                           id="lastname"
+                                                                                           placeholder="Tên"
+                                                                                           value="@Model.LastName"
+                                                                                           asp-for="@Model.LastName"
+                                                                                           style="width: 100%" />
+                                <span class="text-danger" asp-validation-for="LastName"></span>
+                            </div>
+                            <div style="width: 50%">
+                                <label for="phone">Số điện thoại <sup>*</sup></label><br /><input type="text"
+                                                                                                  id="phone"
+                                                                                                  placeholder="Vui lòng nhập số điện thoại ..."
+                                                                                                  pattern="[0-9]*"
+                                                                                                  value="@Model.PhoneNumber"
+                                                                                                  asp-for="@Model.PhoneNumber"
+                                                                                                  style="width: 100%" />
+                                <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+
+                            </div>
+                            <div style="width: 50%">
+                                <label for="gender">Giới tính <sup>*</sup></label><br />
+                                <select id="gender" asp-for="@Model.Gender" style="width: 100%">
+
+                                    @* Tạo các thẻ option động bằng Razor *@
+                                    @if (Model.Gender == "Nam")
+                                    {
+                                        <option value=null disabled>Chọn giới tính ...</option>
+                                        <option value="Nam" selected>Nam</option>
+                                        <option value="Nữ">Nữ</option>
+                                    }
+                                    else if (Model.Gender == "Nữ")
+                                    {
+                                        <option value=null disabled>Chọn giới tính ...</option>
+                                        <option value="Nam">Nam</option>
+                                        <option value="Nữ" selected>Nữ</option>
+                                    }
+                                    else
+                                    {
+                                        <option value=null disabled selected>Chọn giới tính ...</option>
+                                        <option value="Nam">Nam</option>
+                                        <option value="Nữ">Nữ</option>
+                                    }
+                                </select>
+                            </div>
+                            @if (User.Identity.IsAuthenticated && ((User.Identity as ClaimsIdentity)?.Claims.Any(c => c.Issuer == "Google") == true) || (User.Identity as ClaimsIdentity)?.Claims.Any(c => c.Issuer == "IsLinkedWithGoogle") == true)
+                            {
+                                <div style="width: 50%">
+                                    <label for="mail">Email <sup>*</sup></label><br /><input type="email"
+                                                                                             id="mail"
+                                                                                             placeholder="Nhập địa chỉ email để nhận thông tin lịch khám"
+                                                                                             value="@Model.Email"
+                                                                                             asp-for="@Model.Email"
+                                                                                             readonly
+                                                                                             style="width: 100%" />
+                                    <span class="text-danger" asp-validation-for="Email"></span>
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div style="width: 50%">
+                                    <label for="mail">Email <sup>*</sup></label><br /><input type="email"
+                                                                                             id="mail"
+                                                                                             placeholder="Nhập địa chỉ email để nhận thông tin lịch khám"
+                                                                                             value="@Model.Email"
+                                                                                             asp-for="@Model.Email"
+                                                                                             style="width: 100%" />
+                                    <span class="text-danger" asp-validation-for="Email"></span>
+                                </div>
+                            }
+
+                            <div style="width: 50%">
+                                <label for="birth">Ngày sinh <sup>*</sup></label><br /><input type="date"
+                                                                                              id="birth"
+                                                                                              value="@(Model.DateOfBirth.HasValue ? Model.DateOfBirth.Value.ToString("yyyy-MM-dd") : string.Empty)"
+                                                                                              asp-for="@Model.DateOfBirth"
+                                                                                              max="@DateTime.Now.AddYears(-16).ToString("yyyy-MM-dd")"
+                                                                                              placeholder="Vui lòng nhập ngày sinh"
+                                                                                              style="width: 100%" />
+                            </div>
+
+                            <div style="width: 50%">
+                                <label for="province">Tỉnh / Thành phố <sup>*</sup></label><br />
+                                <select id="tinh" title="Chọn Tỉnh Thành" asp-for="@Model.Province">
+                                    <option value="0">Tỉnh Thành</option>
+                                </select>
+                            </div>
+                            <div style="width: 25%" class="district">
+                                <label for="district">Quận / Huyện <sup>*</sup></label><br />
+                                <select id="quan" title="Chọn Quận Huyện" asp-for="@Model.District">
+                                    <option value="0">Quận Huyện</option>
+                                </select>
+                            </div>
+                            <div style="width: 25%" class="ward">
+                                <label for="ward">Phường / Xã <sup>*</sup></label><br />
+                                <select id="phuong" title="Chọn Phường Xã" asp-for="@Model.Ward">
+                                    <option value="0">Phường Xã</option>
+                                </select>
+                            </div>
+
+                            <div style="width: 100%" class="address">
+                                <label for="address">Địa chỉ <sup>*</sup></label><br /><input type="text"
+                                                                                              id="address"
+                                                                                              placeholder="Nhập địa chỉ"
+                                                                                              value="@Model.Address"
+                                                                                              asp-for="@Model.Address"
+                                                                                              style="width: 100%" />
+                                <span class="text-danger" asp-validation-for="Address"></span>
+                            </div>
+                            <div class="submit__button">
+                                <button type="reset" class="reset">Nhập lại</button>
+                                <button type="submit" class="submit">Lưu</button>
+                            </div>
+                        </form>
+                    </div>
+                    @if (User.Identity.IsAuthenticated && (User.Identity as ClaimsIdentity)?.Claims.Any(c => c.Issuer == "Google") == false)
+                    {
+                        <div id="repass" class="tab-pane fade">
+                            <h2>Đổi mật khẩu</h2>
+                            <div class="repass__content__wrapper">
+                                <form asp-action="ChangePassword" method="POST">
+                                    <div style="width: 100%">
+                                        <label for="pass">Mật khẩu</label><br /><input type="password"
+                                                                                       name="password"
+                                                                                       id="pass"
+                                                                                       pattern="^[a-zA-Z][a-zA-Z0-9]*$"
+                                                                                       minlength="3"
+                                                                                       maxlength="30"
+                                                                                       required
+                                                                                       placeholder="Nhập mật khẩu"
+                                        @(User.Identity.IsAuthenticated && (User.Identity as ClaimsIdentity)?.Claims.Any(c => c.Issuer == "Google") == true ? "readonly" : "required")
+                                                                                       style="width: 100%" />
+                                    </div>
+                                    <div style="width: 100%">
+                                        <label for="firstname">Mật khẩu mới</label><br /><input type="password"
+                                                                                                name="newPassword"
+                                                                                                id="firstname"
+                                                                                                pattern="^[a-zA-Z][a-zA-Z0-9]*$"
+                                                                                                minlength="3"
+                                                                                                maxlength="30"
+                                                                                                required
+                                                                                                placeholder="Nhập mật khẩu mới"
+                                        @(User.Identity.IsAuthenticated && (User.Identity as ClaimsIdentity)?.Claims.Any(c => c.Issuer == "Google") == true ? "readonly" : "required")
+                                                                                                style="width: 100%" />
+                                    </div>
+                                    <div style="width: 100%">
+                                        <label for="firstname">Nhập lại mật khẩu</label><br /><input type="password"
+                                                                                                     name="confirmPassword"
+                                                                                                     id="firstname"
+                                                                                                     pattern="^[a-zA-Z][a-zA-Z0-9]*$"
+                                                                                                     minlength="3"
+                                                                                                     maxlength="30"
+                                                                                                     required
+                                                                                                     placeholder="Nhập lại mật khẩu"
+                                        @(User.Identity.IsAuthenticated && (User.Identity as ClaimsIdentity)?.Claims.Any(c => c.Issuer == "Google") == true ? "readonly" : "required")
+                                                                                                     style="width: 100%" />
+                                    </div>
+                                    <div class="submit__button">
+                                        <button type="reset" class="reset">Nhập lại</button>
+                                        <button type="submit" class="submit">Tạo mới</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    }
+
+                    @* Lịch sử đặt khám *@
+                    <div id="history" class="tab-pane fade">
+                        <h2>Lịch sử đặt khám</h2>
+                        <div class="history__management">
+
+                            @if (appointments.Count > 0)
+                            {
+                                @foreach (var appointment in appointments)
+                                {
+                                    <div class="appointment-card" style="border: 1px solid #1376f8; border-radius: 8px; padding: 16px; margin-bottom: 16px; background-color: #fff;">
+                                        <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+                                            <div class="code" style="font-weight: bold; color: #007bff;">@index</div>
+                                            <div class="status" style="
+                                                color: white;
+                                                font-weight: bold;
+                                                width: 30%;
+                                                text-align: center;
+                                                border-radius: 4px;
+                                                padding: 4px;
+                                                background:
+                                                @(
+                                                    appointment?.AppointmentStatus == "Đã Khám" ? "#90ee90" :
+                                                    appointment?.AppointmentStatus == "Chờ Xác Nhận" ? "#ffc107" :
+                                                    appointment?.AppointmentStatus == "Đã Chấp Nhận" ? "#17a2b8" :
+                                                    appointment?.AppointmentStatus == "Đã Hủy" ? "#ff474d" : ""
+                                                );
+                                                                                                                    ">
+                                                @appointment?.AppointmentStatus
+                                            </div>
+                                        </div>
+                                        <div class="body" style="margin-top: 16px;">
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="font-weight: bold; white-space: nowrap; margin-right: 8px; min-width: 180px;">Bệnh nhân:</span>
+                                                <span style="flex-grow: 1;">@appointment?.PatientRecords?.FullName</span>
+                                            </div>
+                                            <hr>
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="flex-grow: 1; font-weight: bold; color: #1376f8; white-space: nowrap;"><i class="fas fa-clinic-medical"></i> @appointment?.Schedule?.Dentist?.Clinic.Name</span>
+                                            </div>
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="flex-grow: 1; font-weight: bold; color: #1376f8;">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    @appointment?.Schedule?.Dentist?.Clinic.Address,
+                                                    @appointment?.Schedule?.Dentist?.Clinic.WardName,
+                                                    @appointment?.Schedule?.Dentist?.Clinic.DistrictName,
+                                                    @appointment?.Schedule?.Dentist?.Clinic.ProvinceName
+                                                </span>
+
+                                            </div>
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="font-weight: bold; white-space: nowrap; margin-right: 8px; min-width: 180px;">Nha sĩ:</span>
+                                                <span style="flex-grow: 1;">@appointment?.Schedule?.Dentist?.Account?.FirstName @appointment?.Schedule?.Dentist?.Account?.LastName</span>
+                                            </div>
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="font-weight: bold; white-space: nowrap; margin-right: 8px; min-width: 180px;">Chuyên Khoa:</span>
+                                                <span style="flex-grow: 1;">@appointment?.Specialty?.Name</span>
+                                            </div>
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="font-weight: bold; white-space: nowrap; margin-right: 8px; min-width: 180px;">Ngày đặt:</span>
+                                                <span style="flex-grow: 1;">@(appointment.CreatedDate.HasValue ? appointment.CreatedDate.Value.ToString("dd-MM-yyyy") : "N/A")</span>
+                                            </div>
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="font-weight: bold; white-space: nowrap; margin-right: 8px; min-width: 180px;">Ngày hẹn:</span>
+                                                <span style="flex-grow: 1;">@appointment?.Schedule?.Date.ToString("dd-MM-yyyy")</span>
+                                            </div>
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="font-weight: bold; white-space: nowrap; margin-right: 8px; min-width: 180px;">Giờ hẹn:</span>
+                                                <span style="flex-grow: 1;">@appointment?.Schedule?.TimeSlot?.StartTime - @appointment?.Schedule?.TimeSlot?.EndTime</span>
+                                            </div>
+                                            <div class="item" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                                <span style="font-weight: bold; white-space: nowrap; margin-right: 8px; min-width: 180px;">Giá tiền:</span>
+                                                <span style="flex-grow: 1;">@string.Format(new CultureInfo("vi-VN"), "{0:#,##0.} đ", appointment?.TotalPrice)</span>
+                                                @switch (appointment?.AppointmentStatus)
+                                                {
+                                                    case "Đã Hủy":
+
+                                                        break;
+                                                    case "Đã Khám":
+
+                                                        if (appointment.IsRated == "Đã Đánh Giá")
+                                                        {
+                                                            <div class="btn btn-success" style="padding: 10px 20px; font-size: 16px; border-radius: 8px; font-weight: bold;">
+                                                                Đã Đánh Giá
+                                                            </div>
+                                                        }
+                                                        else
+                                                        {
+                                                            <button type="button" class="btn btn-success" style="padding: 10px 20px; font-size: 16px; border-radius: 8px; font-weight: bold;" data-bs-toggle="modal" data-bs-target="#ratingModal" data-clinic-id="@appointment?.Schedule?.Dentist?.Clinic.ID" data-dentist-id="@appointment?.Schedule?.Dentist.ID" data-patient-id="@appointment?.PatientRecords?.Account?.ID" data-appointment-id="@appointment?.ID">
+                                                                Đánh Giá
+                                                            </button>
+                                                        }
+
+                                                        break;
+                                                    case "Chờ Xác Nhận":
+                                                        <form asp-area="" asp-controller="Account" asp-action="CancelAppointment" method="post" style="margin-left: auto;">
+                                                            <input type="hidden" name="appointmentID" value="@appointment.ID" />
+                                                            <input type="hidden" name="scheduleID" value="@appointment?.Schedule?.ID" />
+                                                            <input type="hidden" name="appointmentStatus" value="Đã Hủy" />
+                                                            <button type="submit" class="btn btn-danger" style="padding: 10px 20px; font-size: 16px; border-radius: 8px; font-weight: bold;">
+                                                                Hủy khám
+                                                            </button>
+                                                        </form>
+                                                        break;
+                                                    case "Đã Chấp Nhận":
+                                                        <form asp-area="" asp-controller="Account" asp-action="CancelAppointment" method="post" style="margin-left: auto;">
+                                                            <input type="hidden" name="appointmentID" value="@appointment.ID" />
+                                                            <input type="hidden" name="appointmentStatus" value="Đã Hủy" />
+                                                            <button type="submit" class="btn btn-danger" style="padding: 10px 20px; font-size: 16px; border-radius: 8px; font-weight: bold;">
+                                                                Hủy khám
+                                                            </button>
+                                                        </form>
+                                                        break;
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    index++;
+                                }
+                            }
+                            else
+                            {
+                                <div class="history__container__style">
+                                    <span>Bạn chưa có lịch khám nào</span>
+                                    <span>
+                                        <img src="https://medpro.vn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FEmptyList.a1f0b7f8.png&w=640&q=75"
+                                             alt="" />
+                                    </span>
+                                </div>
+                            }
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rating Modal -->
+    <div class="modal fade" id="ratingModal" tabindex="-1" aria-labelledby="ratingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 700px; margin: 1.75rem auto;">
+            <div class="modal-content" style="padding: 20px;">
+                <div class="modal-header" style="justify-content: center;">
+                    <h5 class="modal-title" id="ratingModalLabel" style="font-size: 2rem;">Đánh Giá Phòng Khám</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; right: 2.5rem; font-size: 1.5rem;"></button>
+                </div>
+                <div class="modal-body" style="display: flex; flex-direction: column; align-items: center;">
+                    <form id="ratingForm" asp-action="RateAppointment" method="post" style="width: 100%;">
+                        <input type="hidden" name="appointmentID" id="appointmentIdInput" />
+                        <input type="hidden" name="clinicID" id="clinicIdInput" />
+                        <input type="hidden" name="dentistID" id="dentistIdInput" />
+                        <input type="hidden" name="patientID" id="patientIdInput" />
+                        <div class="rating" style="margin-bottom: 20px; display: flex; justify-content: center; align-items: center;">
+                            <span class="star" data-value="1" style="font-size: 3.5rem; cursor: pointer; color: #e4e5e9; margin: 0 5px;">&#9733;</span>
+                            <span class="star" data-value="2" style="font-size: 3.5rem; cursor: pointer; color: #e4e5e9; margin: 0 5px;">&#9733;</span>
+                            <span class="star" data-value="3" style="font-size: 3.5rem; cursor: pointer; color: #e4e5e9; margin: 0 5px;">&#9733;</span>
+                            <span class="star" data-value="4" style="font-size: 3.5rem; cursor: pointer; color: #e4e5e9; margin: 0 5px;">&#9733;</span>
+                            <span class="star" data-value="5" style="font-size: 3.5rem; cursor: pointer; color: #e4e5e9; margin: 0 5px;">&#9733;</span>
+                        </div>
+                        <input type="hidden" name="rating" id="ratingInput" />
+
+                        <div class="form-group" style="width: 100%; margin-top: 20px;">
+                            <label for="comment" style="font-size: large;">Nhận xét:</label>
+                            <textarea class="form-control" name="comment" id="comment" rows="10" style="width: 100%; font-size: 2rem;"></textarea>
+                        </div>
+                        <div class="modal-footer" style="margin-top: 20px; border-top: 0;">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="padding: 10px 20px; font-size: 1.5rem;">Đóng</button>
+                            <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 1.5rem;">Gửi đánh giá</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#ratingModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                var clinicId = button.data('clinic-id');
+                var dentistId = button.data('dentist-id');
+                var patientId = button.data('patient-id');
+                var appointmentId = button.data('appointment-id');
+                var modal = $(this);
+                modal.find('#clinicIdInput').val(clinicId);
+                modal.find('#dentistIdInput').val(dentistId);
+                modal.find('#patientIdInput').val(patientId);
+                modal.find('#appointmentIdInput').val(appointmentId);
+            });
+
+            $('.star').click(function () {
+                var rating = $(this).data('value');
+                $('#ratingInput').val(rating);
+                $('.star').each(function () {
+                    if ($(this).data('value') <= rating) {
+                        $(this).css('color', '#ffc107');
+                    } else {
+                        $(this).css('color', '#e4e5e9');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/53f42380b0.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/53f42380b0.js" crossorigin="anonymous"></script>
+
+    @* Call API from https://esgoo.net to get data*@
+    <script src="https://esgoo.net/scripts/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            var savedProvince = '@Model.Province';
+            var savedDistrict = '@Model.District';
+            var savedWard = '@Model.Ward';
+
+            // Function to format ID with leading zeros based on the length requirement
+            function formatId(id, length) {
+                return id.toString().padStart(length, '0');
+            }
+
+            var savedProvinceId = savedProvince ? formatId(parseInt(savedProvince, 10), 2) : null;
+            var savedDistrictId = savedDistrict ? formatId(parseInt(savedDistrict, 10), 3) : null;
+            var savedWardId = savedWard ? formatId(parseInt(savedWard, 10), 5) : null;
+
+            function loadWards(idquan, callback) {
+                var formattedId = formatId(idquan, 3);
+                $.getJSON('https://esgoo.net/api-tinhthanh/3/' + formattedId + '.htm', function (data_phuong) {
+                    if (data_phuong.error == 0) {
+                        $("#phuong").html('<option value="0">Phường Xã</option>');
+                        $.each(data_phuong.data, function (key_phuong, val_phuong) {
+                            var selected = (val_phuong.id == savedWardId) ? ' selected' : '';
+                            $("#phuong").append('<option value="' + val_phuong.id + '" data-fullname="' + val_phuong.full_name + '"' + selected + '>' + val_phuong.full_name + '</option>');
+                        });
+
+                        if (callback) {
+                            callback();
+                        }
+                    }
+                });
+            }
+
+            function loadDistricts(idtinh, callback) {
+                var formattedId = formatId(idtinh, 2);
+                $.getJSON('https://esgoo.net/api-tinhthanh/2/' + formattedId + '.htm', function (data_quan) {
+                    if (data_quan.error == 0) {
+                        $("#quan").html('<option value="0">Quận Huyện</option>');
+                        $("#phuong").html('<option value="0">Phường Xã</option>');
+                        $.each(data_quan.data, function (key_quan, val_quan) {
+                            var selected = (val_quan.id == savedDistrictId) ? ' selected' : '';
+                            $("#quan").append('<option value="' + val_quan.id + '" data-fullname="' + val_quan.full_name + '"' + selected + '>' + val_quan.full_name + '</option>');
+                        });
+
+                        if (savedDistrictId) {
+                            loadWards(savedDistrictId, callback);
+                        } else if (callback) {
+                            callback();
+                        }
+                    }
+                });
+            }
+
+            function loadProvinces(callback) {
+                $.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+                    if (data_tinh.error == 0) {
+                        $("#tinh").html('<option value="0">Tỉnh Thành</option>');
+                        $.each(data_tinh.data, function (key_tinh, val_tinh) {
+                            var selected = (val_tinh.id == savedProvinceId) ? ' selected' : '';
+                            $("#tinh").append('<option value="' + val_tinh.id + '" data-fullname="' + val_tinh.full_name + '"' + selected + '>' + val_tinh.full_name + '</option>');
+                        });
+
+                        if (savedProvinceId) {
+                            loadDistricts(savedProvinceId, callback);
+                        } else if (callback) {
+                            callback();
+                        }
+                    }
+                });
+            }
+
+            function setInitialValues() {
+                if (savedProvinceId) {
+                    $("#tinh").val(savedProvinceId);
+                    $("#tinh").trigger('change');
+                }
+                if (savedDistrictId) {
+                    $("#quan").val(savedDistrictId);
+                    $("#quan").trigger('change');
+                }
+                if (savedWardId) {
+                    $("#phuong").val(savedWardId);
+                }
+            }
+
+            loadProvinces(setInitialValues);
+
+            $("#tinh").change(function (e) {
+                var selectedOption = $(this).find('option:selected');
+                var idtinh = selectedOption.val();
+                var fullnameTinh = selectedOption.data('fullname');
+                $('#Province').val(fullnameTinh);
+
+                // Load districts based on selected province
+                loadDistricts(idtinh);
+            });
+
+            $("#quan").change(function (e) {
+                var selectedOption = $(this).find('option:selected');
+                var idquan = selectedOption.val();
+                var fullnameQuan = selectedOption.data('fullname');
+                $('#District').val(fullnameQuan);
+
+                // Load wards based on selected district
+                loadWards(idquan);
+            });
+
+            $("#phuong").change(function (e) {
+                var selectedOption = $(this).find('option:selected');
+                var fullnamePhuong = selectedOption.data('fullname');
+                $('#Ward').val(fullnamePhuong);
+            });
+        });
+    </script>
+</body>

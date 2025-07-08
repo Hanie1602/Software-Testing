@@ -1,0 +1,296 @@
+﻿@model IEnumerable<Dental_Clinic_System.Models.Data.PatientRecord>
+
+@{
+	ViewData["Title"] = "PatientRecordInProfile";
+	var modelSize = Model.Count();
+	var nullModel = TempData["isNull"] as string;
+}
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dental Care | login</title>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+		  rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="~/assets/css/header.css" />
+	<link rel="stylesheet" href="~/assets/css/footer.css" />
+	<link rel="stylesheet" href="~/assets/css/patientrecord.css" />
+</head>
+
+<div class="patient__record__profile">
+	<div class="patient__record__profile__wrapper row">
+		<!-- ============ NAVBAR LIST ============ -->
+		<div class="nav__list col-md-3">
+			<ul>
+				@if (modelSize < 10){
+				<li>
+						<a asp-controller="patientrecord" asp-action="showformcreatingnewpatientrecord" class="nav__list__add__record" id="add-record"><i class="fa-solid fa-user-plus"></i> Thêm hồ sơ</a>
+				</li>
+				}
+				<li>
+					<a class="active"><i class="fa-regular fa-id-card"></i> Hồ sơ bệnh nhân</a>
+				</li>
+			</ul>
+		</div>
+		<!-- ============ LIST RECORD ============ -->
+		<div class="record__list col-md-9">
+			<div class="title">Danh sách hồ sơ bệnh nhân</div>
+			@if(modelSize == 0)
+			{
+				<p style="color:red; font-size:17px;">*Bạn chưa có hồ sơ, vui lòng thêm mới ở bên trái!</p>
+			}
+
+			@if (modelSize == 10)
+			{
+				<p style="color:red; font-size:17px;">**Không thể thêm mới hồ sơ vì bạn đã có tối đa 10 hồ sơ, vui lòng xóa hồ sơ không cần thiết để có thể thêm mới!</p>
+			}
+			
+			<div class="list__record">
+				@foreach (var patient in Model)
+				{
+					var age = DateTime.Now.Year - patient.DateOfBirth.Year;
+					<!-- ======== RECORD ITEM ======== -->
+					<div class="record__item">
+						<div class="record__item__style">
+							<ul class="list__info">
+								<li>
+									<div class="style__list__info">
+										<div class="info__head">
+											<span><i class="fa-solid fa-circle-user"></i></span><span>Họ và tên:</span>
+										</div>
+										<div class="info__content name">@patient.FullName</div>
+									</div>
+								</li>
+								<li>
+									<div class="style__list__info">
+										<div class="info__head">
+											<span><i class="fa-solid fa-cake-candles"></i></span><span>Ngày sinh:</span>
+										</div>
+										<div class="info__content">@patient.DateOfBirth.ToString("dd/MM/yyyy")</div>
+									</div>
+								</li>
+								<li>
+									<div class="style__list__info">
+										<div class="info__head">
+											<span><i class="fa-solid fa-mars-and-venus"></i></span><span>Giới tính:</span>
+										</div>
+										<div class="info__content">@patient.Gender</div>
+									</div>
+								</li>
+								<li>
+									<div class="style__list__info">
+										<div class="info__head">
+											<span><i class="fa-solid fa-location-dot"></i></span><span>Địa chỉ:</span>
+										</div>
+										<div class="info__content">@patient.Address</div>
+									</div>
+								</li>
+								@if (age < 14)
+								{
+									<li>
+										<div class="style__list__info">
+											<div class="info__head">
+												<span><i class="fa-solid fa-id-badge"></i></span><span>Họ và tên nhân thân:</span>
+											</div>
+											<div class="info__content">@patient.FMName</div>
+										</div>
+									</li>
+									<li>
+										<div class="style__list__info">
+											<div class="info__head">
+												<span><i class="fa-solid fa-male"></i></span><span>Quan hệ với bệnh nhân:</span>
+											</div>
+											<div class="info__content">@patient.FMRelationship</div>
+										</div>
+									</li>
+									<li>
+										<div class="style__list__info">
+											<div class="info__head">
+												<span><i class="fa-solid fa-phone"></i></span><span>Số điện thoại nhân thân:</span>
+											</div>
+											<div class="info__content">@patient.FMPhoneNumber</div>
+										</div>
+									</li>
+								}
+								else
+								{
+									<li>
+										<div class="style__list__info">
+											<div class="info__head">
+												<span><i class="fa-solid fa-phone"></i></span><span>Số điện thoại:</span>
+											</div>
+											<div class="info__content">@patient.PhoneNumber</div>
+										</div>
+									</li>
+								}
+							</ul>
+							<div class="list__action">
+								<a class="delete" data-bs-toggle="modal" data-bs-target="#deleteModal" data-record-id="@patient.ID">
+									<i class="fa-regular fa-trash-can"></i> Xoá hồ sơ
+								</a>
+								<a asp-controller="patientrecord" asp-action="editpatientrecord" asp-route-patientRecordID="@patient.ID" class="edit">
+									<i class="fa-solid fa-pen-to-square"></i> Sửa hồ sơ
+								</a>
+								<a data-bs-toggle="modal" data-bs-target="#modal-@patient.ID" class="info">
+									<i class="fa-solid fa-circle-info"></i> Chi tiết
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal for each patient -->
+					<div class="modal fade" id="modal-@patient.ID" tabindex="-1" aria-labelledby="mainTitle-@patient.ID" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered form-modal-styles">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title fs-10" id="mainTitle-@patient.ID">Chi tiết hồ sơ</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<ul>
+										<li class="list__item">
+											<div class="style__item row">
+												<p class="style__item__key col-md-6">
+													<i class="fa-solid fa-circle-user"></i> Họ và tên
+												</p>
+												<p class="style__item__value name col-md-6">@patient.FullName</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="style__item row">
+												<p class="style__item__key col-md-6">
+													<i class="fa-solid fa-cake-candles"></i> Ngày sinh
+												</p>
+												<p class="style__item__value col-md-6">@patient.DateOfBirth.ToString("dd/MM/yyyy")</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="style__item row">
+												<p class="style__item__key col-md-6">
+													<i class="fa-solid fa-mars-and-venus"></i> Giới tính
+												</p>
+												<p class="style__item__value col-md-6">@patient.Gender</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="style__item row">
+												<p class="style__item__key col-md-6">
+													<i class="fa-solid fa-id-card"></i> CMND/CCCD
+												</p>
+												<p class="style__item__value col-md-6">@patient.IdentityNumber</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="style__item row">
+												<p class="style__item__key col-md-6">
+													<i class="fa-solid fa-briefcase"></i> Nghề nghiệp
+												</p>
+												<p class="style__item__value col-md-6">@patient.Job</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="style__item row">
+												<p class="style__item__key col-md-6">
+													<i class="fa-solid fa-map-location-dot"></i> Địa chỉ
+												</p>
+												<p class="style__item__value col-md-6">@patient.Address</p>
+											</div>
+										</li>
+										@if (age < 14)
+										{
+											<li class="list__item">
+												<div class="style__item row">
+													<p class="style__item__key col-md-6">
+														<i class="fa-solid fa-id-badge"></i> Họ và tên nhân thân
+													</p>
+													<p class="style__item__value col-md-6">@patient.FMName</p>
+												</div>
+											</li>
+											<li class="list__item">
+												<div class="style__item row">
+													<p class="style__item__key col-md-6">
+														<i class="fa-solid fa-male"></i> Quan hệ với bệnh nhân
+													</p>
+													<p class="style__item__value col-md-6">@patient.FMRelationship</p>
+												</div>
+											</li>
+											<li class="list__item">
+												<div class="style__item row">
+													<p class="style__item__key col-md-6">
+														<i class="fa-solid fa-phone"></i> Số điện thoại nhân thân
+													</p>
+													<p class="style__item__value col-md-6">@patient.FMPhoneNumber</p>
+												</div>
+											</li>
+										}
+										else
+										{
+											<li class="list__item">
+												<div class="style__item row">
+													<p class="style__item__key col-md-6">
+														<i class="fa-solid fa-at"></i> Email
+													</p>
+													<p class="style__item__value col-md-6">@patient.EmailReceiver</p>
+												</div>
+											</li>
+											<li class="list__item">
+												<div class="style__item row">
+													<p class="style__item__key col-md-6">
+														<i class="fa-solid fa-phone"></i> Số điện thoại
+													</p>
+													<p class="style__item__value col-md-6">@patient.PhoneNumber</p>
+												</div>
+											</li>
+										}
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				}
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="deleteModalLabel">Xác nhận xóa</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				Bạn có chắc chắn muốn xóa hồ sơ này không?
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+				<a href="#" id="confirmDeleteBtn" class="btn btn-danger">Xóa</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/53f42380b0.js"
+		crossorigin="anonymous"></script>
+<script>
+	var deleteModal = document.getElementById('deleteModal');
+	deleteModal.addEventListener('show.bs.modal', function (event) {
+		var button = event.relatedTarget;
+		var recordId = button.getAttribute('data-record-id');
+		var confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
+		confirmDeleteBtn.href = '/patientrecord/deletepatientrecord?patientRecordID=' + recordId;
+	});
+</script>

@@ -1,0 +1,896 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Baloo Paaji 2";
+    background: #f5f8fc;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    display: block;
+    background-color: #b2b2b2;
+}
+
+/* ======== BUTTON ========= */
+.btn-wrapper {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 28px;
+}
+
+    .btn-wrapper.payment {
+        margin-bottom: 0;
+    }
+
+    .btn-wrapper .back-btn {
+        border: none;
+        outline: none;
+        color: #003553;
+        font-size: 1.6rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        border-color: transparent;
+        background: transparent;
+        box-shadow: none;
+        gap: 5px;
+        cursor: pointer;
+        padding: 8px 15px;
+        border-radius: 8px;
+        transition: all 0.25s ease;
+    }
+
+        .btn-wrapper .back-btn:hover {
+            background: linear-gradient( 83.63deg, #00b5f1 33.34%, #00e0ff 113.91% ) !important;
+            color: #fff;
+        }
+
+    .btn-wrapper .add-record-btn {
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        gap: 5px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient( 83.63deg, #00b5f1 33.34%, #00e0ff 113.91% ) !important;
+        border-radius: 8px;
+    }
+
+        .btn-wrapper .add-record-btn:hover {
+            box-shadow: 0 4px 30px 0 rgba(116, 157, 206, 0.2);
+            background: linear-gradient(40deg, #07aae0, #00c6e1) !important;
+        }
+
+.clinic {
+    margin-top: 60px;
+}
+
+.clinic__title {
+    font-size: 6.2rem;
+    margin-top: 50px;
+}
+
+.clinic__container {
+    width: 779px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px 52px 40px;
+    position: relative;
+    background: #fff;
+}
+
+.clinic__container__special {
+    width: 970px;
+}
+
+.clinic__container__title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+    .clinic__container__title span {
+        color: #111c63;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+.clinic__container__card {
+    width: 674px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px 17px;
+    box-shadow: #ccd6ef 5px 20px 40px 0px;
+}
+
+.clinic__container__card__title {
+    background: linear-gradient(45deg, #2320d4 24.57%, #38d6ec 45%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.4rem;
+}
+
+.clinic__container__card .location,
+.clinic__container__card .time {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #111c63;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+    .clinic__container__card .location i {
+        color: #ed4c4c;
+    }
+
+    .clinic__container__card .time i {
+        color: #1dcbb6;
+    }
+
+.clinic__container__card .notification {
+    display: inline-block;
+    font-size: 1.8rem;
+    background: #e8f1ff;
+    border-radius: 1000px;
+    margin-top: 8px;
+    padding: 7px 22px 7px 16px;
+    color: #111c63;
+}
+
+    .clinic__container__card .notification span {
+        font-weight: bold;
+    }
+
+.clinic__container__card .buttons {
+    margin-top: 10px;
+}
+
+.clinic__container__card .button-book {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    background-color: #1dcbb6;
+    border: 1px solid #1dcbb6;
+    border-radius: 100px;
+}
+
+    .clinic__container__card .button-book:hover {
+        box-shadow: 0 0 0 0.2rem rgba(76, 225, 198, 0.25);
+        background-color: #4ce1c6;
+        border: 1px solid #4ce1c6;
+    }
+
+.clinic__container__card .button-more {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    background-color: #2320d4;
+    border: 1px solid #2320d4;
+    border-radius: 100px;
+}
+
+    .clinic__container__card .button-more:hover {
+        background-color: #1c19b5;
+        border: 1px solid #1c19b5;
+    }
+
+.clinic__container__card:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+.clinic__gallery {
+    padding: 5px;
+    background: #fff;
+    box-shadow: 5px 20px 40px #ccd6ef;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.clinic__gallery__style {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.clinic__gallery .gallery-item {
+    width: 100%;
+    cursor: pointer;
+}
+
+.clinic__gallery .gallery-image {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* ============= Clinic Specialty ============= */
+.clinic__special__container__wrapper {
+    width: 890px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.clinic__special__container__card {
+    background: #fff;
+    box-shadow: 2px 8px 20px #dce5fb;
+    margin: 10px;
+    height: auto;
+    border-radius: 23px;
+    cursor: pointer;
+    position: relative;
+    width: calc(100% / 3 - 20px);
+}
+
+    .clinic__special__container__card .image-content {
+        background-image: linear-gradient( 97.97deg, rgb(224, 255, 249) 0%, rgb(214, 230, 255) 92.67% );
+        border-radius: 23px;
+        height: 216px;
+        margin: 7px 7px 0;
+        overflow: hidden;
+    }
+
+        .clinic__special__container__card .image-content img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+    .clinic__special__container__card .text-content {
+        margin: 16px 20px 20px;
+        color: #111c63;
+    }
+
+    .clinic__special__container__card .text-content-title {
+        background: linear-gradient( 45deg, rgb(35, 32, 212) 24.57%, rgb(70, 233, 255) 96.37% );
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 600 !important;
+        font-size: 2rem;
+        line-height: 1.2;
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .clinic__special__container__card .cover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient( 194.54deg, rgba(130, 41, 222, 0.67) -9.38%, #2303aa 91.11% );
+        border-radius: 23px;
+        transition: 0.25s ease-in-out;
+    }
+
+        .clinic__special__container__card .cover:hover {
+            opacity: 1;
+        }
+
+    .clinic__special__container__card .button-wrapper {
+        width: 100%;
+    }
+
+        .clinic__special__container__card .button-wrapper button {
+            display: block;
+            width: 100%;
+            background-color: #1dcbb6;
+            border: 1px solid #1dcbb6;
+            border: none;
+            outline: none;
+            padding: 16px;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 100px;
+            font-size: 1.8rem;
+        }
+
+            .clinic__special__container__card .button-wrapper button:hover {
+                box-shadow: 0 0 0 0.2rem rgba(76, 225, 198, 0.25);
+                background-color: #4ce1c6;
+                border: 1px solid #4ce1c6;
+                color: #fff;
+            }
+
+/* =========== Clinic Dentist ============= */
+.clinic__dentist__container {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    gap: 32px;
+}
+
+    .clinic__dentist__container .info,
+    .clinic__dentist__container .booking {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .clinic__dentist__container .info {
+        display: block;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .clinic__dentist__container .booking {
+        display: block;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .clinic__dentist__container .info-style {
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 30px 0 rgba(116, 157, 206, 0.2);
+        overflow: hidden;
+        padding-bottom: 3px;
+    }
+
+    .clinic__dentist__container .info-title {
+        text-align: center;
+        color: #fff;
+        padding: 12px 16px;
+        background: linear-gradient(36deg, #00b5f1, #00e0ff);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .clinic__dentist__container .info-body {
+        padding: 12px 16px;
+    }
+
+        .clinic__dentist__container .info-body ul {
+            padding-left: 0;
+        }
+
+            .clinic__dentist__container .info-body ul li {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 10px;
+            }
+
+                .clinic__dentist__container .info-body ul li i {
+                    margin-right: 8px;
+                    font-size: 1.9rem;
+                }
+
+        .clinic__dentist__container .info-body .text {
+            color: #003553;
+            font-size: 1.9rem;
+            font-weight: 600;
+        }
+
+        .clinic__dentist__container .info-body .address {
+            color: #858585;
+        }
+
+    .clinic__dentist__container .booking-style {
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 30px 0 rgba(116, 157, 206, 0.2);
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .clinic__dentist__container .booking-title {
+        color: #fff;
+        padding: 12px 16px;
+        background: linear-gradient(36deg, #00b5f1, #00e0ff);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .clinic__dentist__container .booking-body {
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+        .clinic__dentist__container .booking-body .search {
+            width: 100%;
+            display: inline-block;
+            text-align: start;
+            vertical-align: top;
+            padding: 0 10px;
+        }
+
+            .clinic__dentist__container .booking-body .search .input-wrap {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                color: rgba(0, 0, 0, 0.85);
+                font-size: 14px;
+                font-variant: tabular-nums;
+                line-height: 1.5715;
+                list-style: none;
+                font-feature-settings: "tnum", "tnum";
+                position: relative;
+                display: table;
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0;
+            }
+
+            .clinic__dentist__container .booking-body .search .input-wrap-search {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                min-width: 0;
+                padding: 7px 11px;
+                color: rgba(0, 0, 0, 0.85);
+                font-size: 14px;
+                line-height: 1.5715;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #d9d9d9;
+                border-radius: 3px;
+                transition: all 0.3s;
+                display: inline-flex;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            .clinic__dentist__container .booking-body .search .input-wrap input {
+                width: 100%;
+                font-size: 1.8rem;
+                border: none;
+                outline: none;
+            }
+
+            .clinic__dentist__container .booking-body .search .icon-wrap {
+                width: 1px;
+                display: table-cell;
+                position: relative;
+                color: rgba(0, 0, 0, 0.85);
+                font-weight: 400;
+                font-size: 14px;
+                text-align: center;
+                background-color: #fafafa;
+                border: 1px solid #d9d9d9;
+                border-radius: 3px;
+                transition: all 0.3s;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+                .clinic__dentist__container .booking-body .search .icon-wrap button {
+                    width: 40px;
+                    height: 40px;
+                    vertical-align: middle;
+                    border: none;
+                    outline: none;
+                    padding: auto 0;
+                    background: #fff;
+                }
+
+                .clinic__dentist__container .booking-body .search .icon-wrap i {
+                    font-size: 1.8rem;
+                    vertical-align: middle;
+                }
+
+        .clinic__dentist__container .booking-body .filter {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 0 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+            .clinic__dentist__container .booking-body .filter select {
+                border: none;
+                outline: none;
+                min-width: 139px;
+                background: linear-gradient( 83.63deg, #00b5f1 33.34%, #00e0ff 113.91% ) !important;
+                color: #fff !important;
+                border: none !important;
+                border-radius: 5px !important;
+                padding: 0 11px;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+
+                .clinic__dentist__container .booking-body .filter select option {
+                    color: #111c63;
+                }
+
+    .clinic__dentist__container .booking__dentist {
+        height: 48vh;
+        overflow-y: auto;
+        padding: 5px;
+    }
+
+.booking__dentist__card {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color: #003553;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    animation: styles_animation__RBREz 0.7s ease 0.3s forwards;
+    cursor: pointer;
+}
+
+    .booking__dentist__card:hover {
+        box-shadow: 0 0 5px #1da1f2;
+    }
+
+.booking__dentist__card__style {
+    padding: 0.8rem 0.9rem;
+}
+
+    .booking__dentist__card__style div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+    }
+
+        .booking__dentist__card__style div.stylist {
+            color: #ffb54a !important;
+            font-weight: 700 !important;
+        }
+
+.booking__dentist::-webkit-scrollbar {
+    width: 6px;
+    display: block;
+    background-color: #b2b2b2;
+    border-radius: 5px;
+}
+
+.booking__dentist::-webkit-scrollbar-thumb {
+    background: #b2b2b2;
+    background-image: linear-gradient(0deg, #88d3ce 0, #2d9cfd);
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+}
+
+.booking__dentist .card-end {
+    text-align: center;
+    color: #00559c;
+    font-size: 2rem;
+}
+
+/* ========= Booking Calender ========== */
+.year-month__container {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 12px;
+    color: #1ca1f4;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
+}
+
+.year-month__container__style {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    .year-month__container__style button {
+        width: 40px;
+        height: 40px;
+        padding: 6.4px 0;
+        font-size: 16px;
+        border-radius: 3px;
+        vertical-align: -3px;
+        border-color: transparent;
+        background: transparent;
+        text-shadow: none;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        color: rgb(0, 181, 241);
+    }
+
+        .year-month__container__style button[disabled] {
+            color: rgb(149, 165, 166);
+            cursor: not-allowed;
+        }
+
+    .year-month__container__style .year-month__time {
+        font-weight: 600;
+        line-height: 28.287px;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        color: #00b5f1;
+        background: linear-gradient(83.63deg, #00b5f1 33.34%, #00e0ff 113.91%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+.week__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.week__cell {
+    pointer-events: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-right: 1px solid #dfe3eb;
+    border-bottom: 1px solid #dfe3eb;
+    border-top: 1px solid #e4e7ee;
+    font-size: 1rem;
+    white-space: nowrap;
+    background: #f7f7f7;
+    font-size: 2rem;
+}
+
+    .week__cell:first-child {
+        color: #fa531f;
+    }
+
+    .week__cell:last-child {
+        color: #faa01f;
+    }
+
+.date__container__style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+    .date__container__style .date__cell {
+        pointer-events: none;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(100% / 7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border-right: 1px solid #dfe3eb;
+        border-bottom: 1px solid #dfe3eb;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+        .date__container__style .date__cell span {
+            opacity: 0.2;
+        }
+
+        .date__container__style .date__cell.available-day {
+            pointer-events: unset;
+        }
+
+            .date__container__style .date__cell.available-day span {
+                opacity: 0.8 !important;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.2s ease-in-out;
+                padding: 0 10px;
+                min-width: 40px;
+                text-align: center;
+            }
+
+            .date__container__style .date__cell.available-day:hover span {
+                border-radius: 5px;
+                background: linear-gradient(48deg, #00b5f1, #00e0ff);
+                color: #fff !important;
+                cursor: pointer;
+                font-weight: 500;
+            }
+
+/* ============== CLINIC DETAIL ============== */
+.clinic__detail__style {
+    background: #f5f8fc;
+    padding-top: 40px;
+}
+
+.clinic__detail {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.clinic__detail__info__map .info {
+    background: #fff;
+    box-shadow: #ccd6ef 5px 20px 40px 0px;
+    border-radius: 20px;
+    padding: 35px 35px 20px;
+}
+
+.clinic__detail__info__map .info-title {
+    text-align: center;
+}
+
+    .clinic__detail__info__map .info-title img {
+        width: 100%;
+    }
+
+    .clinic__detail__info__map .info-title .name {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #2d9cfd;
+    }
+
+.clinic__detail__info__map .info-details {
+    font-size: 1.6rem;
+}
+
+    .clinic__detail__info__map .info-details .book a {
+        display: block;
+        padding: 10px 30px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        background: #1376f8;
+        width: 100%;
+        border-radius: 100px;
+    }
+
+        .clinic__detail__info__map .info-details .book a:hover {
+            background: #0f5fcb;
+        }
+
+    .clinic__detail__info__map .info-details .style__item {
+        display: inline-flex;
+        gap: 5.5px;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+        .clinic__detail__info__map .info-details .style__item .span {
+            line-height: 18.75px;
+        }
+
+.clinic__detail__desc__map .map {
+    margin-top: 30px;
+    height: 40%;
+}
+
+.clinic__detail__info__map .map {
+    margin-top: 30px;
+    height: 50vh;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.carousel-control-prev {
+    border-radius: 20px 0 0 20px;
+}
+
+.carousel-control-next {
+    border-radius: 0 20px 20px 0;
+}
+
+.clinic__detail__slide__desc img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.clinic__detail__slide__desc .desc {
+    margin-top: 30px;
+    height: 60vh;
+    overflow: auto;
+    padding: 35px;
+    background: #fff;
+    box-shadow: #ccd6ef 5px 20px 40px 0px;
+    border-radius: 20px;
+}
+
+    .clinic__detail__slide__desc .desc h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #2d9cfd;
+    }
+
+    .clinic__detail__slide__desc .desc p {
+        font-size: 1.8rem;
+        color: #003553;
+    }
+
+.clinic__detail__slide__desc .desc__style {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+/* ========= CLINIC DETAIL REVIEW ========== */
+.clinic__detail__title {
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.reviews__content__wrapper,
+.reviews__content,
+.reviews__container {
+    border-radius: 20px;
+}
+
+.reviews__container {
+    padding: 40px 80px !important;
+}
+
+.reviews__content {
+    overflow: hidden;
+}
+
+.reviews__card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+    .reviews__card .title {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: #2d9cfd;
+    }
+
+    .reviews__card .rating {
+        font-size: 1.6rem;
+        color: #faa01f;
+    }
+
+    .reviews__card .content {
+        font-size: 1.8rem;
+        color: #003553;
+    }

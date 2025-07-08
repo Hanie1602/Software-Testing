@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Nha sĩ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+        }
+
+        .content {
+            margin-left: 250px;
+        }
+
+        /* Not Mine */
+        .css-175oi2r {
+            align-items: stretch;
+            background-color: rgba(0, 0, 0, 0);
+            border: 0px solid black;
+            box-sizing: border-box;
+            display: flex;
+            flex-basis: auto;
+            flex-direction: column;
+            flex-shrink: 0;
+            list-style: none;
+            margin: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            min-height: 0px;
+            min-width: 0px;
+            padding: 0px;
+            position: relative;
+            text-decoration: none;
+            z-index: 0;
+        }
+
+        .p-2\.5 {
+            padding: .625rem !important;
+        }
+
+        .bg-\[\#eee\],
+        .bg-\[\#eeeeee\] {
+            --tw-bg-opacity: 1 !important;
+            /* background-color: rgb(238 238 238/var(--tw-bg-opacity)) !important; */
+            background-color: rgb(255, 202, 44);
+        }
+
+        .mt-1\.5 {
+            margin-top: .375rem !important;
+        }
+
+        .md\:flex-wrap {
+            flex-wrap: wrap !important;
+        }
+
+        .mr-10-px {
+            margin-right: 10px;
+        }
+
+        /* Not Mine */
+
+        /* Dashboard Searching bar NOT MINE */
+        .input-group {
+            /* float: left; */
+            width: 30%;
+        }
+
+        /*  */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="container-fluid">
+                    <a href="manager.html" class="navbar-brand">
+                      <img src="assets\image\Dental Care_preview_rev_1.png" alt="Logo" class="img-fluid" width="100">
+                    </a>
+                  </div>
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="showContent('dashboard')">
+                                <i class="fas fa-user-md"></i> Quản lý Nha sĩ
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="manager.html" onclick="showContent('appointments')">
+                                <i class="fas fa-calendar-alt"></i> Lịch làm việc
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showContent('services')">
+                                <i class="fas fa-file-medical"></i> Dịch vụ khám
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showContent('clinics')">
+                                <i class="fas fa-chart-bar"></i> Quản lý Phòng khám
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 content">
+                <div id="dashboard">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Chỉnh sửa Nha sĩ</h1>
+                    </div>
+
+                    <div class="container">
+                        <h2>Chỉnh sửa thông tin nha sĩ</h2>
+
+                        <form id="dentistEditForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="dentistName">Tên:</label>
+                                        <input type="text" class="form-control" id="dentistName" name="dentistName"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="dentistGender">Giới tính:</label>
+                                        <select class="form-control" id="dentistGender" name="dentistGender" required>
+                                            <option value="male">Nam</option>
+                                            <option value="female">Nữ</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="dentistEmail">Email:</label>
+                                        <input type="email" class="form-control" id="dentistEmail" name="dentistEmail"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="dentistDob">Ngày sinh:</label>
+                                        <input type="date" class="form-control" id="dentistDob" name="dentistDob"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="dentistAddress">Địa chỉ:</label>
+                                        <input type="text" class="form-control" id="dentistAddress"
+                                            name="dentistAddress" required>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="dentistPhone">Số điện thoại:</label>
+                                        <input type="tel" class="form-control" id="dentistPhone" name="dentistPhone"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group" style="margin-top: -8px;">
+                                        <!-- <label for="dentistImage">Ảnh:</label>
+                                        <input type="file" class="form-control-file" id="dentistImage"
+                                            name="dentistImage">
+                                        <small class="form-text text-muted">Lưu ý: Ảnh phải có định dạng .jpg, .jpeg,
+                                            .png và dung lượng tối đa 2MB.</small> -->
+                                        <label for="image" class="form-label">Hình ảnh:</label>
+                                        <input type="file" class="form-control" id="image" name="image">
+                                        <p class="help-block">Chọn ảnh đại diện cho dịch vụ.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="dentistStatus">Trạng thái tài khoản:</label>
+                                        <select class="form-control" id="dentistStatus" name="dentistStatus" required>
+                                            <option value="good">Hoạt động tốt</option>
+                                            <option value="banned">Bị cấm</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="form-group mt-3 mb-3">
+                                <label for="dentistDescription">Mô tả:</label>
+
+                                <textarea name="textarea" id="default"></textarea>
+
+                                <input type="hidden" name="dentistDescription" id="dentistDescriptionHidden">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Lưu</button>
+                        </form>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+                <div id="appointments" class="d-none">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Lịch làm việc</h1>
+                    </div>
+                    <div class="container">
+                        <h2>Đặt lịch khám</h2>
+
+
+                    </div>
+
+                </div>
+                <!-- Các phần nội dung khác sẽ được thêm vào đây tương tự -->
+                
+                <div id="services" class="d-none">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Dịch vụ khám</h1>
+                    </div>
+                </div>
+                <div id="clinics" class="d-none">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Quản lý Phòng khám</h1>
+                    </div>
+                    <p>Nội dung quản lý phòng khám sẽ được hiển thị ở đây.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="assets\tinymce\js\tinymce\tinymce.min.js"></script>
+    <script src="assets/js/text_editor.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showContent(contentId) {
+            // Lưu trạng thái nội dung vào localStorage
+            localStorage.setItem('currentContent', contentId);
+
+            const sections = ['dashboard', 'appointments', 'services', 'clinics'];
+            sections.forEach(id => {
+                document.getElementById(id).classList.add('d-none');
+            });
+            document.getElementById(contentId).classList.remove('d-none');
+        }
+
+        // Hàm để khôi phục trạng thái nội dung từ localStorage
+        function restoreContent() {
+            const contentId = localStorage.getItem('currentContent') || 'dashboard';
+            showContent(contentId);
+        }
+
+        // Gọi hàm khôi phục khi trang được tải
+        window.onload = restoreContent;
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Baloo Paaji 2";
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	display: block;
+	background-color: #b2b2b2;
+}
+
+.dentist {
+	width: 1440px;
+	margin: 0 auto;
+	margin-top: 65px;
+}
+
+.dentist__profile {
+	display: flex;
+}
+
+.dentist__profile img {
+	width: 120px;
+	height: 120px;
+}
+
+.dentist__profile__info .name {
+	color: #000;
+	font-size: 2.7rem;
+	font-weight: 700;
+}
+
+.dentist__profile__info .desc {
+	width: 50%;
+	color: #3c4959;
+	font-size: 2.2rem;
+}
+
+.dentist__profile__info .location {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #3c4959;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.48rem */
+	letter-spacing: 0.024rem;
+}
+
+.dentist__profile__work {
+	margin-top: 30px;
+	display: flex;
+	position: relative;
+}
+
+.dentist__profile__work--schedule {
+	width: 50%;
+}
+
+.dentist__profile__work--location {
+	width: 50%;
+}
+
+.dentist__profile__work--schedule select {
+	font-size: 2rem;
+}
+
+.dentist__profile__work--schedule .sub-title {
+	margin-top: 10px;
+	display: flex;
+	gap: 5px;
+	color: #000;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.48rem */
+	letter-spacing: 0.024rem;
+}
+
+.dentist__profile__work--schedule .note {
+	margin-top: 15px;
+	color: #3c4959;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.015rem */
+	letter-spacing: 0.0195rem;
+}
+
+.dentist__profile__work--schedule__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+	margin-top: 20px;
+}
+
+.dentist__profile__work--schedule__wrapper a {
+	display: inline-block;
+	text-align: center;
+	width: 116px;
+	padding: 9px 11px;
+	border-radius: 1px;
+	border: 1px solid #eee;
+	background: #eee;
+	color: #202224;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: -0.0064rem;
+}
+
+.dentist__profile__work--schedule__wrapper a:hover {
+	background: #ddd;
+}
+
+.dentist__profile__work .separate {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	width: 0;
+	border: 1px solid #0005;
+	height: 90%;
+	transform: translateX(-50%);
+}
+
+.dentist__profile__work--location {
+	padding-left: 2%;
+	padding-top: 2%;
+}
+
+.clinic__address {
+	color: #666;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.48rem */
+	letter-spacing: 0.008rem;
+}
+
+.clinic__name {
+	color: #011632;
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 155%; /* 2.17rem */
+	letter-spacing: 0.021rem;
+}
+
+.clinic__address__detail {
+	color: #3c4959;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.015rem */
+	letter-spacing: 0.0195rem;
+}
+
+.book__price {
+	color: #3c4959;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.015rem */
+	letter-spacing: 0.0195rem;
+}
+
+.book__price span {
+	font-size: 2rem;
+	font-weight: 600;
+}

@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Baloo Paaji 2";
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+.form-modal-styles {
+	width: 600px;
+}
+
+.form-modal-styles .modal-body label {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.form-modal-styles .modal-footer .close-btn,
+.form-modal-styles .modal-footer .submit-btn {
+	font-size: 2rem;
+}
+
+.form-modal-styles .modal-body input,
+.form-modal-styles .modal-body textarea {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font-size: 2rem;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* ======== BODY HEADER ========= */
+.specialty__management__header {
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.specialty__management__header .title {
+	font-size: 4.4rem;
+	font-weight: bold;
+}
+
+.specialty__management__header .action-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.specialty__management__header .action-btn .search__bar {
+	padding: 5px 10px;
+	border: 1px solid #4880ff;
+	border-radius: 6px;
+}
+
+.specialty__management__header .action-btn .search__bar input {
+	border: none;
+	outline: none;
+}
+
+.specialty__management__header .action-btn .add__new {
+	background: #4880ff;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 6px 20px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.specialty__management__header .action-btn .add__new:hover {
+	background: #2e5bff;
+}
+
+.specialty__management tbody tr {
+	height: 100px;
+}
+
+.specialty__management button {
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	padding: 5px 10px;
+}
+
+.specialty__management .table button i {
+	vertical-align: middle;
+}
+
+.specialty__management .table button:first-child,
+.specialty__management .submit-btn {
+	background: #4880ff;
+	color: white;
+}
+
+.specialty__management .table button:first-child:hover,
+.specialty__management .submit-btn:hover {
+	background: #3b6cd9;
+}
+
+.specialty__management .table button:last-child,
+.specialty__management .close-btn {
+	background: rgb(255, 66, 66);
+	color: white;
+}
+
+.specialty__management .table button:last-child:hover,
+.specialty__management .close-btn:hover {
+	background: #ff0000;
+}
+
+.specialty__management .table tbody img {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	object-fit: cover;
+	vertical-align: middle;
+}
+
+.specialty__management .table tbody .desc {
+	word-wrap: break-word;
+	width: 1100px;
+}
+
+/* ================ PAGINATION =============== */
+.pagination .page-link {
+	font-size: 2rem;
+	padding: 5px 20px;
+	font-weight: 600;
+}

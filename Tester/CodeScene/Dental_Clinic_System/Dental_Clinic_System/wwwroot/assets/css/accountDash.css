@@ -1,0 +1,240 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Baloo Paaji 2";
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+input:focus {
+	border-color: #47bfff;
+	box-shadow: 0 0 0 4px rgba(29, 161, 242, 0.2);
+	outline: 0;
+}
+
+/* ================== MODAL ================== */
+
+.form-modal-styles {
+	width: 600px;
+}
+
+.form-modal-styles .modal-body label {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.form-modal-styles .modal-footer .close-btn,
+.form-modal-styles .modal-footer .submit-btn {
+	font-size: 2rem;
+}
+
+.form-modal-styles .modal-body input,
+.form-modal-styles .modal-body textarea {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font-size: 2rem;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* =========== INFO ============ */
+
+.account__management {
+	padding: 0 20px;
+}
+
+.account__management__header {
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.account__management__header .title {
+	font-size: 4.4rem;
+	font-weight: bold;
+}
+
+.account__management__header .action-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.account__management__header .action-btn .search__bar {
+	padding: 5px 10px;
+	border: 1px solid #4880ff;
+	border-radius: 6px;
+}
+
+.account__management__header .action-btn .search__bar input {
+	border: none;
+	outline: none;
+}
+
+.account__management__header .action-btn .add__new {
+	background: #4880ff;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 6px 20px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.account__management__header .action-btn .add__new:hover {
+	background: #2e5bff;
+}
+
+.account__management table a button {
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	padding: 5px 10px;
+}
+
+.account__management table a button i {
+	vertical-align: middle;
+}
+
+.account__management table a:first-child button,
+.account__management .submit-btn {
+	background: #4880ff;
+	color: white;
+}
+
+.account__management table a:first-child:hover button,
+.account__management .submit-btn:hover {
+	background: #3b6cd9;
+}
+
+.account__management table a:last-child button,
+.account__management .close-btn {
+	background: rgb(255, 66, 66);
+	color: white;
+}
+
+.account__management table a:last-child:hover button,
+.account__management .close-btn:hover {
+	background: #f81f1f;
+}
+
+.account__management .table tbody img {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 5px;
+}
+
+.account__management .table tbody span {
+	font-weight: 600;
+}
+
+.status {
+	padding: 0.4rem 0;
+	border-radius: 32px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.status.dentist {
+	background: #86e49d;
+	color: #006b21;
+}
+
+.status.member {
+	background: #93aff0;
+	color: #4880ff;
+}
+
+.status.admin {
+	background: #d893a3;
+	color: #b30021;
+}
+
+/* ================ PAGINATION =============== */
+.pagination .page-link {
+	font-size: 2rem;
+}
+
+.pagination .page-link {
+	padding: 5px 20px;
+	font-weight: 600;
+}
+
+/* =============== FORM EDIT ================ */
+.account__management__edit {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.account__management__edit label {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.account__management__edit input,
+.account__management__edit select {
+	width: 100%;
+	font-size: 2rem;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.account__management__edit input {
+	padding: 8.5px 10px;
+}
+
+.account__management__edit button {
+	font-size: 2rem;
+	padding: 5px 10px;
+	font-weight: bold;
+	background: #4880ff;
+	color: #fff;
+}
+
+.account__management__edit button:hover {
+	background: #3b6cd9;
+	color: #fff;
+}
+
+.account__management__edit button[type="reset"] {
+	margin-left: 10px;
+	background: #ffb54a;
+}
+
+.account__management__edit button[type="reset"]:hover {
+	background: #ff9c00;
+}
+
+/* ================ PAGINATION =============== */
+.pagination .page-link {
+	font-size: 2rem;
+	padding: 5px 20px;
+	font-weight: 600;
+}

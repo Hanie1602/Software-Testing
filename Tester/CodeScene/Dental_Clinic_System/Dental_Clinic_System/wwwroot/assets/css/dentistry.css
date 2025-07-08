@@ -1,0 +1,248 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Baloo Paaji 2";
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	display: block;
+	background-color: #b2b2b2;
+}
+
+.dentistry__title {
+	font-size: 6.2rem;
+	margin-top: 80px;
+}
+
+.dentistry__subtitle {
+	margin-top: 42px;
+	color: #011632;
+	font-size: 4.2rem;
+	font-weight: bold;
+	line-height: 125%; /* 5.25rem */
+	text-transform: capitalize;
+}
+
+.dentistry__desc {
+	width: 942px;
+	margin: 0 auto;
+	margin-top: 27px;
+	color: #3c4959;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.79rem */
+	letter-spacing: 0.027rem;
+}
+
+.dentistry__wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.dentistry__sort span {
+	color: #3c4959;
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+.dentistry__sort select {
+	width: 178px;
+	padding-left: 10px;
+	color: #3c4959;
+	font-size: 2.4rem;
+}
+
+.dentistry__sort select option {
+	border-radius: 1rem;
+}
+
+.dentistry__wrapper .dentistry__dentist {
+	color: #011632;
+	font-size: 4.2rem;
+	font-weight: bold;
+	line-height: 125%; /* 5.25rem */
+	text-transform: capitalize;
+}
+
+.dentistry__info {
+	margin-top: 40px;
+}
+
+.dentistry__info__card {
+	position: relative;
+	padding: 20px 54px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.08);
+}
+
+.dentistry__info__card--dentist {
+	width: 50%;
+}
+
+.dentistry__info__card--schedule {
+	width: 49%;
+	margin-left: 10%;
+}
+
+.dentistry__info__card--detist__profile {
+	gap: 14px;
+}
+
+.dentistry__info__card--detist__profile img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.dentistry__info__card--schedule select {
+	font-size: 2rem;
+}
+
+.dentistry__info__card--detist__profile .view__more__profile {
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	color: #3c4959;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.dentistry__info__card--detist__profile .view__more__profile:hover {
+	color: #1376f8;
+}
+
+.dentistry__info__card--detist__profile p {
+	margin-bottom: 0;
+}
+
+.dentistry__info__card--detist__profile .name {
+	color: #011632;
+	font-size: 2.2rem;
+	font-weight: bold;
+	line-height: 155%; /* 3.41rem */
+	letter-spacing: 0.044rem;
+}
+
+.dentistry__info__card--detist__profile .desc {
+	color: #3c4959;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.48rem */
+	letter-spacing: 0.024rem;
+}
+
+.dentistry__info__card--detist__profile .location {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #3c4959;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.48rem */
+	letter-spacing: 0.024rem;
+}
+
+.dentistry__info__card .separate {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	width: 0;
+	border: 1px solid #0005;
+	height: 90%;
+	transform: translateX(-50%);
+}
+
+.dentistry__info__card + .dentistry__info__card {
+	margin-top: 40px;
+}
+
+.dentistry__info__card--schedule .sub-title {
+	margin-top: 10px;
+	display: flex;
+	gap: 5px;
+	color: #000;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.48rem */
+	letter-spacing: 0.024rem;
+}
+
+.card--schedule__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+
+.card--schedule__wrapper a {
+	display: inline-block;
+	text-align: center;
+	width: 116px;
+	padding: 9px 11px;
+	border-radius: 1px;
+	border: 1px solid #eee;
+	background: #eee;
+	color: #202224;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: -0.0064rem;
+}
+
+.card--schedule__wrapper a:hover {
+	background: #ddd;
+}
+
+.dentistry__info__card--schedule .note {
+	margin-top: 5px;
+	color: #3c4959;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.015rem */
+	letter-spacing: 0.0195rem;
+}
+
+.clinic__address {
+	color: #666;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.48rem */
+	letter-spacing: 0.008rem;
+}
+
+.clinic__name {
+	color: #011632;
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 155%; /* 2.17rem */
+	letter-spacing: 0.021rem;
+}
+
+.clinic__address__detail {
+	color: #3c4959;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 155%; /* 2.015rem */
+	letter-spacing: 0.0195rem;
+}

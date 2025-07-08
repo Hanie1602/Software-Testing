@@ -1,0 +1,88 @@
+﻿@model Dental_Clinic_System.ViewModels.LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Care | login</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/assets/css/header.css" />
+    <link rel="stylesheet" href="~/assets/css/footer.css" />
+    <link rel="stylesheet" href="~/assets/css/login.css" />
+</head>
+<body>
+    <div class="content">
+        <div class="content__img">
+            <img src="~/assets/images/login-image.png" alt="doctor" />
+            <div class="content__img__quote">
+                <p class="quote">
+                    “Chưa hề có một ai có thể kiên nhẫn chịu đựng cơn đau răng” <br />
+                    ~ Dr Đỗ Anh Tú
+                </p>
+                <p class="summary">
+                    Người sáng lập ra công ty trách nhiệm hữu hạn 1 mình tôi
+                </p>
+            </div>
+        </div>
+        <div class="content__form">
+            <h1 class="content__form__title">Đăng nhập tài khoản</h1>
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["Error"]
+                </div>
+            }
+            <div class="content__form__login">
+                <a asp-controller="account" asp-action="loginbygoogle">
+                    <button type="button" class="content__form__login__google">
+                        <img src="~/assets/images/Google.png" alt="" />
+                        Đăng nhập bằng Google
+                    </button>
+                </a>
+            </div>
+            <div class="content__form__separate">Hoặc</div>
+            <form asp-action="Login" method="POST" asp-route-returnurl="@ViewBag.ReturnUrl" class="content__form__system" asp-validation-summary="All">
+                <div class="username">
+                    <img src="~/assets/images/envelope.svg" alt="" />
+                    <input type="text" placeholder="Nhập tài khoản của bạn" asp-for="@Model.Username"  value="@ViewBag.RememberMeUsername" required />
+                    <span asp-validation-for="@Model.Username" class="text-danger"></span>
+                    @Html.ValidationMessage("errorLogin")
+                </div>
+                <div class="password">
+                    <img src="~/assets/images/lock.svg" alt="" />
+                    <input type="password" placeholder="Mật khẩu" asp-for="@Model.Password" value="@ViewBag.RememberMePassword" required />
+                    <span asp-validation-for="@Model.Password" class="text-danger"></span>
+                </div>
+                <div class="remember__forgot">
+                    <label class="remember" asp-for="@Model.RememberMe">
+                        <input type="checkbox" asp-for="@Model.RememberMe" />
+                        Tự động đăng nhập
+                    </label>
+                    <a asp-controller="account" asp-action="forgotpassword" class="forgot"> Quên mật khẩu? </a>
+                </div>
+                <div class="cta-btn">
+                    <input type="submit"
+                           placeholder="Đăng nhập"
+                           class="content__form__system__submit"
+                           value="Đăng Nhập" />
+                    <br />
+                    <a class="content__form__system__register__navigation"
+                       asp-controller="account" asp-action="register">
+                        Bạn chưa có tài khoản? Đăng ký ngay!
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

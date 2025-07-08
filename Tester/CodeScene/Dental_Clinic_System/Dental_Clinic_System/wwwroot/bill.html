@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dental Care</title>
+		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/footer.css" />
+		<link rel="stylesheet" href="./assets/css/bill.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__navbar">
+				<a href="#!">
+					<img
+						src="https://firebasestorage.googleapis.com/v0/b/auth-demo-123e3.appspot.com/o/Dental%20Care%20Logo%2FDentalCare.png?alt=media&token=b98bc2f0-f603-4b85-bd1b-764d8679baf0"
+						class="navbar__logo"
+						alt="logo"
+					/>
+				</a>
+				<ul class="navbar__list">
+					<li>
+						<a href="./index.html">Trang chủ</a>
+					</li>
+					<li>
+						<a href="./about.html">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="./clinic.html">Phòng khám</a>
+					</li>
+					<li>
+						<a href="./speciality.html">Chuyên khoa</a>
+					</li>
+					<li>
+						<a href="#!">Blogs</a>
+					</li>
+					<li>
+						<a href="./contact.html">Liên hệ</a>
+					</li>
+				</ul>
+				<!-- ============== ACCESS PROFILE HERE ============== -->
+				<div class="navbar__auth">
+					<ul class="navbar__auth__dropdown">
+						<li class="outer">
+							<div class="name"><i class="fa-solid fa-user"></i> Phúc Hoà</div>
+							<ul class="sub-menu">
+								<li>
+									<a href="./profile.html" class="account">Tài khoản</a>
+								</li>
+								<li>
+									<a href="./patientrecord.html" class="record"
+										>Hồ sơ bệnh nhân</a
+									>
+								</li>
+								<div class="divider"></div>
+								<li>
+									<a href="" class="logout-btn"
+										><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<!-- <a href="./login.html" class="navbar__auth__login"> Đăng nhập </a>
+					<a href="./register.html" class="navbar__auth__register"> Đăng ký </a> -->
+				</div>
+			</nav>
+		</header>
+
+		<main class="medical__bill__container">
+			<div class="medical__bill corner">
+				<!-- HEADER -->
+				<div class="medicall__bill__header">
+					<h1 class="title text-center">PHIẾU KHÁM BỆNH</h1>
+					<p class="clinic__name text-center">
+						Nha khoa Thẩm Mỹ Quốc Tế New Gate
+					</p>
+					<p class="clinic__address text-center">
+						218 Tân Hương, Tân Quý, Tân Phú, Thành phố Hồ Chí Minh
+					</p>
+					<h2 class="sub__title text-center">Mã phiếu</h2>
+					<div class="barcode"></div>
+					<div class="status text-center">Đặt khám thành công</div>
+				</div>
+
+				<!-- TIME -->
+				<div class="medicall__bill__time corner">
+					<div class="content">
+						<div class="sub__title text-center">Giờ khám dự kiến</div>
+						<div class="time text-center">08:30</div>
+					</div>
+					<ul>
+						<li>
+							<span>Mã phiếu:</span> <span><b>T240611NUBLY2</b></span>
+						</li>
+						<li>
+							<span>Chuyên khoa:</span><span><b>Nha khoa</b></span>
+						</li>
+						<li>
+							<span>Ngày khám:</span
+							><span class="date__time"><b>dd/mm/yyyy</b></span>
+						</li>
+						<li>
+							<span>Giờ khám dự kiến:</span
+							><span class="date__time"><b>xx:xx</b></span>
+						</li>
+						<li>
+							<span>Phí khám:</span><span><b>0 VND</b></span>
+						</li>
+					</ul>
+				</div>
+
+				<!-- PATIENT INFO -->
+				<div class="medicall__bill__patient__info corner">
+					<ul>
+						<li>
+							<span>Bệnh nhân:</span><span><b>AN PHÚC HOÀ</b></span>
+						</li>
+						<li>
+							<span>Ngày sinh:</span><span><b>29/12/2004</b></span>
+						</li>
+						<li>
+							<span>Mã bệnh nhân:</span><span><b>??????????</b></span>
+						</li>
+					</ul>
+				</div>
+
+				<!-- COPYRIGHT -->
+				<div class="medicall__bill__copyright corner">
+					<div class="note">
+						<p class="attention">Lưu ý:</p>
+						<div class="notification">
+							Quý bệnh nhân vui lòng đến quầy tiếp nhận tại sảnh để được tiếp
+							đón.
+							<br />
+							Quý bệnh nhân cần hỗ trợ, vui lòng liên hệ tổng đài
+							<strong>CSKH 1900 2115</strong>
+						</div>
+					</div>
+					<div class="copyright text-center">
+						<div class="copyright__wrapper">
+							Bản quyền thuộc về
+							<img
+								style="width: 50%"
+								src="https://firebasestorage.googleapis.com/v0/b/auth-demo-123e3.appspot.com/o/Dental%20Care%20Logo%2FDentalCare.svg?alt=media&token=b67255df-a0e9-4994-8a8e-e47ca5be0cf0"
+								alt=""
+							/>
+						</div>
+					</div>
+					<div class="intro text-center">
+						Đặt lịch khám tại Bệnh viện - Phòng khám hàng đầu Việt Nam
+					</div>
+				</div>
+			</div>
+
+			<a href="./index.html" class="home__page__navigate">Trở về trang chủ</a>
+			<a href="./profile.html" class="medical__hítory__navigate"
+				>Lịch sử đặt khám</a
+			>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__navigation">
+				<a href="/">
+					<img
+						src="https://firebasestorage.googleapis.com/v0/b/auth-demo-123e3.appspot.com/o/Dental%20Care%20Logo%2FDentalCare.png?alt=media&token=b98bc2f0-f603-4b85-bd1b-764d8679baf0"
+						class="navbar__logo"
+						alt="logo"
+					/>
+				</a>
+				<ul class="footer__navigation__list">
+					<li>
+						<a href="/#">Trang chủ</a>
+					</li>
+					<li>
+						<a href="#!">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="#!">Chuyên khoa</a>
+					</li>
+					<li>
+						<a href="#!">Nha Khoa</a>
+					</li>
+					<li>
+						<a href="#!">Blogs</a>
+					</li>
+					<li>
+						<a href="#!">Liên hệ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__separate"></div>
+			<div class="footer__condition__social">
+				<p class="footer__condition__social--copyright">® 2024 Dental Care</p>
+				<div class="footer__condition__social--media">
+					<a href="#!">
+						<img src="./assets/images/facebook.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/instagram.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/youtube.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/linkedin.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/X.png" alt="facebook" />
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/53f42380b0.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

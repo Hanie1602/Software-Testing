@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/images/dentalClinicLogoOfficial.png" />
+    <link rel="stylesheet" href="~/assets/css/contentDash.css" />
+    <link rel="stylesheet" href="~/assets/fonts/stylesheet.css" />
+</head>
+<body>
+    @if (ViewBag.ToastMessageSuccess != null)
+    {
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                showSuccessToasts('@ViewBag.ToastMessageSuccess');
+            });
+        </script>
+    }
+    else if (ViewBag.ToastMessage != null)
+    {
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                showErrorToasts('@ViewBag.ToastMessage');
+            });
+        </script>
+    }
+    else if (TempData["ToastMessageSuccessTempData"] != null)
+    {
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                showSuccessToasts('@TempData["ToastMessageSuccessTempData"]');
+            });
+        </script>
+    }
+    else if (TempData["ToastMessageFailTempData"] != null)
+    {
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                showErrorToasts('@TempData["ToastMessageFailTempData"]');
+            });
+        </script>
+    }
+    else if (TempData["ToastMessageTempData"] != null)
+    {
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                showErrorToasts('@TempData["ToastMessageTempData"]');
+            });
+        </script>
+    }
+
+    @Html.Partial("_Header")
+    <main>
+        @RenderBody()
+
+    </main>
+    @Html.Partial("_Footer")
+    <div id="toasts"></div>
+    <script src="~/assets/js/toastmessage.js"></script>
+</body>
+</html>

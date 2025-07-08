@@ -1,0 +1,510 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Baloo Paaji 2";
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	display: block;
+	background-color: #b2b2b2;
+}
+
+/* ========== DROPDOWN HOVER ========== */
+/* .dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
+} */
+
+.navbar__auth__avatar:active,
+.navbar__auth__avatar.show {
+	border: none;
+}
+
+.dropdown .dropdown-item {
+	font-size: 2rem;
+}
+
+/* ================ hero ================= */
+.hero {
+	width: 1280px;
+	margin: 0 auto;
+	margin-top: 60px;
+	display: flex;
+	position: relative;
+}
+
+.hero__info {
+	width: 46%;
+	padding-top: 54px;
+}
+
+.hero__image {
+	width: 54px;
+}
+
+.hero__info separate {
+	margin-left: 78px;
+}
+
+.hero__info--title {
+	width: 597px;
+	color: #011632;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 120%; /* 66px */
+	letter-spacing: -1.1px;
+	text-transform: capitalize;
+}
+
+.hero__info--desc {
+	width: 544px;
+	margin-top: 19px;
+	color: #3c4959;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 155%; /* 27.9px */
+	letter-spacing: 0.27px;
+}
+
+.hero__cta {
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	gap: 69px;
+}
+
+	.hero__cta .btn {
+		display: inline-block;
+		padding: 15px 30px;
+		color: #fff;
+		font-size: 1.6rem;
+		font-weight: bold;
+		line-height: 155%; /* 24.8px */
+		letter-spacing: 0.24px;
+		border-radius: 10px;
+		background: #1376f8;
+		cursor: pointer;
+	}
+
+		.hero__cta .btn:hover {
+			opacity: 0.9;
+		}
+
+.hero__call {
+	display: flex;
+	gap: 15px;
+}
+
+	.hero__call a {
+		display: inline-block;
+		padding: 14px;
+		border-radius: 10px;
+		border: 1px solid #1376f8;
+		background: #fff;
+	}
+
+	.hero__call p {
+		color: #011632;
+		font-size: 1.4rem;
+		font-weight: bold;
+		line-height: 155%; /* 21.7px */
+		letter-spacing: 0.28px;
+	}
+
+	.hero__call strong {
+		color: #1376f8;
+	}
+
+.hero__search {
+	margin-top: 43px;
+	display: flex;
+}
+
+.hero__search__input {
+	display: flex;
+	gap: 15px;
+	width: 341px;
+	padding: 15px 22px;
+	border-radius: 10px 0 0 10px;
+	border: 1px solid #cecece;
+	background: #fff;
+}
+
+	.hero__search__input input {
+		color: #cfcfcf;
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 155%; /* 24.8px */
+		letter-spacing: 0.24px;
+		border: none;
+		outline: none;
+		background: transparent;
+	}
+
+.hero__search__btn {
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 24.8px */
+	letter-spacing: 0.24px;
+	border-radius: 0 10px 10px 0;
+	background: #1376f8;
+	cursor: pointer;
+	vertical-align: middle;
+	transition: 0.25s;
+}
+
+	.hero__search__btn:hover {
+		opacity: 0.9;
+	}
+
+.home-image {
+	position: absolute;
+	right: 40px;
+	z-index: 3;
+}
+
+.big-circle {
+	position: absolute;
+	top: 6px;
+	right: 0;
+}
+
+.small-circle {
+	position: absolute;
+	top: 60px;
+	right: 58px;
+}
+
+.teeth1-01 {
+	position: absolute;
+	top: 332px;
+	right: 554px;
+}
+
+.teeth1-02 {
+	position: absolute;
+	top: 143px;
+	right: 482px;
+}
+
+.teeth2-01 {
+	position: absolute;
+	top: 388px;
+	right: 16px;
+}
+
+.teeth2-02 {
+	position: absolute;
+	top: 22px;
+	right: 117px;
+}
+
+.teeth3 {
+	position: absolute;
+	top: 177px;
+	right: 61px;
+}
+
+/* ================ speciality ============ */
+.special {
+	margin-top: 240px;
+	background: #e6f6fe;
+	padding: 19px 0 27px;
+}
+
+.special__title {
+	color: #011632;
+	font-size: 4.2rem;
+	font-weight: bold;
+	line-height: 125%; /* 52.5px */
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.special__separate {
+	text-align: center;
+}
+
+.special__container {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.special__container__wrapper {
+	width: 1208px;
+	padding: 40px 80px;
+}
+
+.special__content {
+	overflow: hidden;
+}
+
+.special__cards__card {
+	text-align: center;
+	padding: 65px 83px 40px;
+	border-radius: 10px;
+	background: #fdfcf8;
+}
+
+.special__cards .title {
+	color: #011632;
+	margin-top: 24px;
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 120%; /* 28.8px */
+	text-transform: capitalize;
+}
+
+.special__navigate {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	margin-top: 29px;
+}
+
+	.special__navigate button {
+		padding: 2px 28px;
+		background: #fff;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+
+		.special__navigate button:hover {
+			opacity: 0.8;
+		}
+
+/* ================= Clinic =============== */
+.clinic {
+	margin-top: 113px;
+	background: #e6f6fe;
+	padding: 19px 0 27px;
+}
+
+.clinic__title {
+	color: #011632;
+	font-size: 4.2rem;
+	font-weight: bold;
+	line-height: 125%; /* 52.5px */
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.clinic__separate {
+	text-align: center;
+}
+
+.clinic-container {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clinic-container__wrapper {
+	width: 1440px;
+	padding: 40px 80px;
+}
+
+.clinic__content {
+	overflow: hidden;
+}
+
+.clinic__wrapper__card {
+	border-radius: 25px;
+	background: #fff;
+}
+
+	.clinic__wrapper__card .card-image {
+		position: relative;
+		height: 150px;
+		width: 150px;
+		border-radius: 50%;
+		background: #fff;
+		padding: 3px;
+	}
+
+		.clinic__wrapper__card .card-image .card-img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			border-radius: 50%;
+			border: 4px solid #1376f8;
+		}
+
+	.clinic__wrapper__card .image-content,
+	.clinic__wrapper__card .card-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 10px 14px;
+	}
+
+	.clinic__wrapper__card .image-content {
+		position: relative;
+		row-gap: 5px;
+		padding: 10px 25px;
+		border-radius: 25px 25px 0 25px;
+	}
+
+		.clinic__wrapper__card .image-content .overlay {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background: #1376f8;
+			border-radius: 25px 25px 0 0;
+		}
+	/* 
+.clinic__wrapper__card .image-content .overlay::before,
+.clinic__wrapper__card .image-content .overlay::after {
+	content: "";
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	right: 0;
+	background: #1376f8;
+	bottom: -40px;
+}
+
+.clinic__wrapper__card .image-content .overlay::after {
+	background: #fff;
+	border-radius: 0 25px 0 0;
+} */
+
+	.clinic__wrapper__card .card-content .name {
+		font-size: 2.4rem;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.clinic__wrapper__card .card-content .desc {
+		font-size: 1.6rem;
+		text-align: center;
+		color: #707070;
+	}
+
+	.clinic__wrapper__card .card-content .work-place {
+		font-size: 2rem;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.clinic__wrapper__card .card-content .button {
+		border: none;
+		outline: none;
+		font-size: 1.6rem;
+		color: #fff;
+		padding: 8px 16px;
+		border-radius: 10px;
+		background: #1376f8;
+		margin-top: 5px;
+		cursor: pointer;
+		transition: all 0.25s ease;
+	}
+
+		.clinic__wrapper__card .card-content .button:hover {
+			background: #4c8ce0;
+		}
+
+/* =============== NEWS & ARTICLES =============== */
+.news__wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.news__title {
+	color: #011632;
+	font-size: 4.2rem;
+	font-weight: bold;
+	line-height: 125%; /* 52.5px */
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.news__view__all {
+	padding: 15px 40px;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: bold;
+	background: #1376f8;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+}
+
+	.news__view__all:hover {
+		background: #4c8ce0;
+	}
+
+.news__cards {
+	margin-top: 30px;
+	gap: 20px;
+}
+
+.news__cards_item {
+	flex: 1;
+	padding: 20px;
+	background: #e6f6fe;
+	border-radius: 10px;
+}
+
+	.news__cards_item img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+
+.news__cards_item--title {
+	margin-top: 20px;
+}
+
+	.news__cards_item--title a {
+		color: #011632;
+		font-size: 1.8rem;
+		font-weight: bold;
+		line-height: 155%; /* 27.9px */
+		letter-spacing: 0.27px;
+	}
+
+.news__cards_item--desc {
+	color: #3c4959;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 155%; /* 21.7px */
+	letter-spacing: 0.21px;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Nha sĩ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="manager_update_schedule.css">
+
+    <style>
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+        }
+
+        .content {
+            margin-left: 250px;
+        }
+
+        /* Not Mine */
+        .css-175oi2r {
+            align-items: stretch;
+            background-color: rgba(0, 0, 0, 0);
+            border: 0px solid black;
+            box-sizing: border-box;
+            display: flex;
+            flex-basis: auto;
+            flex-direction: column;
+            flex-shrink: 0;
+            list-style: none;
+            margin: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            min-height: 0px;
+            min-width: 0px;
+            padding: 0px;
+            position: relative;
+            text-decoration: none;
+            z-index: 0;
+        }
+
+        .p-2\.5 {
+            padding: .625rem !important;
+        }
+
+        .bg-\[\#eee\],
+        .bg-\[\#eeeeee\] {
+            --tw-bg-opacity: 1 !important;
+            /* background-color: rgb(238 238 238/var(--tw-bg-opacity)) !important; */
+            background-color: rgb(255, 202, 44);
+        }
+
+        .mt-1\.5 {
+            margin-top: .375rem !important;
+        }
+
+        .md\:flex-wrap {
+            flex-wrap: wrap !important;
+        }
+
+        .mr-10-px {
+            margin-right: 10px;
+        }
+
+        /* Not Mine */
+
+        /* Dashboard Searching bar NOT MINE */
+        .input-group {
+            /* float: left; */
+            width: 30%;
+        }
+
+        /*  */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="container-fluid">
+                    <a href="manager.html" class="navbar-brand">
+                      <img src="assets\image\Dental Care_preview_rev_1.png" alt="Logo" class="img-fluid" width="100">
+                    </a>
+                  </div>
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="showContent('dashboard')">
+                                <i class="fas fa-user-md"></i> Quản lý Nha sĩ
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="manager.html" onclick="showContent('appointments')">
+                                <i class="fas fa-calendar-alt"></i> Lịch làm việc
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showContent('services')">
+                                <i class="fas fa-file-medical"></i> Dịch vụ khám
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showContent('clinics')">
+                                <i class="fas fa-chart-bar"></i> Quản lý Phòng khám
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 content">
+                <div id="dashboard">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Dashboard</h1>
+                    </div>
+                    <p>Nội dung chính sẽ được hiển thị ở đây.</p>
+                </div>
+                <div id="appointments" class="d-none">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Lịch làm việc</h1>
+
+                        
+                          
+                    </div>
+
+                    <!-- <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Chọn nha sĩ
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Bác sĩ Nguyễn Văn A</a>
+                          <a class="dropdown-item" href="#">Bác sĩ Trần Thị B</a>
+                          <a class="dropdown-item" href="#">Bác sĩ Lê Văn C</a>
+                        </div>
+                    </div> -->
+
+                    <div class="container">
+                        <h2>Đặt lịch khám</h2>
+                      
+                        <form id="appointmentForm">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="dentistDropdown">Nha sĩ:</label>
+                              <select class="form-select" id="dentistDropdown" name="dentistId">
+                                <option value="">Chọn nha sĩ</option>
+                                <option value="1">Dr.Tú</option>
+                                <option value="2">HòaPool</option>
+                                <option value="3">Hoàng WIBU</option>
+                                </select>
+                            </div>
+                      
+                            <div class="col-md-6">
+                              <label for="appointmentDate">Ngày khám:</label>
+                              <input type="date" class="form-control" id="appointmentDate" name="appointmentDate">
+                            </div>
+
+                            <div class="col-md-6 mt-3">
+                                <label for="appointmentShift">Ca khám:</label>
+                                <select class="form-select" id="appointmentShift" name="appointmentShift">
+                                  <option value="">Chọn ca khám</option>
+                                  <option value="morning">Ca sáng</option>
+                                  <option value="afternoon">Ca chiều</option>
+                                  <option value="fullday">Cả ngày</option>
+                                </select>
+
+                                <!-- <div id="timeSlotData" style="display: none;">
+                                    <div data-shift="morning">
+                                      <div class="time-slot">08:00 - 08:30</div>
+                                      <div class="time-slot">08:30 - 09:00</div>
+                                      </div>
+                                    <div data-shift="afternoon">
+                                      <div class="time-slot">13:00 - 13:30</div>
+                                      <div class="time-slot">13:30 - 14:00</div>
+                                      </div>
+                                    <div data-shift="fullday">
+                                      <div class="time-slot">08:00 - 08:30</div>
+                                      <div class="time-slot">08:30 - 09:00</div>
+                                      </div>
+                                  </div> -->
+                            </div>
+                          </div>
+                      
+                          <div class="row mt-3" id="timeSlotsContainer">
+                            <div class="col-md-12">
+                              <button type="submit" class="btn btn-primary">Đặt lịch</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      
+                </div>
+                <!-- Các phần nội dung khác sẽ được thêm vào đây tương tự -->
+                
+                <div id="services" class="d-none">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Dịch vụ khám</h1>
+                    </div>
+                    <p>Nội dung dịch vụ khám sẽ được hiển thị ở đây.</p>
+                </div>
+                <div id="clinics" class="d-none">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Quản lý Phòng khám</h1>
+                    </div>
+                    <p>Nội dung quản lý phòng khám sẽ được hiển thị ở đây.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showContent(contentId) {
+            // Lưu trạng thái nội dung vào localStorage
+            localStorage.setItem('currentContent', contentId);
+
+            const sections = ['dashboard', 'appointments', 'services', 'clinics'];
+            sections.forEach(id => {
+                document.getElementById(id).classList.add('d-none');
+            });
+            document.getElementById(contentId).classList.remove('d-none');
+        }
+
+        // Hàm để khôi phục trạng thái nội dung từ localStorage
+        function restoreContent() {
+            const contentId = localStorage.getItem('currentContent') || 'dashboard';
+            showContent(contentId);
+        }
+
+        // Gọi hàm khôi phục khi trang được tải
+        window.onload = restoreContent;
+
+    </script>
+</body>
+
+</html>

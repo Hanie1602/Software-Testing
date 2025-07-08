@@ -1,0 +1,94 @@
+﻿@{
+    var emailClaim = User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Email)?.Value;
+    var firstnameClaim = User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Surname)?.Value;
+    var lastnameClaim = User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.GivenName)?.Value;
+    string fullNameAnonymousUser = "Xin Chào Bạn";
+}
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Care | login</title>
+    
+    <link rel="stylesheet" href="~/assets/css/header.css" />
+
+</head>
+
+<header class="header">
+    <nav class="header__navbar">
+        <a asp-controller="home" asp-action="index">
+            <img src="~/assets/images/DentalCare.png" class="navbar__logo" alt="logo" />
+        </a>
+        <ul class="navbar__list">
+            <li>
+                <a asp-controller="home" asp-action="index">Trang chủ</a>
+            </li>
+            <li>
+                <a asp-controller="about" asp-action="index">Giới thiệu</a>
+            </li>
+            <li>
+                <a asp-controller="clinic" asp-action="index">Phòng Khám</a>
+            </li>
+            <li>
+                <a asp-controller="specialty" asp-action="index">Chuyên khoa</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="news" asp-action="index">Tin Tức</a>
+            </li>
+            <li>
+                <a asp-controller="contact" asp-action="index">Liên hệ</a>
+            </li>
+        </ul>
+
+        <!-- ============== ACCESS PROFILE HERE ============== -->
+        <div class="navbar__auth">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <ul class="navbar__auth__dropdown">
+                    <li class="outer">
+                        @if ((firstnameClaim is null && lastnameClaim is null) || (firstnameClaim == string.Empty && lastnameClaim == string.Empty))
+                        {
+                            <div class="name">
+                                <i class="fa-solid fa-user"></i>
+                                @fullNameAnonymousUser
+                            </div>
+
+                        }
+                        else
+                        {
+                            <div class="name">
+                                <i class="fa-solid fa-user"></i>
+                                @lastnameClaim @firstnameClaim
+                            </div>
+
+                        }
+                        <ul class="sub-menu" style="padding-left: 0px">
+                            <li>
+                                <a asp-controller="account" asp-action="profile" class="account">Tài khoản</a>
+                            </li>
+                            <li>
+                                <a asp-controller="patientrecord" asp-action="PatientRecordInProfile" class="record">Hồ sơ bệnh nhân</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a asp-controller="account" asp-action="logout" class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            }
+            else
+            {
+                <a asp-controller="account" asp-action="login" class="navbar__auth__login"> Đăng nhập </a>
+                <a asp-controller="account" asp-action="register" class="navbar__auth__register"> Đăng ký </a>
+            }
+            @* <a href="/" class="navbar__auth__booking"> Đặt lịch khám </a> *@
+
+
+        </div>
+
+    </nav>
+
+    <script src="https://kit.fontawesome.com/53f42380b0.js"
+            crossorigin="anonymous"></script>
+</header>

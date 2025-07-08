@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Care | login</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    @* <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+    rel="stylesheet" /> *@
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
+    <link rel="stylesheet" href="~/assets/css/header.css" />
+    <link rel="stylesheet" href="~/assets/css/footer.css" />
+    <link rel="stylesheet" href="~/assets/css/contact.css" />
+</head>
+
+<div class="contact">
+    <h1 class="contact__title text-center fw-bold">
+        Hợp tác cùng <span style="color: #1376f8">Dental</span>Care
+    </h1>
+    <div class="text-center">
+        <img src="~/assets/images/separate.png" alt="" />
+    </div>
+    <p class="contact__desc">
+        Vui lòng gửi thông tin, chúng tôi sẽ liên hệ lại trong thời gian sớm
+        nhất.
+    </p>
+    <form asp-area="admin" asp-controller="managerclinic" asp-action="GetApprovalRequest" method="POST" class="contact__form" onsubmit="return validateForm()">
+        <p>Tên Doanh Nghiệp <sup>*</sup></p>
+        <input type="text" name="companyName" required pattern="^[0-9a-zA-Z\sÀ-ỹ.,-]+$" title="Tên doanh nghiệp chỉ được chứa chữ cái, chữ số, khoảng trắng và các ký tự đặc biệt như dấu chấm, dấu phẩy và dấu gạch ngang." />
+
+        <p>Số Điện Thoại <sup>*</sup></p>
+        <input type="tel" name="companyPhonenumber" required pattern="^[0-9]{9,12}$" title="Số điện thoại chỉ được chứa chữ số và có độ dài từ 9-12 chữ số." />
+
+        <p>Địa Chỉ Email <sup>*</sup></p>
+        <input type="email" name="companyEmail" required />
+
+        <p>Tên Người Đại Diện <sup>*</sup></p>
+        <input type="text" name="representativeName" required pattern="^[0-9a-zA-Z\sÀ-ỹ.,-]+$" title="Tên người đại diện chỉ được chứa chữ cái, chữ số, khoảng trắng và các ký tự đặc biệt như dấu chấm, dấu phẩy và dấu gạch ngang." />
+
+        <p>Tên Phòng Khám <sup>*</sup></p>
+        <input type="text" name="clinicName" required />
+
+        <p>Địa Chỉ Phòng Khám <sup>*</sup></p>
+        <input type="text" name="clinicAddress" required pattern="^[0-9a-zA-Z\sÀ-ỹ.,-]+$" title="Địa chỉ phòng khám chỉ được chứa chữ cái, chữ số, khoảng trắng và các ký tự đặc biệt như dấu chấm, dấu phẩy và dấu gạch ngang." />
+
+        <p>Tên Miền hoặc URL Website</p>
+        <input type="url" name="domainName" />
+
+        <p>Nội Dung <sup>*</sup></p>
+        <textarea name="content" id="default" required></textarea>
+
+        <div style="text-align: end;">
+            <button type="submit">Gửi thông tin</button>
+        </div>
+    </form>
+</div>
+<script>
+    function validateForm() {
+        var form = document.forms["contact__form"];
+        var companyName = form["companyName"].value;
+        var representativeName = form["representativeName"].value;
+        var clinicAddress = form["clinicAddress"].value;
+        var companyPhonenumber = form["companyPhonenumber"].value;
+
+        var namePattern = /^[0-9a-zA-Z\sÀ-ỹ.,-]+$/;
+        if (!namePattern.test(companyName)) {
+            alert("Tên doanh nghiệp chỉ được chứa chữ cái, chữ số, khoảng trắng và các ký tự đặc biệt như dấu chấm, dấu phẩy và dấu gạch ngang.");
+            form["companyName"].focus();
+            return false;
+        }
+
+        if (!namePattern.test(representativeName)) {
+            alert("Tên người đại diện chỉ được chứa chữ cái, chữ số, khoảng trắng và các ký tự đặc biệt như dấu chấm, dấu phẩy và dấu gạch ngang.");
+            form["representativeName"].focus();
+            return false;
+        }
+
+        if (!namePattern.test(clinicAddress)) {
+            alert("Địa chỉ phòng khám chỉ được chứa chữ cái, chữ số, khoảng trắng và các ký tự đặc biệt như dấu chấm, dấu phẩy và dấu gạch ngang.");
+            form["clinicAddress"].focus();
+            return false;
+        }
+
+        var phonePattern = /^[0-9]{9,12}$/;
+        if (!phonePattern.test(companyPhonenumber)) {
+            alert("Số điện thoại chỉ được chứa chữ số và có độ dài từ 9-12 chữ số.");
+            form["companyPhonenumber"].focus();
+            return false;
+        }
+
+        return true; // Nếu tất cả đều hợp lệ, cho phép gửi form
+    }
+</script>
+
+<script src="https://kit.fontawesome.com/53f42380b0.js"
+        crossorigin="anonymous"></script>
+<script src="assets\js\tinymce\js\tinymce\tinymce.min.js"></script>
+<script src="assets\js\richtexteditor.js"></script>
+<script type="text/javascript" src="/richtexteditor/rte.js"></script>
+<script type="text/javascript"
+        src="/richtexteditor/plugins/all_plugins.js"></script>
+

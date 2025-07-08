@@ -1,0 +1,206 @@
+/* ============= Register ============= */
+.content {
+	height: calc(100vh - 133px);
+	position: relative;
+	width: 1280px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.content__img {
+	width: 44%;
+}
+
+.content__form {
+	width: 56%;
+}
+
+.content__img img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.content__img__quote {
+	position: absolute;
+	bottom: 30px;
+	left: 50px;
+	z-index: 2;
+}
+
+.content__img__quote .quote {
+	color: #fff;
+	font-size: 2.4rem;
+	width: 500px;
+	font-weight: bold;
+	line-height: 120%; /* 28.8px */
+	text-transform: capitalize;
+}
+
+.content__img__quote .summary {
+	margin-top: 15px;
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 155%; /* 27.9px */
+	letter-spacing: 0.27px;
+}
+
+.content__form {
+	padding-top: 110px;
+}
+
+.content__form__title {
+	color: #011632;
+	font-size: 4.2rem;
+	font-family: "Baloo Paaji 2";
+	text-align: center;
+	font-weight: bold;
+	line-height: 125%; /* 52.5px */
+	text-transform: capitalize;
+}
+
+.content__form__login__google {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	border-radius: 10px;
+	padding: 16px 106px;
+	margin: 0 auto;
+	margin-top: 33px;
+	border: 1px solid #011632;
+	background: #fff;
+	color: #011632;
+	font-family: "Baloo Paaji 2";
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 800;
+	line-height: 155%; /* 21.7px */
+	letter-spacing: 0.28px;
+	cursor: pointer;
+	transition: background 0.25s;
+}
+
+.content__form__login__google:hover {
+	background: #c3c3c380;
+}
+
+.content__form__separate {
+	margin: 30px 0 30px;
+	color: #011632;
+	text-align: center;
+	font-size: 1.8rem;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 155%; /* 27.9px */
+	letter-spacing: 0.27px;
+}
+
+.content__form__separate::before,
+.content__form__separate::after {
+	display: inline-block;
+	content: "";
+	vertical-align: middle;
+	width: 188.271px;
+	height: 0.5px;
+	background: #01163280;
+}
+
+.content__form__system .username,
+.content__form__system .email,
+.content__form__system .password {
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	gap: 16px;
+	width: 414px;
+	height: 60px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: 1px solid #afafaf;
+	background: #fff;
+}
+
+.content__form__system .email,
+.content__form__system .password {
+	margin-top: 25px;
+}
+
+.content__form__system .username input,
+.content__form__system .email input,
+.content__form__system .password input {
+	background: transparent;
+	width: 260px;
+	border: none;
+	outline: none;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 1.4rem;
+	font-family: "Baloo Paaji 2";
+	font-weight: 500;
+	line-height: 155%; /* 21.7px */
+	letter-spacing: 0.28px;
+}
+
+.content__form__system .policies_check {
+	display: block;
+	margin: 21px 0 20px;
+	margin-left: 154px;
+	color: #011632;
+	font-family: "Baloo Paaji 2";
+	font-size: 1.4rem;
+	font-weight: bold;
+	letter-spacing: 0.28px;
+}
+
+.content__form__system .policies_check input[type="checkbox"] {
+	vertical-align: middle;
+	position: relative;
+	bottom: 1px;
+	margin-right: 15px;
+}
+
+.content__form__system .cta_btn {
+	text-align: center;
+}
+
+.content__form__system__submit {
+	width: 414px;
+	height: 60px;
+	flex-shrink: 0;
+	margin: 0 auto;
+	border-radius: 10px;
+	background: #1376f8;
+	color: #fff;
+	border: none;
+	text-align: center;
+	font-family: "Baloo Paaji 2";
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 155%; /* 27.9px */
+	letter-spacing: 0.27px;
+	cursor: pointer;
+	transition: background 0.25s;
+}
+
+.content__form__system__submit:hover {
+	background: #1376f890;
+}
+
+.content__form__system__login__navigation {
+	display: inline-block;
+	margin-top: 21px;
+	color: #000;
+	text-align: center;
+	font-family: "Baloo Paaji 2";
+	font-size: 1.4rem;
+	line-height: 95%; /* 13.3px */
+}
+
+.content__form__system__login__navigation strong {
+	font-weight: bold;
+}
+
+.content__form__system__login__navigation:hover {
+	text-decoration: underline;
+}

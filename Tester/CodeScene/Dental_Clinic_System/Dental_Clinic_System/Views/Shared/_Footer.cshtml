@@ -1,0 +1,119 @@
+﻿
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dental Care | login</title>
+
+	<link rel="stylesheet" href="~/assets/css/footer.css" />
+
+</head>
+
+
+<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__navigation">
+			<a href="/home">
+				<img src="~/assets/images/DentalCare.png"
+					 class="navbar__logo"
+					 alt="logo" />
+			</a>
+			<ul class="footer__navigation__list">
+				<li>
+					<a asp-controller="home" asp-action="index">Trang Chủ</a>
+				</li>
+				<li>
+					<a asp-controller="about" asp-action="index">Giới Thiệu</a>
+				</li>
+				<li>
+					<a asp-controller="clinic" asp-action="index">Phòng Khám</a>
+				</li>
+				<li>
+					<a asp-controller="specialty" asp-action="index">Chuyên Khoa</a>
+				</li>
+				<li>
+					<a asp-area="" asp-controller="news" asp-action="index">Tin Tức</a>
+				</li>
+				<li>
+					<a asp-controller="contact" asp-action="index">Liên Hệ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__separate"></div>
+		<div class="footer__terms row">
+			<div class="footer__terms__address__contact col-md-6">
+				<div class="phone__number footer__terms__list">
+					<span>Số điện thoại: </span><a href="tel:0123456789" class="footer__terms__links">00 có</a>
+				</div>
+				<div class="email__contact footer__terms__list">
+					<span>Email: </span><a href="mailto:dentalcare@gmail.com"
+									  class="footer__terms__links">dentalcare@gmail.com</a>
+				</div>
+				<div class="address footer__terms__list">
+					<span>Địa chỉ: </span>Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ,
+					Thành Phố Thủ Đức, Thành phố Hồ Chí Minh
+				</div>
+			</div>
+			<div class="footer__terms__services col-md-2 text-start">
+				<div class="footer__terms__title">Dịch vụ Y tế</div>
+				<ul>
+					<li>
+						<a asp-controller="clinic" asp-action="index" class="footer__terms__links">Đặt khám theo phòng khám</a>
+					</li>
+					<li>
+						<a href="~/specialty" class="footer__terms__links">Đặt khám theo nha sĩ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__terms__instruction col-md-2 text-start">
+				<div class="footer__terms__title">Hướng dẫn</div>
+				<ul>
+					<li>
+						<a asp-controller="clinic" asp-action="index" class="footer__terms__links">Đặt lịch khám</a>
+					</li>
+					<li>
+						<a href="#!" class="footer__terms__links">Câu hỏi thường gặp</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__terms__about__us col-md-2 text-start">
+				<div class="footer__terms__title">Về DentalCare</div>
+				<ul>
+					<li>
+						<a asp-controller="about" asp-action="index" class="footer__terms__links">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="#!" class="footer__terms__links">Điều khoản dịch vụ</a>
+					</li>
+					<li>
+						<a href="#!" class="footer__terms__links">Chính sách bảo mật</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__condition__social">
+			<p class="footer__condition__social--copyright">
+				® 2024 Dental Care | All rights reserved.
+			</p>
+			<div class="footer__condition__social--media">
+				<div style="font-size: 2rem; font-weight: bold">
+					Liên hệ với chúng tôi:
+				</div>
+				<a href="#!">
+					<img src="~/assets/images/facebook.png" alt="facebook" />
+				</a>
+				<a href="#!">
+					<img src="~/assets/images/instagram.png" alt="facebook" />
+				</a>
+				<a href="#!">
+					<img src="~/assets/images/youtube.png" alt="facebook" />
+				</a>
+				<a href="#!">
+					<img src="~/assets/images/linkedin.png" alt="facebook" />
+				</a>
+				<a href="#!">
+					<img src="~/assets/images/X.png" alt="facebook" />
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>

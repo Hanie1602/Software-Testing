@@ -1,0 +1,189 @@
+﻿@using System.Security.Claims
+@model Dental_Clinic_System.ViewModels.APILocalVM
+@{
+	ViewData["Title"] = "DentistBooking";
+	// Account user = ViewBag.user;
+	var userName = Context.User.Claims.FirstOrDefault(u => u.Type == ClaimTypes.Name)?.Value;
+	var userPhone = Context.User.Claims.FirstOrDefault(u => u.Type == ClaimTypes.MobilePhone)?.Value;
+	var userAddress = Context.User.Claims.FirstOrDefault(u => u.Type == ClaimTypes.StreetAddress)?.Value;
+}
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dental Care | login</title>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+		  rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
+	<link rel="stylesheet" href="~/assets/css/header.css" />
+	<link rel="stylesheet" href="~/assets/css/footer.css" />
+	<link rel="stylesheet" href="~/assets/css/booking.css" />
+</head>
+
+<div class="booking__title">
+	<div class="booking__dentist">
+		<img src="~/assets/images/dentist4.png" alt="" />
+		<div class="booking__dentist__info">
+			<p class="sub-title">ĐẶT LỊCH KHÁM</p>
+			<p class="name">Bác sĩ Chuyên khoa I </p>
+			<p class="work">09:00 - 09-30 - Thứ 5 - 16/05/2024</p>
+		</div>
+	</div>
+</div>
+<div class="booking__body">
+	<form class="booking__detail" method="get" asp-controller="specialty" asp-action="test">
+		<input type="text" placeholder="Họ tên bệnh nhân (bắt buộc)" value="@userName" /> <br />
+		<input type="text"
+			   placeholder="Số điện thoại liên hệ (bắt buộc)" value="@userPhone" /><br />
+		<input type="date" min="@DateTime.Now.ToString("yyyy-MM-dd")" placeholder="Ngày/tháng/năm sinh (bắt buộc)" />
+		<br />
+		<select class="address" id="tinh" title="Chọn Tỉnh Thành">
+			<option value="0">Tỉnh Thành</option>
+		</select>
+		<input type="hidden" asp-for="@Model.Province" id="Province"/>
+		<br />
+		<select class="address" id="quan"title="Chọn Quận Huyện">
+			<option value="0">Quận Huyện</option>
+		</select>
+		<input type="hidden" asp-for="@Model.District" id="District" />
+		<br />
+		<select class="address" id="phuong" title="Chọn Phường Xã">
+			<option value="0">Phường Xã</option>
+		</select>
+		<input type="hidden" asp-for="@Model.Ward" id="Ward" />
+		<br />
+		<input class="address" type="text" placeholder="Địa chỉ" value="@userAddress" />
+		<textarea id="default"></textarea>
+		<p>Hình thức đặt khám</p>
+		<div class="price">
+			<p>Phí đặt lịch <span>Miễn phí</span></p>
+			<hr />
+			<p>Tổng cộng <span style="color: #fe3834">Miễn phí</span></p>
+		</div>
+		<button type="submit">Xác nhận đặt khám</button>
+		<p style="font-size: 1.4rem; text-align: center; margin-top: 5px">
+			Bằng việc xác nhận đặt khám, bạn đã hoàn toàn đồng ý với Điều khoản
+			sử dụng dịch vụ của chúng tôi.
+		</p>
+	</form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/53f42380b0.js"
+		crossorigin="anonymous"></script>
+<script src="~/assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
+<script src="~/assets/js/richtexteditor.js"></script>
+<script type="text/javascript" src="/richtexteditor/rte.js"></script>
+<script type="text/javascript"
+		src="/richtexteditor/plugins/all_plugins.js"></script>
+<script src="https://esgoo.net/scripts/jquery.js"></script>
+@* <script>
+	$(document).ready(function () {
+		//Lấy tỉnh thành
+		$.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+			if (data_tinh.error == 0) {
+				$.each(data_tinh.data, function (key_tinh, val_tinh) {
+					$("#tinh").append('<option value="' + val_tinh.id + '">' + val_tinh.full_name + '</option>');
+				});
+				$("#tinh").change(function (e) {
+					var selectedOption = $(this).find('option:selected');
+					var idtinh = selectedOption.val();
+					var fullnameTinh = selectedOption.data('fullname');
+					$('#Province').val(fullnameTinh);
+					console.log(fullnameTinh);
+					
+					//Lấy quận huyện
+					$.getJSON('https://esgoo.net/api-tinhthanh/2/' + idtinh + '.htm', function (data_quan) {
+						if (data_quan.error == 0) {
+							$("#quan").html('<option value="0">Quận Huyện</option>');
+							$("#phuong").html('<option value="0">Phường Xã</option>');
+							$.each(data_quan.data, function (key_quan, val_quan) {
+								$("#quan").append('<option value="' + val_quan.id + '">' + val_quan.full_name + '</option>');
+							});
+							//Lấy phường xã
+							$("#quan").change(function (e) {
+								var idquan = $(this).val();
+								$.getJSON('https://esgoo.net/api-tinhthanh/3/' + idquan + '.htm', function (data_phuong) {
+									if (data_phuong.error == 0) {
+										$("#phuong").html('<option value="0">Phường Xã</option>');
+										$.each(data_phuong.data, function (key_phuong, val_phuong) {
+											$("#phuong").append('<option value="' + val_phuong.id + '">' + val_phuong.full_name + '</option>');
+										});
+									}
+								});
+							});
+
+						}
+					});
+				});
+
+			}
+		});
+	});
+</script> *@
+
+<script>
+	$(document).ready(function () {
+		//Lấy tỉnh thành
+		$.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+			if (data_tinh.error == 0) {
+				$.each(data_tinh.data, function (key_tinh, val_tinh) {
+					$("#tinh").append('<option value="' + val_tinh.id + '" data-fullname="' + val_tinh.full_name + '">' + val_tinh.full_name + '</option>');
+				});
+				$("#tinh").change(function (e) {
+					var selectedOption = $(this).find('option:selected');
+					var idtinh = selectedOption.val();
+					var fullnameTinh = selectedOption.data('fullname');
+					$('#Province').val(fullnameTinh);
+					console.log(fullnameTinh);
+
+					//Lấy quận huyện
+					$.getJSON('https://esgoo.net/api-tinhthanh/2/' + idtinh + '.htm', function (data_quan) {
+						if (data_quan.error == 0) {
+							$("#quan").html('<option value="0">Quận Huyện</option>');
+							$("#phuong").html('<option value="0">Phường Xã</option>');
+							$.each(data_quan.data, function (key_quan, val_quan) {
+								$("#quan").append('<option value="' + val_quan.id + '" data-fullname="' + val_quan.full_name + '">' + val_quan.full_name + '</option>');
+							});
+							//Lấy phường xã
+							$("#quan").change(function (e) {
+								var selectedOption = $(this).find('option:selected');
+								var idquan = selectedOption.val();
+								var fullnameQuan = selectedOption.data('fullname');
+								$('#District').val(fullnameQuan);
+
+								$.getJSON('https://esgoo.net/api-tinhthanh/3/' + idquan + '.htm', function (data_phuong) {
+									if (data_phuong.error == 0) {
+										$("#phuong").html('<option value="0">Phường Xã</option>');
+										$.each(data_phuong.data, function (key_phuong, val_phuong) {
+											$("#phuong").append('<option value="' + val_phuong.id + '" data-fullname="' + val_phuong.full_name + '">' + val_phuong.full_name + '</option>');
+										});
+
+										// Set hidden input for Ward on change
+										$("#phuong").change(function (e) {
+											var selectedOption = $(this).find('option:selected');
+											var fullnamePhuong = selectedOption.data('fullname');
+											$('#Ward').val(fullnamePhuong);
+										});
+									}
+								});
+							});
+
+						}
+					});
+				});
+
+			}
+		});
+	});
+</script>

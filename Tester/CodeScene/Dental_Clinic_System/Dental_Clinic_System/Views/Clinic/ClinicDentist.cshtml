@@ -1,0 +1,157 @@
+﻿@using Dental_Clinic_System.Models.Data
+@using Dental_Clinic_System.Helper
+@model IEnumerable<Dental_Clinic_System.Models.Data.Dentist>
+
+@{
+	ViewData["Title"] = "DentistList";
+	var degreeList = Model.Select(d => d.Degree).ToList();
+	var genderList = Model.Select(g => g.Account).ToList();
+	var clinic = Model.First().Clinic;
+}
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Danh Sách Nha Sĩ</title>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+		  rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="~/assets/css/header.css" />
+	<link rel="stylesheet" href="~/assets/css/footer.css" />
+	<link rel="stylesheet" href="~/assets/css/clinic.css" />
+</head>
+
+<div class="clinic">
+	<h1 class="clinic__title text-center fw-bold">Chọn Bác Sĩ</h1>
+	<div class="text-center">
+		<img src="~/assets/images/separate.png" alt="" />
+	</div>
+	<div class="clinic__dentist__container">
+		<div class="info">
+			<div class="info-style">
+				<div class="info-title">Thông tin cơ sở y tế</div>
+				<div class="info-body">
+					<ul>
+						<li>
+							<i class="fa-solid fa-hospital"></i>
+							<div class="text">
+								<span>@Model.FirstOrDefault()?.Clinic.Name</span>
+								<p class="address">
+									@clinic.Address, @clinic.WardName, @clinic.DistrictName, @clinic.ProvinceName
+								</p>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-tooth"></i>
+							<div class="text"><span>Chuyên khoa: @ViewBag.Specialty?.Name</span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="booking">
+			<div class="booking-style">
+				<div class="booking-title">Vui lòng chọn Bác sĩ</div>
+				<div class="booking-body">
+					<div>
+						<div class="search">
+							<form method="get" asp-controller="clinic" asp-action="choosedentist">
+							<span class="input-wrap">
+								<span class="input-wrap-search">
+										<input type="hidden" name="clinicID" value="@ViewBag.clinicID" />
+										<input type="hidden" name="specialtyID" value="@ViewBag.specialtyID" />
+									<input type="search" name="keysearch" value="@ViewBag.keysearch" placeholder="Tìm nhanh bác sĩ" />
+								</span>
+								<span class="icon-wrap">
+									<button type="submit">
+										<i class="fa-solid fa-magnifying-glass"></i>
+									</button>
+								</span>
+							</span>
+							</form>
+						</div>
+						<div class="filter">
+							<form method="get" asp-controller="clinic" asp-action="choosedentist">
+								<input type="hidden" name="clinicID" value="@ViewBag.clinicID" />
+								<input type="hidden" name="specialtyID" value="@ViewBag.specialtyID" />
+								<div class="filter">
+									<select name="degreeID" id="degree" onchange="this.form.submit()">
+										<option value="">Học hàm / Học vị</option>
+										@foreach (var degree in degreeList)
+										{
+											if (degree.ID == ViewBag.degree)
+											{
+												<option value="@degree.ID" selected>@degree.Name</option>
+											}
+											else
+											{
+												<option value="@degree.ID">@degree.Name</option>
+											}
+										}
+									</select>
+								</div>
+							</form>
+
+							<form method="get" asp-controller="clinic" asp-action="choosedentist">
+								<input type="hidden" name="clinicID" value="@ViewBag.clinicID" />
+								<input type="hidden" name="specialtyID" value="@ViewBag.specialtyID" />
+								<div class="filter">
+									<select name="gender" id="gender" onchange="this.form.submit()">
+										<option value="">Giới tính</option>
+										@foreach (var gender in genderList)
+										{
+											if(gender.Gender == ViewBag.gender)
+											{
+												<option value="@gender.Gender" selected>@gender?.Gender</option>
+											}
+											else
+											{
+												<option value="@gender.Gender">@gender?.Gender</option>
+											}
+										}
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="booking__dentist">
+						@foreach (var dentist in Model)
+						{
+							<a asp-controller="clinic" asp-action="clinicdentistcalendar" asp-route-clinicID="@dentist.Clinic.ID" asp-route-specialtyID="@ViewBag.Specialty?.ID" asp-route-dentistID="@dentist.ID">
+								<div class="booking__dentist__card">
+									<div class="booking__dentist__card__style">
+
+										<div class="stylist">
+											<i class="fa-solid fa-stethoscope"></i> @dentist.Account.LastName @dentist.Account.FirstName
+										</div>
+										<div>
+											<i class="fa-solid fa-mars-and-venus"></i> Giới tính: @dentist.Account.Gender
+										</div>
+										<div>
+											<i class="fa-solid fa-dollar-sign"></i> Giá khám: ???
+										</div>
+									</div>
+								</div>
+							</a>
+						}
+						<div class="card-end">Đã hết danh sách</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-wrapper">
+				<a href="/clinic/chooseclinicspecialty?clinicID=@ViewBag.clinicID">
+					<button type="button" class="back-btn">
+						Quay lại <i class="fa-solid fa-arrow-rotate-left"></i>
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

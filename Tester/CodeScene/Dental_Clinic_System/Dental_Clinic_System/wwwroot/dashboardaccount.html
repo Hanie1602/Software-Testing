@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/headerAd.css" />
+    <link rel="stylesheet" href="./assets/css/accountDash.css" />
+</head>
+<body>
+    <div class="dashboard__container d-flex">
+        <!-- ============ SIDEBAR ============ -->
+        <nav class="sidebar" style="width: 15%">
+            <p class="dashboard__logo"><span>Dental</span>Care</p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="./dashboard.html">
+                        <span class="menu-icon"><i class="bx bxs-dashboard"></i></span>Dashboard
+                    </a>
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link collapsed active"
+                       data-bs-toggle="collapse"
+                       href="#manage-account"
+                       aria-expanded="false"
+                       aria-controls="manage-account">
+                        <span class="menu-icon"><i class="bx bxs-user"></i></span>
+                        <span class="menu-title">Quản lý tài khoản</span>
+                        <span class="menu-down" style="margin-left: auto">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="collapse" id="manage-account">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a style="padding-left: 40px; font-size: 1.4rem"
+                                   class="nav-link"
+                                   href="./dashboardaccount.html"><i class="fa-solid fa-stethoscope"></i> Quản lý nha sĩ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="padding-left: 40px; font-size: 1.4rem"
+                                   class="nav-link"
+                                   href="#!">
+                                    <i class="fa-solid fa-hospital-user"></i> Quản lý bệnh
+                                    nhân
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="padding-left: 40px; font-size: 1.4rem"
+                                   class="nav-link"
+                                   href="#!">
+                                    <i class="fa-solid fa-hospital"></i> Quản lý chủ phòng
+                                    khám
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="padding-left: 40px; font-size: 1.4rem"
+                                   class="nav-link"
+                                   href="#!"><i class="fa-solid fa-ban"></i> Tài khoản bị cấm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="./dashboardclinic.html">
+                        <span class="menu-icon"><i class="bx bx-list-ul"></i></span>Quản
+                        lý phòng khám
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./dashboardspecialty.html">
+                        <span class="menu-icon"><i class="bx bxs-bookmarks"></i></span>Quản lý chuyên khoa
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!">
+                        <span class="menu-icon"><i class="bx bx-history"></i></span>Xem
+                        lịch sử giao dịch
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">©️ All rights reserved | Dental Care</div>
+        </nav>
+
+        <div class="container-fluid" style="width: 85%; padding: 0">
+            <nav class="nav__header d-flex flex-row justify-content-end">
+                <a href="#!">
+                    <div class="d-flex align-items-center nav__header__profile">
+                        <img src="./assets/images/avatar.jpg" alt="" />
+                        <p>
+                            <span>Hoapooh</span> <br />
+                            Admin
+                        </p>
+                        <i class="bx bx-chevron-down-circle"></i>
+                    </div>
+                </a>
+            </nav>
+
+            <div class="account__management">
+                <!-- account management header -->
+                <div class="account__management__header">
+                    <h1 class="title">Quản lý nha sĩ</h1>
+                    <div class="action-btn">
+                        <div class="search__bar">
+                            <input type="search" placeholder="Tìm kiếm ..." />
+                        </div>
+                        <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                class="add__new">
+                            + New
+                        </button>
+                    </div>
+                </div>
+                <!-- Modal For Add new User -->
+                <div class="modal fade"
+                     id="myModal"
+                     tabindex="-1"
+                     aria-labelledby="mainTitle"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered form-modal-styles">
+                        <form action="" method="POST" class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-10" id="mainTitle">
+                                    Thêm mới người dùng
+                                </h1>
+                                <button type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="user-name">
+                                    <label for="nameSpecialty">Tên người dùng</label><input type="text"
+                                                                                            name="nameSpecialty"
+                                                                                            id="nameSpecialty" />
+                                </div>
+                                <div class="user-tel">
+                                    <label for="telSpecialty">Số điện thoại</label><input type="tel" name="telSpecialty" id="telSpecialty" />
+                                </div>
+                                <div class="user-mail">
+                                    <label for="mailSpecialty">Email</label><input type="email"
+                                                                                   name="mailSpecialty"
+                                                                                   id="mailSpecialty" />
+                                </div>
+                                <div class="user-address">
+                                    <label for="addrSpecialty">Địa chỉ</label><input type="text"
+                                                                                     name="addrSpecialty"
+                                                                                     id="addrSpecialty" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                        class="close-btn btn"
+                                        data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                                <button type="submit" class="submit-btn btn">
+                                    Save changes
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <table class="table table-striped mt-5" style="font-size: 1.6rem">
+                    <thead>
+                        <tr>
+                            <th class="text-center">STT</th>
+                            <th>Tên người dùng</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                            <th>Địa chỉ</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTableBody">
+                        <tr style="vertical-align: middle">
+                            <td class="text-center">1</td>
+                            <td>
+                                <img src="./assets/images/avatar.jpg" alt="" />
+                                <span>Phúc Hoà</span>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>0123456789</td>
+                            <td class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </td>
+                            <td>
+                                <a href="./dashboardedit.html">
+                                    <button type="button">
+                                        <i class="bx bxs-edit"></i>
+                                    </button>
+                                </a>
+                                <a href="#!">
+                                    <button type="button">
+                                        <i class="bx bxs-trash"></i>
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr style="vertical-align: middle">
+                            <td class="text-center">2</td>
+                            <td>
+                                <img src="./assets/images/avatar.jpg" alt="" />
+                                <span>Phúc Hoà</span>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>0123456789</td>
+                            <td class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </td>
+                            <td>
+                                <a href="#!">
+                                    <button type="button">
+                                        <i class="bx bxs-edit"></i>
+                                    </button>
+                                </a>
+                                <a href="#!">
+                                    <button type="button">
+                                        <i class="bx bxs-trash"></i>
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- ========== PAGINATION  ========== -->
+                <ul class="pagination" id="pagination">
+                    <!-- <li class="page-item">
+                        <a class="page-link" href="#" style="font-size: 2rem">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" style="font-size: 2rem">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" style="font-size: 2rem">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" style="font-size: 2rem">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" style="font-size: 2rem">Next</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/53f42380b0.js"
+            crossorigin="anonymous"></script>
+    <script src="./assets/js/pagination.js"></script>
+</body>
+</html>

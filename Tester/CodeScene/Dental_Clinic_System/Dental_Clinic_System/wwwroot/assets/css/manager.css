@@ -1,0 +1,468 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Baloo Paaji 2";
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 100%;
+    }
+}
+
+/* body::-webkit-scrollbar {
+	width: 6px;
+	display: block;
+	background: #b2b2b2;
+	border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #b2b2b2;
+	background-image: linear-gradient(0deg, #88d3ce 0, #2d9cfd);
+	border: 1px solid #b5b5b5;
+	border-radius: 100px;
+} */
+
+input:focus {
+    border-color: #47bfff;
+    box-shadow: 0 0 0 4px rgba(29, 161, 242, 0.2);
+    outline: 0;
+}
+
+/* ============== IMAGE PREVIEW ============== */
+.container__image__preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    padding: 10px 7.5px;
+}
+
+.style__image__preview {
+    width: 100%;
+    text-align: center;
+}
+
+    .style__image__preview .title {
+        font-size: 2.4rem;
+        color: #4880ff;
+        font-weight: bold;
+    }
+
+/* ============== FORM BUTTON ================ */
+.manager__management__clinic .btn,
+.manager__management__add__schedule .btn,
+.manager__management__dentist button {
+    font-size: 2rem;
+    padding: 5px 10px;
+    font-weight: bold;
+    background: #4880ff;
+    color: #fff;
+}
+
+    .manager__management__clinic .btn:hover,
+    .manager__management__add__schedule .btn:hover,
+    .manager__management__dentist button:hover {
+        background: #3b6cd9;
+        color: #fff;
+    }
+
+    .manager__management__clinic .btn[type="reset"],
+    .manager__management__add__schedule .btn[type="reset"],
+    .manager__management__dentist button[type="reset"] {
+        margin-left: 10px;
+        background: #ffb54a;
+    }
+
+        .manager__management__clinic .btn[type="reset"]:hover,
+        .manager__management__add__schedule .btn[type="reset"]:hover,
+        .manager__management__dentist button[type="reset"]:hover {
+            background: #ff9c00;
+        }
+
+/* ================== MODAL ================== */
+
+.form-modal-styles {
+    width: 1000px;
+}
+
+    .form-modal-styles .modal-body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .form-modal-styles .modal-body label {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .form-modal-styles .modal-body .modal-body-card {
+            flex: 0 0 50%;
+            padding: 0 10px;
+        }
+
+        .form-modal-styles .modal-body .user-address,
+        .form-modal-styles .modal-body .user-pic,
+        .form-modal-styles .modal-body .special-name {
+            flex: 0 0 100%;
+        }
+
+    .form-modal-styles .modal-footer .close-btn,
+    .form-modal-styles .modal-footer .submit-btn {
+        font-size: 2rem;
+    }
+
+    .form-modal-styles .modal-body input,
+    .form-modal-styles .modal-body textarea,
+    .form-modal-styles .modal-body select {
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+/* ============= BODY =============== */
+
+.manager__management {
+    padding: 0 20px;
+}
+
+.manager__management__header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+    .manager__management__header .title {
+        font-size: 4.4rem;
+        font-weight: bold;
+    }
+
+    .manager__management__header .action-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .manager__management__header .action-btn .search__bar {
+            padding: 5px 10px;
+            border: 1px solid #4880ff;
+            border-radius: 6px;
+        }
+
+            .manager__management__header .action-btn .search__bar input {
+                border: none;
+                outline: none;
+            }
+
+        .manager__management__header .action-btn .add__new {
+            background: #4880ff;
+            border: none;
+            outline: none;
+            color: white;
+            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+            .manager__management__header .action-btn .add__new:hover {
+                background: #2e5bff;
+            }
+
+.manager__management table a button {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+    .manager__management table a button i {
+        vertical-align: middle;
+    }
+
+.manager__management table a:first-child button,
+.manager__management .submit-btn {
+    background: #4880ff;
+    color: white;
+}
+
+    .manager__management table a:first-child:hover button,
+    .manager__management .submit-btn:hover {
+        background: #3b6cd9;
+    }
+
+.manager__management table a:last-child button,
+.manager__management .close-btn {
+    background: rgb(255, 66, 66);
+    color: white;
+}
+
+    .manager__management table a:last-child:hover button,
+    .manager__management .close-btn:hover {
+        background: #f81f1f;
+    }
+
+.manager__management .table tbody img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.manager__management .table tbody span {
+    font-weight: 600;
+}
+
+.status {
+    padding: 0.4rem 0;
+    border-radius: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+    .status.complete {
+        background: #86e49d;
+        color: #006b21;
+    }
+
+    .status.working {
+        background: #4880ff;
+        color: #fff;
+    }
+
+    .status.out {
+        background: #d893a3;
+        color: #b30021;
+    }
+
+/* =========== Manager Schedule ============ */
+.ws__style {
+    width: 600px;
+}
+
+.manager__management .work__schedule {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+    .manager__management .work__schedule .time {
+        min-width: 115px;
+        margin-right: 10px;
+        padding: 5px 10px;
+        background: #4880ff;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+/* ================ PAGINATION =============== */
+.pagination .page-link {
+    font-size: 2rem;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+/* ================ CLINIC MANAGEMENT ================ */
+.manager__management__clinic {
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .manager__management__clinic label {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .manager__management__clinic input,
+    .manager__management__clinic textarea,
+    .manager__management__clinic select {
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+        .manager__management__clinic input:not(#image) {
+            padding: 5px 10px;
+        }
+
+/* ========== RICHTEXT EDITOR =========== */
+#container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.ck-editor__editable[role="textbox"] {
+    /* Editing area */
+    min-height: 200px;
+}
+
+.ck-content .image {
+    /* Block images */
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* ===================== EDIT ======================== */
+.manager__management__dentist {
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .manager__management__dentist label {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .manager__management__dentist input,
+    .manager__management__dentist select {
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .manager__management__dentist input {
+        padding: 8.5px 10px;
+    }
+
+/* ============ TIME INTERVAL =============== */
+#checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+    #checkboxContainer label {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        font-size: 1.6rem;
+    }
+
+/* ============ MANAGER SCHEDULE ADD ============ */
+.manager__management__add__schedule {
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .manager__management__add__schedule .sub-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .manager__management__add__schedule .input-text,
+    .manager__management__add__schedule select {
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .manager__management__add__schedule input {
+        padding: 8.5px 10px;
+    }
+
+/* ============ LIST CHECK BOX - MUTISELECT ============ */
+.form-check,
+.form-modal-styles .modal-body .user-address .form-check {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+/* .form-check-input {
+			margin-right: 10px;
+			font-size: 2rem;
+			font-weight: 500;
+		} */
+
+.form-check-label, .form-modal-styles .modal-body .user-address .form-check-label {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.form-check .form-check-input, .form-modal-styles .modal-body .user-address .form-check .form-check-input {
+    float: left;
+    margin-left: 0;
+}
+
+
+
+.form-check-input, .form-modal-styles .modal-body .user-address .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+    .form-check-input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        position: relative; /* Thêm thuộc tính position để quản lý dấu tích */
+    }
+
+        .form-check-input[type="checkbox"]:checked {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            /*.form-check-input[type="checkbox"]:checked::before {
+                content: '✔';
+                display: block;
+                color: #fff;
+                font-size: 20px;*/ /* Điều chỉnh kích thước dấu tích */
+                /*text-align: center;
+                width: 100%;
+                line-height: 30px;*/ /* Điều chỉnh để căn giữa dọc */
+                /*position: absolute;
+                top: 0;
+                left: 0;
+                
+            }*/

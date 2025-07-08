@@ -1,0 +1,408 @@
+/* ================== MODAL ================== */
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 100%;
+    }
+}
+
+.form-modal-styles {
+    width: 60%;
+}
+
+    .form-modal-styles .modal-body label {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .form-modal-styles .modal-footer .close-btn,
+    .form-modal-styles .modal-footer .submit-btn {
+        font-size: 2rem;
+        background: rgb(255, 66, 66);
+        color: white;
+    }
+
+    .form-modal-styles .modal-footer .submit-btn {
+        background: #4880ff;
+    }
+
+        .form-modal-styles .modal-footer .close-btn:hover,
+        .form-modal-styles .modal-footer .submit-btn:hover {
+            background: #f81f1f;
+        }
+
+        .form-modal-styles .modal-footer .submit-btn:hover {
+            background: #3b6cd9;
+        }
+
+    .form-modal-styles .modal-body input,
+    .form-modal-styles .modal-body select {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+/* ================ PAGINATION =============== */
+.pagination .page-link {
+    font-size: 2rem;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+/* =============== DASHBOARD ============ */
+
+.dashboard__info {
+    background: #f5f6fa;
+    padding: 20px 30px;
+    min-height: calc(100vh - 80px);
+    border-radius: 0.8rem 0 0 0;
+}
+
+.dashboard__info__title {
+    color: #202224;
+    font-size: 4.4rem;
+    font-weight: 700;
+    letter-spacing: -0.0114rem;
+}
+
+.dashboard__info__cards {
+    gap: 30px;
+    margin-top: 30px;
+}
+
+    .dashboard__info__cards .card-item {
+        position: relative;
+        padding: 16px;
+        background: #fff;
+        min-width: 368px;
+        border-radius: 16px;
+    }
+
+        .dashboard__info__cards .card-item p {
+            color: #202224;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .dashboard__info__cards .card-item .nums {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+
+        .dashboard__info__cards .card-item .trends i,
+        .dashboard__info__cards .card-item .trends span {
+            color: #00b69b;
+        }
+
+        .dashboard__info__cards .card-item img {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
+
+.dashboard__info__chart {
+    margin-top: 50px;
+}
+
+/* ============= CLINIC MANAGEMENT ============= */
+.clinic__management {
+    padding: 0 20px;
+}
+
+.clinic__management__header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+    .clinic__management__header .title {
+        font-size: 4.4rem;
+        font-weight: bold;
+    }
+
+    .clinic__management__header .action-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .clinic__management__header .action-btn .search__bar {
+            padding: 5px 10px;
+            border: 1px solid #4880ff;
+            border-radius: 6px;
+        }
+
+            .clinic__management__header .action-btn .search__bar input {
+                border: none;
+                outline: none;
+            }
+
+        .clinic__management__header .action-btn .add__new {
+            background: #4880ff;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+            .clinic__management__header .action-btn .add__new:hover {
+                background: #2e5bff;
+            }
+
+.clinic__management__wrapper {
+    margin-top: 20px;
+}
+
+.clinic-wrap-item {
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.clinic-wrap-item__style {
+    padding: 10px 10px;
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+    .clinic-wrap-item__style .img-content img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .clinic-wrap-item__style .info-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .clinic-wrap-item__style .info-content .title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #202224;
+        }
+
+        .clinic-wrap-item__style .info-content span {
+            /*font-weight: bold;*/
+        }
+
+        .clinic-wrap-item__style .info-content .name,
+        .clinic-wrap-item__style .info-content .address {
+            font-size: 2.6rem;
+        }
+
+        .clinic-wrap-item__style .info-content .action {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+            .clinic-wrap-item__style .info-content .action a,
+            .clinic-wrap-item__style .info-content .action button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                padding: 15px 18px;
+                border: 1px solid #4880ff;
+                color: #4880ff;
+                font-size: 1.6rem;
+            }
+
+                .clinic-wrap-item__style .info-content .action a.view {
+                    border: none;
+                    background: #00b69b;
+                    color: #fff;
+                }
+
+                    .clinic-wrap-item__style .info-content .action a.view:hover {
+                        background: #049a84;
+                    }
+
+                .clinic-wrap-item__style .info-content .action a.delete,
+                .clinic-wrap-item__style .info-content .action button.delete {
+                    border: none;
+                    background: rgb(255, 66, 66);
+                    color: #fff;
+                }
+
+                    .clinic-wrap-item__style .info-content .action a.delete:hover,
+                    .clinic-wrap-item__style .info-content .action button.delete:hover {
+                        background: #f81f1f;
+                    }
+
+                .clinic-wrap-item__style .info-content .action a:hover {
+                    background: #4880ff;
+                    color: #fff;
+                }
+
+/* ========== RICHTEXT EDITOR =========== */
+#container {
+    width: 100%;
+}
+
+.ck-editor__editable[role="textbox"] {
+    /* Editing area */
+    min-height: 100px;
+}
+
+.ck-content .image {
+    /* Block images */
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/*========= toasts MESSAGE ===========*/
+/*========= toasts MESSAGE ===========*/
+#toasts {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 999999;
+    display: block;
+}
+
+.toasts {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+    min-width: 400px;
+    max-width: 450px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    transition: all linear 0.3s;
+    opacity: 1; /* Set opacity to 1 */
+}
+
+@-webkit-keyframes slideInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(calc(100% + 32px));
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideInLeft {
+    from {
+        opacity: 0;
+        -moz-transform: translateX(calc(100% + 32px));
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.toasts--success {
+    border-color: #47d864;
+}
+
+    .toasts--success .toasts__icon {
+        color: #47d864;
+    }
+
+.toasts--info {
+    border-color: #2f86eb;
+}
+
+    .toasts--info .toasts__icon {
+        color: #2f86eb;
+    }
+
+.toasts--warning {
+    border-color: #ffc021;
+}
+
+    .toasts--warning .toasts__icon {
+        color: #ffc021;
+    }
+
+.toasts--error {
+    border-color: #ff623d;
+}
+
+    .toasts--error .toasts__icon {
+        color: #ff623d;
+    }
+
+.toasts + .toasts {
+    margin-top: 24px;
+}
+
+.toasts__icon {
+    font-size: 24px;
+}
+
+.toasts__icon,
+.toasts__close {
+    padding: 0 16px;
+}
+
+.toasts__body {
+    flex-grow: 1;
+}
+
+.toasts__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toasts__msg {
+    font-size: 20px;
+    color: #888;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+.toasts__close {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}

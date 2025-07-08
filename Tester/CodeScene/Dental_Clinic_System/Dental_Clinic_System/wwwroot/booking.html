@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dental Care | login</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/footer.css" />
+		<link rel="stylesheet" href="./assets/css/booking.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__navbar">
+				<a href="#!">
+					<img src="./assets/images/logo.png" class="navbar__logo" alt="logo" />
+				</a>
+				<ul class="navbar__list">
+					<li>
+						<a href="./index.html">Trang chủ</a>
+					</li>
+					<li>
+						<a href="./about.html">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="./clinic.html">Phòng khám</a>
+					</li>
+					<li>
+						<a href="./speciality.html">Chuyên khoa</a>
+					</li>
+					<li>
+						<a href="#!">Blogs</a>
+					</li>
+					<li>
+						<a href="./contact.html">Liên hệ</a>
+					</li>
+				</ul>
+				<div class="navbar__auth">
+					<!-- <a href="/" class="navbar__auth__avatar">
+                    <img src="images/avatar.jpg" alt="" />
+                </a>
+                <a href="/" class="navbar__auth__booking"> Đặt lịch khám </a> -->
+					<a href="./login.html" class="navbar__auth__login"> Đăng nhập </a>
+					<a href="./register.html" class="navbar__auth__register"> Đăng ký </a>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="booking__title">
+				<div class="booking__dentist">
+					<img src="./assets/images/dentist4.png" alt="" />
+					<div class="booking__dentist__info">
+						<p class="sub-title">ĐẶT LỊCH KHÁM</p>
+						<p class="name">Bác sĩ Chuyên khoa I Trần Thanh Bình</p>
+						<p class="work">09:00 - 09-30 - Thứ 5 - 16/05/2024</p>
+					</div>
+				</div>
+			</div>
+			<div class="booking__body">
+				<form class="booking__detail">
+					<input type="text" placeholder="Họ tên bệnh nhân (bắt buộc)" /> <br />
+					<input
+						type="text"
+						placeholder="Số điện thoại liên hệ (bắt buộc)"
+					/><br />
+					<input type="date" placeholder="Ngày/tháng/năm sinh (bắt buộc)" />
+					<br />
+					<select name="city">
+						<option value="">-- Chọn Tỉnh/Thành --</option>
+						<option value="">Hồ Chí Minh</option>
+						<option value="">Hà Nội</option>
+					</select>
+					<br />
+					<select name="dítrict">
+						<option value="">-- Chọn Quận/Huyện --</option>
+						<option value="">Bình Dương</option>
+						<option value="">Đống Đa</option>
+					</select>
+					<br />
+					<input class="address" type="text" placeholder="Địa chỉ" />
+					<textarea name="" id="default"></textarea>
+					<p>Hình thức đặt khám</p>
+					<div class="price">
+						<p>Phí đặt lịch <span>Miễn phí</span></p>
+						<hr />
+						<p>Tổng cộng <span style="color: #fe3834">Miễn phí</span></p>
+					</div>
+					<button type="submit">Xác nhận đặt khám</button>
+					<p style="font-size: 1.4rem; text-align: center; margin-top: 5px">
+						Bằng việc xác nhận đặt khám, bạn đã hoàn toàn đồng ý với Điều khoản
+						sử dụng dịch vụ của chúng tôi.
+					</p>
+				</form>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__navigation">
+				<a href="/">
+					<img src="./assets/images/logo.png" class="navbar__logo" alt="logo" />
+				</a>
+				<ul class="footer__navigation__list">
+					<li>
+						<a href="/#">Trang chủ</a>
+					</li>
+					<li>
+						<a href="#!">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="#!">Chuyên khoa</a>
+					</li>
+					<li>
+						<a href="#!">Nha Khoa</a>
+					</li>
+					<li>
+						<a href="#!">Blogs</a>
+					</li>
+					<li>
+						<a href="#!">Liên hệ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__separate"></div>
+			<div class="footer__condition__social">
+				<p class="footer__condition__social--copyright">® 2024 Dental Care</p>
+				<div class="footer__condition__social--media">
+					<a href="#!">
+						<img src="./assets/images/facebook.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/instagram.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/youtube.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/linkedin.png" alt="facebook" />
+					</a>
+					<a href="#!">
+						<img src="./assets/images/X.png" alt="facebook" />
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/53f42380b0.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="assets\js\tinymce\js\tinymce\tinymce.min.js"></script>
+		<script src="assets\js\richtexteditor.js"></script>
+		<script type="text/javascript" src="/richtexteditor/rte.js"></script>
+		<script
+			type="text/javascript"
+			src="/richtexteditor/plugins/all_plugins.js"
+		></script>
+	</body>
+</html>

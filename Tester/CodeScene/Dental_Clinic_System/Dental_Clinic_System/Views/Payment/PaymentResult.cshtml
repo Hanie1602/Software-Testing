@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Care | login</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/assets/css/paymentresult.css" />
+
+    <style>
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<<div class="container">
+
+    @* Successfully *@
+    @if ((ViewBag.ResultCode == 0 && (ViewBag.Message == "Success".ToUpper() || ViewBag.Message == "Thành công".ToUpper())) || ViewBag.VnPayResponseCode == "00")
+    {
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="message-box _success">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <h2> Giao dịch thanh toán thành công </h2>
+                    <p>
+                        Cảm ơn bạn đã thanh toán. <br>
+                    </p>
+                    <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                        <a asp-controller="home" asp-action="index" style="padding: 10px 20px; border-radius: 5px; text-decoration: none; color: white; background-color: #007bff; border: none;">Trở về trang chủ</a>
+                        <a asp-controller="payment" asp-action="paymentinvoice" asp-route-appointmentID="@ViewBag.appoinmentID" asp-route-transaction="@ViewBag.transaction" asp-route-clinicID="@ViewBag.clinicID" style="padding: 10px 20px; border-radius: 5px; text-decoration: none; color: white; background-color: #6c757d; border: none;">Xem phiếu khám</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else @* Fail *@
+    {
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="message-box _success _failed">
+                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    <h2> Giao dịch thanh toán thất bại </h2>
+                    <p>  Xin lỗi vì sự bất tiện này </p>
+                    <p style="color: red;">Mã lỗi: @ViewBag.ResultCode @ViewBag.VnPayResponseCode</p>
+                    <p style="color: red;">@ViewBag.Message</p>
+                    <div style="margin-top: 20px; display: flex; text-align: center">
+                        <a asp-controller="home" asp-action="index" style="padding: 10px 20px; border-radius: 5px; text-decoration: none; color: white; background-color: #007bff; border: none;">Trở về trang chủ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+
+
+</div> 

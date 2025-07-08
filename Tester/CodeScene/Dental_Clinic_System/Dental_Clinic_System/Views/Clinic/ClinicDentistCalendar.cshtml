@@ -1,0 +1,192 @@
+﻿@model IEnumerable<Dental_Clinic_System.Models.Data.Schedule>
+
+@{
+	ViewData["Title"] = "DentistBookingCalendar";
+}
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dental Care | login</title>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+		  rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="~/assets/css/mobiscroll.javascript.min.css" />
+	<link rel="stylesheet" href="~/assets/css/header.css" />
+	<link rel="stylesheet" href="~/assets/css/footer.css" />
+	<link rel="stylesheet" href="~/assets/css/clinic.css" />
+	<link rel="stylesheet" href="~/assets/css/schedule.css" />
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<div class="clinic">
+	<h1 class="clinic__title text-center fw-bold">Chọn Ngày Khám</h1>
+	<div class="text-center">
+		<img src="~/assets/images/separate.png" alt="seperate" />
+	</div>
+	<div class="clinic__dentist__container">
+		<div class="info">
+			<div class="info-style">
+				<div class="info-title">Thông tin cơ sở y tế</div>
+				<div class="info-body">
+					<ul>
+						<li>
+							<i class="fa-solid fa-hospital"></i>
+							<div class="text">
+								<span>@ViewBag.clinicName</span>
+								<p class="address">
+									@ViewBag.clinicAddress
+								</p>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-tooth"></i>
+							<div class="text"><span>Chuyên khoa: @ViewBag.specialtyName</span></div>
+						</li>
+						<li>
+							<i class="fa-solid fa-stethoscope"></i>
+							<div class="text">
+								<span>Bác sĩ: @ViewBag.dentistName</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- =========== BOOKING =========== -->
+		<div class="booking">
+			<form asp-controller="patientrecord" asp-action="patientrecord" method="get">
+				<div class="booking-style">
+					<div class="booking-title">Vui lòng chọn ngày và giờ khám</div>
+
+					<!-- THẺ NÀY ĐỂ HIỂN THỊ LỊCH THEO GIAO DIỆN MOBISCROLL  -->
+
+					<div class="mbsc-col-sm-12 mbsc-col-md-4">
+						<div class="mbsc-form-group">
+							<div id="demo-single-day"></div>
+						</div>
+					</div>
+
+					
+				</div>
+				<input type="hidden" name="clinicID" value="@ViewBag.clinicID" />
+				<input type="hidden" name="specialtyID" value="@ViewBag.specialtyID" />
+				<input type="hidden" name="dentistID" value="@ViewBag.dentistID" />
+
+				<input type="hidden" id="scheduleID" name="scheduleID" />
+				<div class="btn-wrapper">
+					<a href="/clinic/choosedentist?clinicID=@ViewBag.clinicID&specialtyID=@ViewBag.specialtyID">
+						<button type="button" class="back-btn">
+							Quay lại <i class="fa-solid fa-arrow-rotate-left"></i>
+						</button>
+					</a>
+					<a>
+
+						<button type="submit" class="add-record-btn">
+							Tiếp tục <i class="fa-solid fa-arrow-right"></i>
+						</button>
+
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="~/assets/js/mobiscroll.javascript.min.js"></script>
+@* <script src="~/assets/js/mobiscroll-calendar.js"></script> *@
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		mobiscroll.setOptions({
+			stepMinute: 30,
+			theme: "ios",
+			themeVariant: "light"
+		});
+
+		//fetch schedules from the server
+		fetch('/clinic/getschedules?dentistID=' + @ViewBag.dentistID)
+			.then(response => response.json())
+			.then(data => {
+				// map the data to the mobiscroll valid format
+				var schedules = data.map(function (item) {
+					return {
+						start: item.date + 'T' + item.startTime,
+						end: item.date + 'T' + item.startTime,
+						title: item.scheduleID,
+						recurring: {
+							repeat: 'none'
+						}
+					};
+				});
+
+				var scheduleMap = new Map();
+				data.forEach(function (item) {
+					scheduleMap.set(item.date + 'T' + item.startTime, item.scheduleID);
+				});
+				//console.log(schedules);
+				console.log(scheduleMap);
+
+				let current = new Date(); 
+				//initialize mobiscroll calendar with the valid dates
+				mobiscroll.datepicker("#demo-single-day", {
+					controls: ["calendar", "timegrid"],
+					firstDay: 1,
+					min: current.setHours(current.getHours() + 4),
+					display: "inline",
+					touchUI: true,
+					selectMultiple: false,
+					valid: schedules.map(item => ({
+						start: item.start,
+						end: item.end,
+						item: item.title,
+
+					})),
+
+					locale: mobiscroll.localeVi,
+
+					onChange: function (event, inst) {
+						console.log(formatDate(event.value));
+						document.getElementById('scheduleID').value = scheduleMap.get(formatDate(event.value));
+						//Ẩn hoặc hiện button submit theo giá trị scheduleID
+						if (document.getElementById('scheduleID').value === 'undefined') {
+							document.querySelectorAll('.add-record-btn').forEach(btn => {
+								btn.classList.add('hidding');
+							})
+						}
+						else {
+							document.querySelectorAll('.add-record-btn').forEach(btn => {
+								btn.classList.remove('hidding');
+							})
+						}
+					}
+				});
+
+			})
+			.catch(error => {
+				alert('Không tải được lịch tương ứng!');
+				console.error('error:', error);
+			});
+	});
+
+	// Hàm này nhận value của ngày trong event và trả về theo định dạng
+	function formatDate(date) {
+		const pad = (number) => (number < 10 ? '0' : '') + number;
+		const day = pad(date.getDate());
+		const month = pad(date.getMonth() + 1); // Months are zero-based
+		const year = date.getFullYear();
+		const hours = pad(date.getHours());
+		const minutes = pad(date.getMinutes());
+
+		return `${year}-${month}-${day}T${hours}:${minutes}`;
+	}
+</script>
+

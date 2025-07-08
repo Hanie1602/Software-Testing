@@ -1,0 +1,102 @@
+﻿@model Dental_Clinic_System.ViewModels.RegisterVM
+@{
+    // Layout = null;
+    ViewData["Title"] = "Register";
+}
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dental Care | login</title>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+		  rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="~/assets/css/header.css" />
+	<link rel="stylesheet" href="~/assets/css/footer.css" />
+	<link rel="stylesheet" href="~/assets/css/authentication.css" />
+</head>
+<body>
+
+	<div class="content">
+		<div class="content__img">
+			<img src="~/assets/images/register-image.png" alt="doctor" />
+			<div class="content__img__quote">
+				<p class="quote">
+					“Effort is like toothpaste; you can usually squeeze out just a
+					little bit more.” <br />~ Dr Andre Jackson
+				</p>
+				<p class="summary">Manager of Smile Pvt.Ltd</p>
+			</div>
+		</div>
+		<div class="content__form register">
+			<h1 class="content__form__title">Đăng ký tài khoản</h1>
+			<div class="content__form__login">
+				<a asp-controller="account" asp-action="loginbygoogle">
+					<button type="button" class="content__form__login__google">
+						<img src="~/assets/images/Google.png" alt="" />
+						Đăng nhập bằng Google
+					</button>
+				</a>
+			</div>
+			<div class="content__form__separate">Hoặc</div>
+			<form asp-action="register" method="POST" class="content__form__system">
+				
+				<div class="username">
+					<i class="fa-solid fa-user"></i>
+					<input type="text" placeholder="Tên tài khoản" asp-for="@Model.Username"/>
+					@Html.ValidationMessage("errorUsernameRegister")
+					<span class="text-danger" asp-validation-for="Username"></span>
+				</div>
+				<div class="phone">
+					<i class="fa-solid fa-phone"></i>
+					<input type="text" placeholder="Nhập số điện thoại" asp-for="@Model.PhoneNumber"/>
+					@Html.ValidationMessage("errorPhoneRegister")
+					<span class="text-danger" asp-validation-for="PhoneNumber"></span>
+				</div>
+				<div class="email">
+					<i class="fa-solid fa-envelope"></i>
+					<input type="email" placeholder="Nhập Email của bạn" asp-for="@Model.Email"/>
+					@Html.ValidationMessage("errorEmailRegister")
+					<span class="text-danger" asp-validation-for="Email"></span>
+				</div>
+				<div class="password">
+					<i class="fa-solid fa-lock"></i>
+					<input type="password" placeholder="Nhập mật khẩu" asp-for="@Model.Password"/>
+					<span class="text-danger" asp-validation-for="Password"></span>
+				</div>
+				<label class="policies_check">
+					<input type="checkbox" required/>
+					Tôi đã đọc và đồng ý với Điều khoản Dịch vụ
+				</label>
+				<div class="cta_btn">
+					<input type="submit"
+						   value="Đăng ký"
+						   class="content__form__system__submit" />
+					<br />
+					<a class="content__form__system__login__navigation"
+					   asp-controller="account" asp-action="login">
+						<strong>Đăng nhập</strong> nếu bạn đã có tài khoản
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/53f42380b0.js"
+            crossorigin="anonymous"></script>
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
+</body>
+

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Dental_Clinic_System.Models.Data.Specialty>
+@{
+	ViewData["Title"] = "ClinicSpecialty";
+}
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dental Care | login</title>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+		  rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="~/assets/css/header.css" />
+	<link rel="stylesheet" href="~/assets/css/footer.css" />
+	<link rel="stylesheet" href="~/assets/css/clinic.css" />
+</head>
+
+		<div class="clinic">
+			<h1 class="clinic__title text-center fw-bold">Các Chuyên Khoa</h1>
+			<div class="text-center">
+				<img src="~/assets/images/separate.png" alt="" />
+			</div>
+			<div class="clinic__container clinic__container__special">
+				<h2 class="clinic__container__title">
+					<img src="~/assets/images/note-icon.svg" alt="" /><span>Chọn Chuyên khoa</span>
+				</h2>
+				<div class="clinic__special__container__wrapper">
+					@foreach (var specialty in Model)
+					{
+						<div class="clinic__special__container__card">
+							<div class="image-content">
+								<img src="~/assets/images/clinic-special.png" alt="" />
+							</div>
+							<div class="text-content">
+								<h2 class="text-content-title">@specialty.Name</h2>
+							</div>
+							<div class="cover">
+								<div class="button-wrapper">
+									<a asp-controller="clinic" asp-action="choosedentist"  asp-route-clinicID="@ViewBag.clinicID" asp-route-specialtyID="@specialty.ID"><button>Đặt khám</button></a>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+		</div>
+
+

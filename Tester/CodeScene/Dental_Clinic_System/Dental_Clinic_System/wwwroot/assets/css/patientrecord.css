@@ -1,0 +1,1038 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Baloo Paaji 2";
+	scroll-behavior: smooth;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p,
+figure {
+	margin-bottom: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	display: block;
+	background-color: #b2b2b2;
+}
+
+svg:not(:root) {
+	overflow-clip-margin: content-box;
+	overflow: hidden;
+}
+
+input:focus {
+	border-color: #47bfff;
+	box-shadow: 0 0 0 4px rgba(29, 161, 242, 0.2);
+	outline: 0;
+}
+
+/* ========= MODAL ========= */
+.modal-content {
+	padding: 10px;
+}
+
+.modal-header {
+	border-bottom: none;
+	color: #1376f8;
+	font-weight: bold;
+}
+
+.modal-body .list__item:not(:first-child) {
+	margin-top: 20px;
+}
+
+.modal-body .style__item p {
+	font-size: 1.6rem;
+}
+
+.modal-body .style__item__key {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 600;
+}
+
+	.modal-body .style__item__key i {
+		color: #b1b1b1;
+	}
+
+.modal-body .style__item__value.name {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	color: #1376f8;
+	font-weight: bold;
+}
+
+/* ========= PATIENT RECORD ========= */
+
+.pt__record,
+.pt__rcd__confirm {
+	background: #d8e9f2;
+	padding: 50px 0;
+}
+
+	.pt__record.add {
+		background: #fff;
+	}
+
+.pt__record__add__wrapper {
+	margin-top: 20px;
+	background: #e8f2f7;
+}
+
+/* ======== BUTTON ========= */
+.btn-wrapper {
+	margin-bottom: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 24px;
+	margin-bottom: 28px;
+}
+
+	.btn-wrapper.add__record {
+		justify-content: flex-end;
+		gap: 16px;
+	}
+
+	.btn-wrapper.payment {
+		margin-bottom: 0;
+	}
+
+	.btn-wrapper .reset-btn {
+		border: none;
+		outline: none;
+		font-size: 1.6rem;
+		font-weight: 600;
+		padding: 8px 15px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 8px;
+		background: #ffb54a;
+	}
+
+		.btn-wrapper .reset-btn:hover {
+			background: #e68a0a;
+		}
+
+	.btn-wrapper .back-btn {
+		border: none;
+		outline: none;
+		color: #003553;
+		font-size: 1.6rem;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		border-color: transparent;
+		background: transparent;
+		box-shadow: none;
+		gap: 5px;
+		cursor: pointer;
+		padding: 8px 15px;
+		border-radius: 8px;
+		transition: all 0.25s ease;
+	}
+
+		.btn-wrapper .back-btn:hover {
+			background: #1376f8 !important;
+			color: #fff;
+		}
+
+	.btn-wrapper .add-record-btn {
+		padding: 8px 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		gap: 5px;
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: #fff;
+		background: #1376f8 !important;
+		border-radius: 8px;
+		transition: all 0.25s ease;
+	}
+
+		.btn-wrapper .add-record-btn:hover {
+			box-shadow: 0 4px 30px 0 rgba(116, 157, 206, 0.2);
+			background: #1da1f2 !important;
+		}
+
+.service__table__style .delete-btn {
+	padding: 6px 12px;
+	background-color: transparent;
+	border: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+	border-radius: 3px;
+}
+
+	.service__table__style .delete-btn:hover {
+		color: #fff;
+		background-color: #e74c3c;
+		border: #e74c3c;
+	}
+
+/* =========== KEYFRAMES ========== */
+@keyframes styles__bounce {
+	0% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+
+	25% {
+		opacity: 0;
+		transform: translateY(10px) scale(0.9);
+	}
+
+	26% {
+		opacity: 0;
+		transform: translateY(-10px) scale(0.9);
+	}
+
+	55% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+/* =========== TITLE =========== */
+.pt__record__title {
+	font-size: 6.2rem;
+}
+
+/* =========== CHOOSE RECORD FORM -- NO RECORD ============ */
+.style__container {
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+	.style__container.payment {
+		max-width: 1180px;
+	}
+
+.style__container__choose {
+	margin: 0 auto;
+	padding-bottom: 30px;
+	width: 450px;
+}
+
+.style__container__add {
+	max-width: 980px;
+	margin: 0 auto;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.record__container {
+	padding-top: 30px;
+	max-width: 100%;
+	min-height: 300px;
+}
+
+.record__container__style {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+	.record__container__style span {
+		width: 80%;
+		margin: 0 auto;
+		color: #b1b1b1;
+		text-align: center;
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+
+		.record__container__style span:last-child {
+			box-sizing: border-box;
+			display: inline-block;
+			overflow: hidden;
+			width: initial;
+			height: initial;
+			background: none;
+			opacity: 1;
+			border: 0px;
+			margin: 0px;
+			padding: 0px;
+			position: relative;
+			max-width: 100%;
+		}
+
+	.record__container__style img {
+		box-sizing: border-box;
+		padding: 0px;
+		border: none;
+		margin: auto;
+		display: block;
+		object-fit: contain;
+	}
+
+/* =========== CHOOSE RECORD FORM -- WITH RECORD ============ */
+.record__container__card__style {
+	display: flex;
+	flex-direction: column;
+}
+
+	.record__container__card__style .record__card {
+		font-size: 1.4rem;
+		border-radius: 8px !important;
+		background: #fff;
+		box-shadow: 4px 8px 30px 0 rgba(177, 196, 218, 0.35);
+		transition: all 0.3s ease-in-out;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 16px !important;
+		border: 1px solid #f0f0f0;
+	}
+
+		.record__container__card__style .record__card:hover {
+			cursor: pointer !important;
+			box-shadow: 0 4px 30px 0 rgba(116, 157, 206, 0.2);
+			transform: translateY(-0.2rem);
+			border-color: #1376f8 !important;
+		}
+
+		.record__container__card__style .record__card ::after {
+			content: "";
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+		}
+
+	.record__container__card__style .record__card__body {
+		padding: 15px;
+	}
+
+		.record__container__card__style .record__card__body::after,
+		.record__container__card__style .record__card__body::before {
+			display: table;
+			content: "";
+		}
+
+		.record__container__card__style .record__card__body::after {
+			clear: both;
+		}
+
+	.record__container__card__style .record__card:hover ::after {
+		right: -20px;
+		top: -20px;
+		background-color: #1376f8;
+		box-shadow: 0 1px 2px 0 #1376f8, 0 1px 3px 1px #1376f8;
+	}
+
+	.record__container__card__style .card__body__style {
+		display: flex;
+		align-items: flex-start;
+		margin: 8px;
+	}
+
+		.record__container__card__style .card__body__style:first-child {
+			font-weight: 700;
+			margin-left: 6px;
+		}
+
+			.record__container__card__style .card__body__style:first-child span {
+				word-wrap: break-word;
+				font-size: 1.6rem !important;
+				font-style: normal !important;
+				font-weight: 600 !important;
+				color: #1376f8 !important;
+				text-transform: uppercase;
+			}
+
+	.record__container__card__style .style__label {
+		display: flex;
+		align-items: center;
+		min-width: 150px;
+		margin: 0;
+	}
+
+		.record__container__card__style .style__label i {
+			font-size: 2.4rem;
+			margin: 0 5px;
+			color: #c1d5e9;
+		}
+
+		.record__container__card__style .style__label span {
+			font-size: 1.6rem;
+			padding-left: 5px;
+		}
+
+	.record__container__card__style .style__text {
+		font-size: 1.6rem;
+		word-wrap: break-word;
+		padding-left: 5px;
+		font-weight: 600;
+		flex: 1 1;
+	}
+
+.record__card__body .style__icon {
+	z-index: 10;
+	fill: #fff;
+	animation: styles__bounce 1.2s ease-in infinite;
+}
+
+.record__container__card__style .record__card .style__icon,
+.record__container__card__style .record__card ::after {
+	position: absolute;
+	right: -80px;
+	top: -80px;
+	transition: all 0.3s ease-in-out;
+}
+
+.record__container__card__style .record__card:hover .style__icon {
+	right: 3px;
+	top: 3px;
+}
+
+/* ======== PATIENT RECORD CONFIRM ======== */
+.style__container__confirm {
+	margin-left: -16px;
+	margin-right: -16px;
+	row-gap: 12px;
+}
+
+/* 1. Record Clinic and Style body */
+
+.pt__rcd__clinic__style,
+.pt__rcd__service__details__style {
+	padding: 15px 16px;
+}
+
+.pt__rcd__patient {
+	margin-bottom: 25px;
+}
+
+.pt__rcd__patient,
+.pt__rcd__clinic,
+.pt__rcd__payment,
+.pt__rcd__service,
+.pt__rcd__details {
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 4px 30px 0 rgba(116, 157, 206, 0.2);
+	overflow: hidden;
+}
+
+	.pt__rcd__patient .pt__rcd__title,
+	.pt__rcd__clinic .pt__rcd__title,
+	.pt__rcd__payment .pt__rcd__title,
+	.pt__rcd__service .pt__rcd__title,
+	.pt__rcd__details .pt__rcd__title {
+		color: #fff;
+		padding: 12px 16px;
+		background: #1376f8;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 1.1;
+	}
+
+.pt__rcd__patient__body,
+.pt__rcd__clinic__body,
+.pt__rcd__payment__body,
+.pt__rcd__service__body,
+.pt__rcd__details__body {
+	padding: 12px 16px;
+}
+
+.pt__rcd__service {
+	margin-bottom: 24px;
+}
+
+.pt__rcd__patient__body .patient__info,
+.pt__rcd__clinic__body .clinic__info {
+	display: flex;
+	align-items: flex-start;
+}
+
+.pt__rcd__patient__body .patient__info {
+	margin-bottom: 5px;
+}
+
+	.pt__rcd__patient__body .patient__info i,
+	.pt__rcd__clinic__body .clinic__info i {
+		color: #c1d5e9;
+		font-size: 1.8rem;
+		margin-right: 8px;
+	}
+
+.pt__rcd__patient__body .patient__info__details,
+.pt__rcd__clinic__body .clinic__info__details {
+	flex: 1 1;
+	word-wrap: break-word;
+	font-size: 1.8rem;
+	line-height: 1.1;
+}
+
+	.pt__rcd__clinic__body .clinic__info__details span {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+/* 2. Service table style */
+
+.service__table__style {
+	width: 100%;
+}
+
+	.service__table__style th,
+	.service__table__style td {
+		padding: 10px 5px;
+		font-size: 1.6rem;
+	}
+
+	.service__table__style .style__col__first {
+		min-width: 50px;
+		text-align: center;
+	}
+
+	.service__table__style .style__col__other {
+		width: fit-content;
+		text-align: left;
+	}
+
+	.service__table__style .style__col__sub__other {
+		width: fit-content;
+		max-width: 200px;
+	}
+
+/* 3. patients details grid style */
+.pt__rcd__details__body__style {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 10px;
+}
+
+	.pt__rcd__details__body__style .details__item {
+		display: flex;
+	}
+
+	.pt__rcd__details__body__style .details__item__title {
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
+		min-width: 130px;
+		color: #003553;
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 1.1;
+	}
+
+		.pt__rcd__details__body__style .details__item__title i {
+			color: #c1d5e9;
+		}
+
+	.pt__rcd__details__body__style .details__item__content {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+
+		.pt__rcd__details__body__style .details__item__content.name {
+			text-transform: uppercase;
+		}
+
+.family__member__confirm {
+	margin-top: 30px;
+	color: #0352cc;
+	font-weight: 600;
+}
+
+/* ========= PAYMENT ========= */
+.payment__bill__title {
+	display: flex;
+	align-items: center;
+	color: #11a2f3 !important;
+	font-size: 2.2rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+	.payment__bill__title i {
+		margin-right: 5px;
+		font-size: 1.6rem;
+	}
+
+.payment__bill__body {
+	margin-top: 15px;
+}
+
+	.payment__bill__body .list__bill {
+		list-style: none;
+		border-bottom: 1px solid #dfe3eb;
+	}
+
+	.payment__bill__body .list__bill__style {
+		box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+		padding: 8px 12px;
+		margin-bottom: 12px;
+		border-radius: 8px;
+		border: 1px solid #00e0ff;
+	}
+
+	.payment__bill__body .style__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	.payment__bill__body li:last-child .style__item {
+		border-bottom: none;
+	}
+
+	.payment__bill__body .style__item__key,
+	.payment__bill__body .style__item__value {
+		color: #003553;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 1.6rem;
+		font-weight: 500;
+		line-height: 1.1;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+		.payment__bill__body .style__item__key i {
+			color: #c1d5e9;
+		}
+
+		.payment__bill__body .style__item__key span {
+			font-size: 1.8rem;
+		}
+
+	.payment__bill__body .style__item__value {
+		display: flex;
+		justify-content: flex-end;
+		margin: 0;
+		max-width: 50%;
+		font-weight: 400;
+		text-align: right;
+		color: #003553;
+	}
+
+		.payment__bill__body .style__item__value.price,
+		.payment__bill__body .style__item__payment .price {
+			color: #11a2f3;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+
+		.payment__bill__body .style__item__value.price {
+			font-weight: 500;
+		}
+
+	.payment__bill__body .style__item__payment {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 20px;
+		font-size: 1.8rem;
+		font-weight: 500;
+	}
+
+		.payment__bill__body .style__item__payment.total {
+			font-size: 2.2rem;
+		}
+
+		.payment__bill__body .style__item__payment p {
+			font-weight: bold;
+		}
+
+		.payment__bill__body .style__item__payment span {
+			margin-left: 20px;
+			min-width: 120px;
+			text-align: right;
+		}
+
+/* ============ PAYMENT TYPE =============== */
+.collapse__item__header {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	padding: 0 0 12px;
+}
+
+	.collapse__item__header label {
+		display: flex;
+		margin: 0;
+		text-align: left;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+		word-wrap: break-word;
+		box-sizing: border-box;
+		margin-right: 3rem !important;
+		position: relative;
+		cursor: pointer;
+		height: -moz-fit-content;
+		height: fit-content;
+		transition: 0.28s ease;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		align-items: flex-start;
+		align-content: center;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.1;
+		color: #003553;
+	}
+
+	.collapse__item__header .dots {
+		border: 1px solid #5a5a5a;
+		border-radius: 50%;
+		margin-right: 9px;
+		display: inline-block;
+		padding-top: 1px;
+		width: 18px;
+		height: 18px;
+		z-index: 0;
+		position: relative;
+	}
+
+		.collapse__item__header .dots::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0);
+			width: 64%;
+			height: 64%;
+			background: linear-gradient(83.63deg, #00b5f1 33.34%, #00e0ff 113.91%);
+			border-radius: 50%;
+			transition: all 0.11s ease;
+		}
+
+	.collapse__item__header.active .dots::after {
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+/* .collapse__item__content {
+	display: none;
+	transition: opacity 0.4s ease;
+	opacity: 0;
+	border-radius: 8px;
+	background: #eaeaea;
+	position: relative;
+}
+
+.collapse__item__content.active {
+	opacity: 1;
+	display: block;
+} */
+
+.collapse__item__content {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	display: none;
+	border-radius: 8px;
+	background: #eaeaea;
+	position: relative;
+}
+
+	.collapse__item__content.active {
+		opacity: 1;
+		transform: translateY(0);
+		display: block;
+	}
+
+.collapse__item__content--box {
+	padding: 12px 16px;
+	margin-bottom: 12px;
+}
+
+	.collapse__item__content--box::after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 20px;
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid #eaeaea;
+	}
+
+	.collapse__item__content--box .style__box {
+		display: flex;
+	}
+
+	.collapse__item__content--box .style__box__card {
+		padding: 5px 2px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90px;
+		cursor: pointer;
+		transition: all 0.1s ease-in-out;
+		margin-bottom: 0;
+		border: 1px dashed #cdd8ea;
+		border-radius: 0.2rem;
+	}
+
+		.collapse__item__content--box .style__box__card.active {
+			border-color: #00b5f1 !important;
+			background-color: #eafaff;
+		}
+
+		.collapse__item__content--box .style__box__card:hover {
+			box-shadow: 0 0 8px 2px rgba(116, 157, 206, 0.2);
+		}
+
+		.collapse__item__content--box .style__box__card figure img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+
+/* ========== ADD NEW RECORD ========== */
+.record__add__title {
+	font-size: 2.6rem;
+	font-weight: 700;
+	margin-bottom: 28px;
+}
+
+.record__add__desc {
+	padding: 20px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #11a2f3;
+	margin-bottom: 28px;
+	border-radius: 8px;
+	border: 1px solid #c1d5e9;
+	background: #d4e9ff;
+}
+
+.record__add__required {
+	color: #ff3b30;
+	margin-bottom: 28px;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.record__add__form label {
+	margin-top: 10px;
+	font-size: 2.6rem;
+	font-weight: 600;
+}
+
+	.record__add__form label sup {
+		color: #ff3b30;
+		font-size: 2.6rem;
+	}
+
+.record__add__form input,
+.record__add__form select {
+	width: 100%;
+	font-size: 1.8rem;
+	font-weight: 400;
+	padding: 10px 16px;
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
+}
+
+.record__add__form select {
+	padding: 6.5px 16px;
+}
+
+.record__add__form__divider {
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(40deg, #00b5f1, #00e0ff);
+	margin-bottom: 36px;
+	margin-top: 24px;
+}
+
+.family__member__add__title {
+	font-size: 2.6rem;
+	font-weight: 700;
+	margin-bottom: 28px;
+}
+
+#age__check {
+	display: none;
+}
+
+/* =========== PROFILE ============ */
+.patient__record__profile {
+	padding: 50px 0;
+}
+
+.patient__record__profile__wrapper {
+	max-width: 1180px;
+	width: 100%;
+	margin: auto;
+	padding: 0 15px;
+}
+
+.nav__list ul li {
+	margin-bottom: 10px;
+}
+
+.nav__list .active {
+	display: flex;
+	align-items: center;
+	padding: 12px;
+	color: #1376f8;
+	text-shadow: 0 0 0.25px currentcolor;
+	border-left: 4px solid #1376f8;
+	gap: 10px;
+	border-radius: 8px;
+	white-space: nowrap;
+	background: #fff;
+	box-shadow: 4px 8px 30px 0 rgba(177, 196, 218, 0.35);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.nav__list__add__record {
+	display: flex;
+	padding: 12px;
+	color: #fff;
+	gap: 10px;
+	align-items: center;
+	border-radius: 8px;
+	white-space: nowrap;
+	background: #1376f8;
+	box-shadow: 4px 8px 30px 0 rgba(177, 196, 218, 0.35);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+	.nav__list__add__record:hover {
+		background: #0a5cbf;
+	}
+
+.record__list {
+	border-left: 1px solid #d3d3d3;
+	padding-left: 24px;
+}
+
+	.record__list .title {
+		font-size: 2.6rem;
+		font-weight: 700;
+	}
+
+.record__item__style {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-radius: 16px;
+	background: #fff;
+	box-shadow: 4px 8px 30px 0 rgba(177, 196, 218, 0.35);
+	border: 1px solid #eaeaea;
+}
+
+	.record__item__style .list__info {
+		padding: 0 20px 20px;
+	}
+
+.style__list__info {
+	display: flex;
+	width: 100%;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #003553;
+	margin-bottom: 12px;
+	gap: 10px;
+}
+
+	.style__list__info .info__head {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+		.style__list__info .info__head i {
+			color: #b1b1b1;
+		}
+
+	.style__list__info .info__content {
+		color: #000;
+		font-weight: 500;
+	}
+
+		.style__list__info .info__content.name {
+			color: #1376f8;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+.record__item__style .list__action {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	border-radius: 0 0 16px 16px;
+	padding: 12px 20px;
+	background: #f5f5f5;
+}
+
+	.record__item__style .list__action a {
+		display: flex;
+		align-items: center;
+		border: none;
+		outline: none;
+		background: transparent;
+		gap: 4px;
+		font-size: 1.8rem;
+		font-weight: 600;
+		padding: 5px;
+		cursor: pointer;
+	}
+
+	.record__item__style .list__action .delete {
+		color: #ff3b30;
+	}
+
+	.record__item__style .list__action .edit {
+		color: #1376f8;
+	}
+
+	.record__item__style .list__action .info {
+		color: #ffb54a;
+	}
+
+.btn-wrapper .add-record-btn.disabled-btn {
+	background-color: #cccccc !important;
+	cursor: not-allowed;
+}

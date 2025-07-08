@@ -1,0 +1,286 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 0;
+}
+
+.medical__bill__container {
+	color: #3e3e3e;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	padding: 50px 0;
+	background: #e8f2f7;
+	font-family: "Poppins", sans-serif;
+}
+
+/* ================ COMMON CORNER ================ */
+.corner::before,
+.corner::after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	width: 40px;
+	height: 40px;
+	background-color: #e8f2f7;
+	border-radius: 50%;
+}
+
+/* ================ HEADER ================ */
+.medical__bill {
+	position: relative;
+	max-width: 360px;
+	margin: auto;
+	padding: 3px 20px;
+	background: #fff;
+}
+
+.medical__bill::before {
+	left: -20px;
+}
+
+.medical__bill::after {
+	right: -20px;
+}
+
+.medicall__bill__header {
+	padding: 20px 0;
+	border-top: 2px dashed #f0f2f5;
+}
+
+.medicall__bill__header .title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.medicall__bill__header .clinic__name {
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.medicall__bill__header .clinic__address {
+	font-size: 13px;
+	font-weight: 300;
+	color: var(--primary-color);
+}
+
+.medicall__bill__header .status {
+	font-size: 13px;
+	padding: 10px 25px;
+	border-radius: 20px;
+	line-height: 1;
+	background-color: #3bb54a;
+	color: #fff;
+	margin: 20px;
+}
+
+.medicall__bill__header .sub__title {
+	font-size: 1.4rem;
+	margin-bottom: 10px;
+}
+
+/* ================ TIME ================ */
+.medicall__bill__time {
+	position: relative;
+	padding: 20px 0;
+	border-top: 2px dashed #f0f2f5;
+}
+
+.medicall__bill__time::before {
+	left: -40px;
+}
+
+.medicall__bill__time::after {
+	right: -40px;
+}
+
+.medicall__bill__time .content {
+	margin-bottom: 24px;
+}
+
+.medicall__bill__time .sub__title {
+	color: #1376f8;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.medicall__bill__time .time {
+	font-size: 3.2rem;
+	color: #1376f8;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.medicall__bill__time ul li {
+	margin-bottom: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.3rem;
+	text-align: left;
+}
+
+.medicall__bill__time .date__time {
+	color: #1abc9c;
+}
+
+/* ================ PATIENT INFO ================ */
+.medicall__bill__patient__info {
+	position: relative;
+	padding: 20px 0;
+	border-top: 2px dashed #f0f2f5;
+}
+
+.medicall__bill__patient__info::before {
+	left: -40px;
+}
+
+.medicall__bill__patient__info::after {
+	right: -40px;
+}
+
+.medicall__bill__patient__info ul li {
+	margin-bottom: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.3rem;
+	text-align: left;
+}
+
+/* ================ COPYRIGHT ================ */
+.medicall__bill__copyright {
+	position: relative;
+	padding: 20px 0 0;
+	border-top: 2px dashed #f0f2f5;
+}
+
+.medicall__bill__copyright::before {
+	left: -40px;
+}
+
+.medicall__bill__copyright::after {
+	right: -40px;
+}
+
+.medicall__bill__copyright .attention {
+	color: #df0000;
+	font-style: italic;
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.medicall__bill__copyright .notification {
+	font-size: 1.4rem;
+	margin-bottom: 10px;
+	font-style: italic;
+	color: var(--primary-color);
+}
+
+.medicall__bill__copyright .copyright {
+	font-size: 1.3rem;
+}
+
+.medicall__bill__copyright .copyright .copyright__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.medicall__bill__copyright .intro {
+	border-bottom: 2px dashed #f0f2f5;
+	position: relative;
+	margin-top: 5px;
+	padding-bottom: 30px;
+	font-size: 1rem;
+}
+
+.medicall__bill__copyright .intro::before,
+.medicall__bill__copyright .intro::after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	width: 40px;
+	height: 40px;
+	background-color: #e8f2f7;
+	border-radius: 50%;
+}
+
+.medicall__bill__copyright .intro::before {
+	left: -40px;
+}
+
+.medicall__bill__copyright .intro::after {
+	right: -40px;
+}
+
+/* ========= NAVIGATION ========= */
+.home__page__navigate {
+	display: block;
+	text-align: center;
+	min-width: 360px;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 50px;
+	background: #1376f8;
+	color: #fff;
+	transition: all 0.25s ease-in;
+}
+
+.home__page__navigate:hover {
+	background: #3b6cd9;
+}
+
+.medical__hítory__navigate {
+	display: block;
+	text-align: center;
+	min-width: 360px;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 50px;
+	background: #fff;
+	color: #1376f8;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.25s ease-in;
+	border: 1px solid #d9d9d9;
+}
+
+.medical__hítory__navigate:hover {
+	border-color: #1376f8;
+}

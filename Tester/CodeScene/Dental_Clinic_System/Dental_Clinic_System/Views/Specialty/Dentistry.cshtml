@@ -1,0 +1,108 @@
+﻿@model IEnumerable<Dental_Clinic_System.Models.Data.Dentist>
+@{
+	ViewData["Dentist"] = "Dentistry";
+}
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dental Care | login</title>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+		  rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="~/assets/css/header.css" />
+	<link rel="stylesheet" href="~/assets/css/footer.css" />
+	<link rel="stylesheet" href="~/assets/css/dentistry.css" />
+</head>
+
+<div class="dentistry">
+	<h1 class="dentistry__title text-center fw-bold">@Model.FirstOrDefault()?.DentistSpecialties.FirstOrDefault()?.Specialty.Name</h1>
+	<div class="text-center">
+		<img src="~/assets/images/separate.png" alt="" />
+	</div>
+	<h2 class="dentistry__subtitle text-center">Mô tả</h2>
+	<div class="text-center">
+		<img src="~/assets/images/separate-02.png" alt="" />
+	</div>
+	<p class="dentistry__desc">
+		@Model.FirstOrDefault()?.DentistSpecialties.FirstOrDefault()?.Specialty.Description
+	</p>
+	<div class="dentistry__wrapper">
+		<div class="d-flex justify-content-between">
+			<h2 class="dentistry__dentist">Nha Sĩ uy tín</h2>
+			<div class="dentistry__sort">
+				<span>Sort by: </span>
+				<select name="location" id="">
+					<option value="all">Toàn quốc</option>
+					<option value="hcm">Hồ Chí Minh</option>
+					<option value="hn">Hà Nội</option>
+				</select>
+			</div>
+		</div>
+		<img src="~/assets/images/separate-01.png" alt="" />
+
+		@foreach (var dentistry in Model)
+		{
+			<div class="dentistry__info">
+				<div class="dentistry__info__card d-flex">
+					<div class="dentistry__info__card--dentist">
+						<div class="dentistry__info__card--detist__profile d-flex">
+							<div class="view__more">
+								<img src="@dentistry.Account.Image" alt="" />
+								<a asp-controller="specialty" asp-action="showdentist" asp-route-specialtyID="@ViewBag.specialtyID" asp-route-dentistID="@dentistry.ID" class="view__more__profile">Xem thêm</a>
+							</div>
+							<div class="details">
+								<p class="name">Bác sĩ Chuyên khoa | @dentistry.Account.LastName @dentistry.Account.FirstName</p>
+								<div class="desc">
+									@Html.Raw(dentistry.Description)
+								</div>
+								<p class="location">
+									<i class="fa-solid fa-location-dot"></i><span> @dentistry.Clinic.Province</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="separate"></div>
+					<div class="dentistry__info__card--schedule">
+
+						@*========================THỬ NGHIỆM=============================*@
+							<select name="calendar" id="">
+							@foreach (var schedule in dentistry.Schedules)
+							{
+								<option value="">@schedule.Date</option>
+							}
+							</select>
+							<p class="sub-title">
+								<i class="fa-regular fa-calendar"></i>Đặt lịch khám
+							</p>
+						
+							<div class="card--schedule__wrapper">
+							@foreach (var schedule in dentistry.Schedules)
+							{
+								<a asp-controller="patientrecord" asp-action="patientrecord" asp-route-specialtyID="@ViewBag.specialtyID" asp-route-dentistID="@dentistry.ID" asp-route-clinicID="@dentistry.Clinic.ID" asp-route-scheduleID="@schedule.ID">@schedule.TimeSlot.StartTime - @schedule.TimeSlot.EndTime</a>
+							}
+							</div>
+						
+						<p class="note">
+							Chọn <i class="fa-regular fa-hand-point-up"></i> và đặt.
+							&#10088;Phí đặt lịch ...&#10089;
+						</p>
+						<hr />
+						<p class="clinic__address">ĐỊA CHỈ KHÁM</p>
+						<p class="clinic__name">@dentistry.Clinic.Name</p>
+						<p class="clinic__address__detail">
+							@dentistry.Clinic.Address
+						</p>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+</div>

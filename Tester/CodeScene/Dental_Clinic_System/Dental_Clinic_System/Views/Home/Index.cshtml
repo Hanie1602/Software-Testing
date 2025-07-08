@@ -1,0 +1,238 @@
+﻿@using Dental_Clinic_System.Helper
+@using Dental_Clinic_System.Models.Data
+@{
+    // ViewData["Title"] = "Home Page";
+    // Layout = null;
+    var specialties = ViewBag.Specialities as List<Specialty>;
+    var clinics = ViewBag.Clinics as List<Clinic>;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Care</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    @* <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+          rel="stylesheet" /> *@
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="~/assets/css/styles.css" />
+</head>
+<body>
+    @* @Html.Partial("_Header") *@
+    <main>
+        <!-- HERO -->
+        <div class="hero">
+            <div class="hero__info">
+                <h1 class="hero__info--title">
+                    NỀN TẢNG ĐẶT LỊCH PHÒNG KHÁM NHA KHOA
+                </h1>
+                <img src="~/assets/images/separate.png"
+                     alt="separate"
+                     class="separate" />
+                <p class="hero__info--desc">
+                    Nền tảng đặt lịch phòng khám nha khoa uy tín và hợp pháp. Chúng tôi
+                    kết nối bạn với các phòng khám đạt chuẩn và bác sĩ giàu kinh nghiệm,
+                    đảm bảo chất lượng chăm sóc tốt nhất. Đặt lịch trực tuyến dễ dàng,
+                    tiết kiệm thời gian với thông tin phòng khám minh bạch và đánh giá
+                    từ bệnh nhân. Hãy để chúng tôi giúp bạn bảo vệ nụ cười của mình!
+                </p>
+                <div class="hero__cta">
+                    <a asp-controller="clinic" asp-action="index" class="btn"> Đặt lịch khám </a>
+                    <div class="hero__call">
+                        <a to="/#!">
+                            <img src="~/assets/images/Calling.png" alt="call" />
+                        </a>
+                        <p>
+                            <strong>Nha khoa khẩn cấp 24H</strong>
+                            <br />
+                            0900-78601
+                        </p>
+                    </div>
+                </div>
+                @* <div class="hero__search">
+                    <div class="hero__search__input">
+                        <img src="~/assets/images/search.png" alt="" />
+                        <input type="text" placeholder="Nhập từ khóa để tìm kiếm" />
+                    </div>
+                    <a to="/#!" class="hero__search__btn"> Tìm kiếm </a>
+                </div> *@
+            </div>
+            <div class="hero__image">
+                <img src="~/assets/images/home-image.png" alt="" class="home-image" />
+                <img src="~/assets/images/big-circle.png" alt="" class="big-circle" />
+                <img src="~/assets/images/small-circle.png"
+                     alt=""
+                     class="small-circle" />
+                <img src="~/assets/images/teeth1.png" alt="" class="teeth1-01" />
+                <img src="~/assets/images/teeth1.png" alt="" class="teeth1-02" />
+                <img src="~/assets/images/teeth2.png" alt="" class="teeth2-01" />
+                <img src="~/assets/images/teeth2.png" alt="" class="teeth2-02" />
+                <img src="~/assets/images/teeth3.png" alt="" class="teeth3" />
+            </div>
+        </div>
+
+        <!-- SPECIALTY -->
+        <div class="special">
+            <h2 class="special__title">CHUYÊN KHOA</h2>
+            <div class="special__separate">
+                <img src="~/assets/images/separate-01.png" alt="" />
+            </div>
+            <div class="special__container">
+                <div class="special__container__wrapper swiper">
+                    <div class="special__content">
+                        <div class="special__cards swiper-wrapper">
+                            @foreach (var specialty in specialties)
+                            {
+
+                                <div class="special__cards__card swiper-slide" style="height: initial">
+                                    <a asp-controller="specialty" asp-action="choosedentistry" asp-route-specialtyID="@specialty.ID">
+                                        <img src="@specialty.Image" alt="@specialty.Name" />
+                                        <h3 class="title">@specialty.Name</h3>
+                                    </a>
+                                </div>
+
+                            }
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CLINIC -->
+        <div class="clinic">
+            <h2 class="clinic__title">PHÒNG KHÁM</h2>
+            <div class="clinic__separate">
+                <img src="~/assets/images/separate-01.png" alt="" />
+            </div>
+            <div class="clinic-container">
+                <div class="clinic-container__wrapper swiper mySwiper">
+                    <div class="clinic__content">
+                        <div class="clinic__wrapper swiper-wrapper">
+                            @foreach (var clinic in clinics)
+                            {
+                                <div class="clinic__wrapper__card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="@clinic.Image"
+                                                 alt="@clinic.Name"
+                                                 class="card-img" />
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">@clinic.Name</h2>
+                                        <p class="work-place">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            @clinic.ProvinceName
+                                        </p>
+                                        <a asp-controller="clinic" asp-action="ClinicDetail" asp-route-clinicID="@clinic.ID" class="button">Xem chi tiết</a>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWS -->
+        <div class="news">
+            <div class="news__wrapper">
+                <div class="d-flex justify-content-between">
+                    <h2 class="news__title">News & Articles</h2>
+                    <button class="news__view__all">Tất cả</button>
+                </div>
+                <div class="news__separate">
+                    <img src="~/assets/images/separate-01.png" alt="" />
+                </div>
+
+                <div class="news__cards d-flex flex-row">
+                    <div class="news__cards_item">
+                        <a href="#!"><img src="~/assets/images/news1.png" alt="" /></a>
+                        <p class="news__cards_item--title">
+                            <a href="#!">
+                                Ưu đãi 30% chi phí trồng răng Implant tại Nha khoa Trồng răng
+                                Sài Gòn
+                            </a>
+                        </p>
+                        <p class="news__cards_item--desc">
+                            Nha khoa Trồng răng Sài Gòn là địa chỉ trồng răng Implant tin
+                            cậy tại TPHCM. Nha khoa hiện có chương trình ưu đãi hấp dẫn cho
+                            khách hàng có nhu cầu trồng răng.
+                        </p>
+                    </div>
+                    <div class="news__cards_item">
+                        <img src="~/assets/images/news2.png" alt="" />
+                        <p class="news__cards_item--title">
+                            <a href="#!">
+                                Ưu đãi 30% chi phí trồng răng Implant tại Nha khoa Trồng răng
+                                Sài Gòn
+                            </a>
+                        </p>
+                        <p class="news__cards_item--desc">
+                            Nha khoa Trồng răng Sài Gòn là địa chỉ trồng răng Implant tin
+                            cậy tại TPHCM. Nha khoa hiện có chương trình ưu đãi hấp dẫn cho
+                            khách hàng có nhu cầu trồng răng.
+                        </p>
+                    </div>
+                    <div class="news__cards_item">
+                        <img src="~/assets/images/news3.png" alt="" />
+                        <p class="news__cards_item--title">
+                            <a href="#!">
+                                Ưu đãi 30% chi phí trồng răng Implant tại Nha khoa Trồng răng
+                                Sài Gòn
+                            </a>
+                        </p>
+                        <p class="news__cards_item--desc">
+                            Nha khoa Trồng răng Sài Gòn là địa chỉ trồng răng Implant tin
+                            cậy tại TPHCM. Nha khoa hiện có chương trình ưu đãi hấp dẫn cho
+                            khách hàng có nhu cầu trồng răng..
+                        </p>
+                    </div>
+                    <div class="news__cards_item">
+                        <img src="~/assets/images/news4.png" alt="" />
+                        <p class="news__cards_item--title">
+                            <a href="#!">
+                                Ưu đãi 30% chi phí trồng răng Implant tại Nha khoa Trồng răng
+                                Sài Gòn
+                            </a>
+                        </p>
+                        <p class="news__cards_item--desc">
+                            Nha khoa Trồng răng Sài Gòn là địa chỉ trồng răng Implant tin
+                            cậy tại TPHCM. Nha khoa hiện có chương trình ưu đãi hấp dẫn cho
+                            khách hàng có nhu cầu trồng răng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @* @Html.Partial("_Footer") *@
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/53f42380b0.js"
+            crossorigin="anonymous"></script>
+    <script src="~/assets/js/swiper-bundle.js"></script>
+    <script src="~/assets/js/myswiper.js"></script>
+</body>
+</html>
+
