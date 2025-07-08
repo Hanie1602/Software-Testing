@@ -1,0 +1,286 @@
+﻿@model Dental_Clinic_System.Models.Data.Clinic
+
+@{
+    ViewData["Title"] = "Edit"; 
+    Layout = "_LayoutManager";
+}
+@section Styles {
+    <style>
+        .sidebar .nav-item a.Quan_ly_phong_kham {
+            color: #fff;
+            background: #4880ff;
+        }
+
+        .manager__management__header {
+            justify-content: space-around;
+        }
+
+        .modal-footer {
+            gap: 5px;
+            padding: 0 10px;
+        }
+
+        .manager__management__clinic {
+            width: 90%;
+            margin: 0 auto;
+            --mdb-modal-box-shadow: 0 6px 45px -9px rgba(var(--mdb-box-shadow-color-rgb), 0.21), 0 30px 60px -6px rgba(var(--mdb-box-shadow-color-rgb), 0.12);
+            border: 0;
+            box-shadow: var(--mdb-modal-box-shadow);
+            padding: 24px 60px !important; /* Reduced padding for top/bottom and left/right */
+            border-radius: 10px; /* Adjust this value to change the roundness of the corners */
+        }
+    </style>
+}
+
+<form asp-action="Edit" class="manager__management__clinic row" id="uploadForm">
+        <!--header -->
+        <div class="manager__management__header">
+            <div class="title">Thông tin phòng khám</div>
+        </div>
+        <br />
+        <!--body -->
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="ID" />
+
+        <div class="col-md-6">
+            <label>Tên phòng khám</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Cơ sở</label>
+            <input asp-for="Basis" class="form-control" />
+            <span asp-validation-for="Basis" class="text-danger"></span>
+        </div>
+        <!-- UPLOAD -->
+        <div class="col-md-12 image-file">
+            <label for="imageInput">Hình ảnh</label>
+            <div class="preview-image col-md-12">
+                <input class="form-control"
+                       type="file"
+                       name="imageInput"
+                       id="imageInput" />
+                <input type="hidden" id="imageUrl" asp-for="Image" />
+            </div>
+            <div class="container__image__preview">
+                <div class="style__image__preview row">
+                    
+                    <div class="final-image col-md-6">
+                        <h3 class="title">Hiện ảnh hiện tại</h3>
+                        <img src="@Model.Image"
+                             alt=""
+                             id="imageDisplay"
+                             style="
+												display: block;
+												max-width: 100%;
+												text-align: center;
+												border-radius: 5px;
+                                            " />
+                    </div>
+                    <div class="preview-image col-md-6">
+                        <h3 class="title">Hình ảnh được chọn</h3>
+                        <img src=""
+                             alt=""
+                             id="imagePreview"
+                             style="
+												display: block;
+												max-width: 100%;
+												text-align: center;
+												border-radius: 5px;
+                                            " />
+                    </div>
+                    
+                </div>
+            </div>
+            <br />
+            
+            
+        </div>
+        <div class="col-md-6">
+            <label for="province">Tỉnh / Thành phố </label>
+            <select id="tinh" title="Chọn Tỉnh Thành" asp-for="Province" class="form-control">
+                <option value="0">Tỉnh Thành</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="district">Quận / Huyện </label>
+            <select id="quan" title="Chọn Quận Huyện" asp-for="District" class="form-control">
+                <option value="0">Quận Huyện</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="ward">Phường / Xã </label>
+            <select id="phuong" title="Chọn Phường Xã" asp-for="Ward" class="form-control">
+                <option value="0">Phường Xã</option>
+            </select>
+        </div>
+
+        <div class="col-md-12">
+            <label>Địa chỉ</label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Số điện thoại liên hệ</label>
+            <input asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="col-md-12">
+            <label>Mô tả phòng khám</label>
+
+            <div id="container">
+                <div id="editor">
+                    <textarea asp-for="Description" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <input asp-for="ClinicStatus" class="form-control" type="hidden" />
+        </div>
+        <div class="col-md-6">
+            <input asp-for="ManagerID" class="form-control" type="hidden" />
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn">Lưu</button>
+            <button type="reset" class="btn">Đặt lại</button>
+        </div>
+    </form>
+<br />
+   
+
+
+@section Scripts {
+    @* Đưa ảnh lên firebase *@
+    
+    <script src="~/assets/js/upload-image-firebase.js" type="module"></script>
+
+    @* Dùng editor *@
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/super-build/ckeditor.js"></script>
+    <script src="~/assets/js/richtexteditor2.js"></script>
+
+    @* Call API from https://esgoo.net to get data*@
+    <script src="https://esgoo.net/scripts/jquery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var savedProvince = '@Model.Province';
+            var savedDistrict = '@Model.District';
+            var savedWard = '@Model.Ward';
+
+            // Function to format ID with leading zeros based on the length requirement
+            function formatId(id, length) {
+                return id.toString().padStart(length, '0');
+            }
+
+            var savedProvinceId = savedProvince ? formatId(parseInt(savedProvince, 10), 2) : null;
+            var savedDistrictId = savedDistrict ? formatId(parseInt(savedDistrict, 10), 3) : null;
+            var savedWardId = savedWard ? formatId(parseInt(savedWard, 10), 5) : null;
+
+            function loadWards(idquan, callback) {
+                var formattedId = formatId(idquan, 3);
+                $.getJSON('https://esgoo.net/api-tinhthanh/3/' + formattedId + '.htm', function (data_phuong) {
+                    if (data_phuong.error == 0) {
+                        $("#phuong").html('<option value="0">Phường Xã</option>');
+                        $.each(data_phuong.data, function (key_phuong, val_phuong) {
+                            var selected = (val_phuong.id == savedWardId) ? ' selected' : '';
+                            $("#phuong").append('<option value="' + val_phuong.id + '" data-fullname="' + val_phuong.full_name + '"' + selected + '>' + val_phuong.full_name + '</option>');
+                        });
+
+                        if (callback) {
+                            callback();
+                        }
+                    }
+                });
+            }
+
+            function loadDistricts(idtinh, callback) {
+                var formattedId = formatId(idtinh, 2);
+                $.getJSON('https://esgoo.net/api-tinhthanh/2/' + formattedId + '.htm', function (data_quan) {
+                    if (data_quan.error == 0) {
+                        $("#quan").html('<option value="0">Quận Huyện</option>');
+                        $("#phuong").html('<option value="0">Phường Xã</option>');
+                        $.each(data_quan.data, function (key_quan, val_quan) {
+                            var selected = (val_quan.id == savedDistrictId) ? ' selected' : '';
+                            $("#quan").append('<option value="' + val_quan.id + '" data-fullname="' + val_quan.full_name + '"' + selected + '>' + val_quan.full_name + '</option>');
+                        });
+
+                        if (savedDistrictId) {
+                            loadWards(savedDistrictId, callback);
+                        } else if (callback) {
+                            callback();
+                        }
+                    }
+                });
+            }
+
+            function loadProvinces(callback) {
+                $.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+                    if (data_tinh.error == 0) {
+                        $("#tinh").html('<option value="0">Tỉnh Thành</option>');
+                        $.each(data_tinh.data, function (key_tinh, val_tinh) {
+                            var selected = (val_tinh.id == savedProvinceId) ? ' selected' : '';
+                            $("#tinh").append('<option value="' + val_tinh.id + '" data-fullname="' + val_tinh.full_name + '"' + selected + '>' + val_tinh.full_name + '</option>');
+                        });
+
+                        if (savedProvinceId) {
+                            loadDistricts(savedProvinceId, callback);
+                        } else if (callback) {
+                            callback();
+                        }
+                    }
+                });
+            }
+
+            function setInitialValues() {
+                if (savedProvinceId) {
+                    $("#tinh").val(savedProvinceId);
+                    $("#tinh").trigger('change');
+                }
+                if (savedDistrictId) {
+                    $("#quan").val(savedDistrictId);
+                    $("#quan").trigger('change');
+                }
+                if (savedWardId) {
+                    $("#phuong").val(savedWardId);
+                }
+            }
+
+            loadProvinces(setInitialValues);
+
+            $("#tinh").change(function (e) {
+                var selectedOption = $(this).find('option:selected');
+                var idtinh = selectedOption.val();
+                var fullnameTinh = selectedOption.data('fullname');
+                $('#Province').val(fullnameTinh);
+
+                // Load districts based on selected province
+                loadDistricts(idtinh);
+            });
+
+            $("#quan").change(function (e) {
+                var selectedOption = $(this).find('option:selected');
+                var idquan = selectedOption.val();
+                var fullnameQuan = selectedOption.data('fullname');
+                $('#District').val(fullnameQuan);
+
+                // Load wards based on selected district
+                loadWards(idquan);
+            });
+
+            $("#phuong").change(function (e) {
+                var selectedOption = $(this).find('option:selected');
+                var fullnamePhuong = selectedOption.data('fullname');
+                $('#Ward').val(fullnamePhuong);
+            });
+        });
+    </script>
+
+}
+
+

@@ -1,0 +1,202 @@
+﻿@model IEnumerable<Dental_Clinic_System.Models.Data.Appointment>
+@using Dental_Clinic_System.Helper
+@{
+	ViewData["Title"] = "Quản Lý Đặt Khám";
+	string statusColorClass = "status";
+}
+
+<head>
+	<link rel="stylesheet" href="~/assets/css/sidebar.css" />
+	<link rel="stylesheet" href="~/assets/css/headerAd.css" />
+	<link rel="stylesheet" href="~/assets/css/dentistpatients.css" />
+	<link rel="stylesheet" href="~/assets/css/specialtydash.css" />
+</head>
+
+<div class="patients__management" style="padding: 40px">
+	<h1 style="text-align:center;"><strong>Quản Lý Đơn Khám Bệnh Nhân</strong></h1>
+	<div class="text-center"><img style="vertical-align: middle;" src="/assets/images/separate-01.png" alt="Sepherate image"></div>
+	<table class="table table-striped mt-5" style="font-size: 2rem;">
+		<thead>
+			<tr>
+				<th>STT</th>
+				<th>Bệnh nhân</th>
+				<th>Chuyên Khoa</th>
+				<th>Ngày hẹn</th>
+				<th>Giờ hẹn</th>
+				<th>Trạng thái</th>
+				<th>Ngày tạo</th>
+				<th>Hành động</th>
+			</tr>
+		</thead>
+		<tbody id="myTableBody">
+			@foreach (var appointment in Model)
+			{
+				<tr>
+					<td>@appointment.ID</td>
+					<td>@appointment.PatientRecords.FullName</td>
+					<td>@appointment.Specialty.Name</td>
+					<td>@appointment.Schedule.Date.ToString("dd/MM/yyyy")</td>
+					<td>@appointment.Schedule.TimeSlot.StartTime - @appointment.Schedule.TimeSlot.EndTime</td>
+					@switch (@appointment.AppointmentStatus)
+					{
+						@case "Đã Chấp Nhận": statusColorClass = "status approved"; break;
+						@case "Chờ Xác Nhận": statusColorClass = "status pending"; break;
+						@case "Đã Khám":	statusColorClass = "status complete"; break;
+						@case "Đã Hủy": statusColorClass = "status deny"; break;
+					}
+					<td><p class="@statusColorClass">@appointment.AppointmentStatus</p></td>
+					<td>2024-05-21</td>
+					<td>
+						@if(appointment.AppointmentStatus == "Chờ Xác Nhận")
+						{
+							<a style="color:blue; text-decoration:none;" asp-controller="dentistdetail" asp-action="changestatusappointment" asp-route-appointmentID="@appointment.ID" asp-route-statusNumber="1">Xác Nhận</a>
+							<a style="color:red; text-decoration:none;" asp-controller="dentistdetail" asp-action="cancelappointment" asp-route-appointmentID="@appointment.ID">Hủy</a>
+						}
+						else if (appointment.AppointmentStatus == "Đã Chấp Nhận")
+						{
+							<a style="color:green; text-decoration:none;" asp-controller="dentistdetail" asp-action="changestatusappointment" asp-route-appointmentID="@appointment.ID" asp-route-statusNumber="2">Đã Khám</a>
+							<a style="color:red; text-decoration:none;" asp-controller="dentistdetail" asp-action="cancelappointment" asp-route-appointmentID="@appointment.ID">Hủy</a>
+						}
+						else if (appointment.AppointmentStatus == "Đã Khám")
+						{						
+						<button type="button" class="btn show-popup" data-appointment-id="@appointment.ID"
+								data-patient-name="@appointment.PatientRecords.FullName"
+								data-patient-gender="@appointment.PatientRecords.Gender"
+								data-patient-phone="@appointment.PatientRecords.PhoneNumber"
+								data-patient-email="@appointment.PatientRecords.EmailReceiver"
+								data-patient-province="@await LocalAPIReverseString.GetProvinceNameById(appointment.PatientRecords.Province)"
+								data-patient-district="@await LocalAPIReverseString.GetDistrictNameById(appointment.PatientRecords.Province, appointment.PatientRecords.District)"
+								data-patient-ward="@await LocalAPIReverseString.GetWardNameById(appointment.PatientRecords.District, appointment.PatientRecords.Ward)"
+								data-patient-address="@appointment.PatientRecords.Address"
+								data-appointment-price="@Math.Round(appointment.TotalPrice)"
+								data-appointment-status="@appointment.AppointmentStatus">
+							<p style="font-size:20px; color:chocolate; text-decoration:underline;">Chi Tiết Đơn</p>
+						</button>
+						}
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+	<ul class="pagination" id="pagination"></ul>
+</div>
+
+<!-- Dark overlay -->
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<!-- Hidden block to display as a popup -->
+<div class="modal-content" id="popupBlock" style="font-size: 20px;">
+	<h5 style="text-align:center;">Thông tin bệnh nhân đặt khám</h5>
+		<input type="hidden" id="appointmentID" name="AppointmentID" />
+		<div class="d-flex justify-content-around">
+			<div class="mb-3 w-75" style="margin-right:1%">
+				<label for="patientName" class="form-label">Tên Bệnh Nhân</label>
+				<span id="patientName" class="form-control bg-light bg-gradient"></span>
+			</div>
+			<div class="mb-3 w-25">
+				<label for="patientGender" class="form-label">Giới Tính</label>
+				<span id="patientGender" class="form-control bg-light bg-gradient"></span>
+			</div>
+		</div>
+		<div class="mb-3">
+			<label for="patientPhone" class="form-label">Số điện thoại</label>
+			<span id="patientPhone" class="form-control bg-light bg-gradient"></span>
+		</div>
+		<div class="mb-3">
+			<label for="patientEmail" class="form-label">Email</label>
+			<span id="patientEmail" class="form-control bg-light bg-gradient"></span>
+		</div>
+		<div class="d-flex justify-content-between">
+			<div class="mb-3 w-25" style=" margin-right:2%">
+				<label for="patientProvince" class="form-label">Tỉnh Thành</label>
+				<span id="patientProvince" class="form-control bg-light bg-gradient"></span>
+			</div>
+			<div class="mb-3 w-25" style="margin-right:2%">
+				<label for="patientDistrict" class="form-label">Quận/Huyện</label>
+				<span id="patientDistrict" class="form-control bg-light bg-gradient"></span>
+			</div>
+			<div class="mb-3 w-25" style=" margin-right:2%">
+				<label for="patientWard" class="form-label">Phường/Xã</label>
+				<span id="patientWard" class="form-control bg-light bg-gradient"></span>
+			</div>
+		</div>
+		<div class="mb-3">
+			<label for="patientAddress" class="form-label">Địa Chỉ</label>
+			<span id="patientAddress" class="form-control bg-light bg-gradient"></span>
+		</div>
+		<div class="mb-3">
+			<label for="appointmentPrice" class="form-label">Giá Khám</label>
+			<span id="appointmentPrice" class="form-control bg-light bg-gradient"></span>
+		</div>
+		<div class="mb-3">
+			<label for="appointmentStatus" class="form-label">Trạng Thái</label>
+			<span class="form-control bg-light bg-gradient">Đã Khám + Hoàn Tiền</span>
+@* 			<select class="form-control" id="appointmentStatus" name="AppointmentStatus">
+				<option value="Chờ Xác Nhận">Chờ Xác Nhận</option>
+				<option value="Đã Chấp Nhận">Đã Chấp Nhận</option>
+				<option value="Đã Khám">Đã Khám</option>
+				<option value="Đã Hủy">Đã Hủy</option>
+			</select> *@
+		</div>
+		<div style="text-align: end;">
+		<button type="submit" class="btn btn-warning">Xuất PDF</button>
+			<button type="button" class="btn btn-secondary" id="closePopup">Đóng</button>
+		</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://kit.fontawesome.com/53f42380b0.js"
+		crossorigin="anonymous"></script>
+@* <script src="assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
+<script src="assets/js/richtexteditor.js"></script>
+<script type="text/javascript" src="/richtexteditor/rte.js"></script>
+<script type="text/javascript"
+        src="/richtexteditor/plugins/all_plugins.js"></script> *@
+<script src="~/assets/js/pagination.js"></script>
+
+@*Javascript XỬ LÝ MODAL*@
+<script>
+	document.querySelectorAll('.show-popup').forEach(button => {
+		button.addEventListener('click', (e) => {
+			const appointmentID = e.currentTarget.getAttribute('data-appointment-id');
+			const patientName = e.currentTarget.getAttribute('data-patient-name');
+			const patientGender = e.currentTarget.getAttribute('data-patient-gender');
+			const patientPhone = e.currentTarget.getAttribute('data-patient-phone');
+			const patientEmail = e.currentTarget.getAttribute('data-patient-email');
+			const patientProvince = e.currentTarget.getAttribute('data-patient-province');
+			const patientDistrict = e.currentTarget.getAttribute('data-patient-district');
+			const patientWard = e.currentTarget.getAttribute('data-patient-ward');
+			const patientAddress = e.currentTarget.getAttribute('data-patient-address');
+			const appointmentPrice = e.currentTarget.getAttribute('data-appointment-price');
+
+			document.getElementById('appointmentID').value = appointmentID;
+			document.getElementById('patientName').textContent = patientName;
+			document.getElementById('patientGender').textContent = patientGender;
+			document.getElementById('patientPhone').textContent = patientPhone;
+			document.getElementById('patientEmail').textContent = patientEmail;
+			document.getElementById('patientProvince').textContent = patientProvince;
+			document.getElementById('patientDistrict').textContent = patientDistrict;
+			document.getElementById('patientWard').textContent = patientWard;
+			document.getElementById('patientAddress').textContent = patientAddress;
+			document.getElementById('appointmentPrice').textContent = appointmentPrice;
+
+			document.getElementById('popupBlock').style.display = 'block';
+			document.getElementById('modalOverlay').style.display = 'block';
+		});
+	});
+
+	document.getElementById('closePopup').addEventListener('click', () => {
+		document.getElementById('popupBlock').style.display = 'none';
+		document.getElementById('modalOverlay').style.display = 'none';
+	});
+
+	document.getElementById('modalOverlay').addEventListener('click', () => {
+		document.getElementById('popupBlock').style.display = 'none';
+		document.getElementById('modalOverlay').style.display = 'none';
+	});
+</script>

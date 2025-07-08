@@ -1,0 +1,304 @@
+﻿@model Dental_Clinic_System.Areas.Admin.ViewModels.AddClincVM
+
+@{
+	ViewData["Title"] = "EditClinic";
+	Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+	.text-New-Clinic {
+		font-size: calc(1.375rem + 1.5vw);
+		text-align: center;
+	}
+
+	.sidebar .nav-item a.Quan_ly_phong_kham {
+		color: #fff;
+		background: #4880ff;
+	}
+
+	.modal-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.form-modal-styles {
+		width: 817px;
+		margin: auto;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		background-color: #fff;
+		padding: 20px;
+	}
+
+	.modal-content {
+		padding: 20px;
+	}
+
+	.modal-body {
+		margin-top: 20px;
+	}
+
+	.text-New-Clinic {
+		font-size: calc(1.375rem + 1.5vw);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.modal-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+</style>
+
+<!--SHOW THÔNG TIN CHI TIẾT PHÒNG KHÁM VÀ CHỈNH SỬA-->
+<div class="modal-header">
+	<h1 class="modal-title fs-10 text-New-Clinic" id="mainTitle">
+		Chỉnh sửa phòng khám
+	</h1>
+</div>
+
+<div class="modal-dialog modal-dialog-centered form-modal-styles">
+
+	<form id="uploadForm" action="~/Admin/ManagerClinic/EditClinic" method="post" class="modal-content">
+		<input type="hidden" asp-for="ID" />
+		<input type="hidden" asp-for="ClinicStatus" value="Hoạt động" />
+
+		<div class="modal-body row">
+			@* HIỂN THỊ LỖI *@
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+			<div class="clinic-name col-md-6">
+				<label for="name">Tên phòng khám</label>
+				<input type="text" name="Name" id="name" class="form-control" value="@Model.Name" />
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+			<div class="clinic-tel col-md-6">
+				<label for="basis">Cơ sở</label>
+				<input type="text" name="Basis" id="basis" class="form-control" value="@Model.Basis" />
+			</div>
+			<div class="clinic-manager col-md-6">
+				<label for="manager">Người quản lý phòng khám</label>
+				<select asp-for="ManagerID" asp-items="Model.UnassignedManagers" class="form-control">
+					<option value="">-- Chọn quản lý phòng khám --</option>
+				</select>
+			</div>
+			<div class="clinic-tel col-md-6">
+				<label for="tel">Số điện thoại</label>
+				<input type="tel" name="PhoneNumber" id="tel" class="form-control" value="@Model.PhoneNumber" />
+				<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+			</div>
+			<div class="clinic-mail col-md-12">
+				<label for="mail">Email</label>
+				<input type="email" name="Email" id="mail" class="form-control" value="@Model.Email" />
+				<span asp-validation-for="Email" class="text-danger"></span>
+			</div>
+			<div class="clinic-address col-md-12">
+				<label for="addrSpecialty">Địa chỉ phòng khám</label>
+				<input type="text" name="Address" id="addrSpecialty" class="form-control" value="@Model.Address" />
+				<span asp-validation-for="Address" class="text-danger"></span>
+			</div>
+			<div class="clinic-province col-md-4">
+				<label for="province">Tỉnh / Thành phố</label>
+				<select id="province" title="Chọn Tỉnh Thành" name="Province" class="form-control">
+					<option value="0">-- Chọn Tỉnh Thành --</option>
+				</select>
+			</div>
+			<div class="clinic-district col-md-4">
+				<label for="district">Quận / Huyện</label>
+				<select id="district" title="Chọn Quận Huyện" name="District" class="form-control">
+					<option value="0">-- Chọn Quận Huyện --</option>
+				</select>
+			</div>
+			<div class="clinic-ward col-md-4">
+				<label for="ward">Phường / Xã</label>
+				<select id="ward" title="Chọn Phường Xã" name="Ward" class="form-control">
+					<option value="0">-- Chọn Phường Xã --</option>
+				</select>
+			</div>
+
+			<!--UPLOAD IMAGE-->
+			<div class="clinic-image col-md-12">
+				<label>Hình ảnh</label>
+				<div class="preview-image col-md-12">
+					<input type="file" id="imageInput" class="form-control" />
+					<input asp-for="Image" type="hidden" id="imageUrl" class="form-control" />
+				</div>
+
+				<br />
+
+				<div class="container__image__preview">
+					<div class="style__image__preview row">
+						<div class="final-image col-md-6">
+							<h3 class="title">Hình ảnh hiện tại</h3>
+							<img src="@Model.Image" alt="" id="imageDisplay"
+								 style=" display: block; max-width: 100%; text-align: center; border-radius: 10px;" />
+						</div>
+
+						<div class="preview-image col-md-6">
+							<h3 class="title">Hình ảnh được chọn</h3>
+							<img src="" alt="" id="imagePreview"
+								 style=" display: block; max-width: 100%; text-align: center; border-radius: 10px;" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clinic-desc col-md-12">
+				<label>Mô tả phòng khám</label>
+				<div id="container">
+					<div id="editor">
+						<textarea asp-for="Description" class="form-control"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button"
+					class="close-btn btn"
+					data-bs-dismiss="modal"
+					id="newBtn">
+				Quay lại
+			</button>
+			<button type="submit" class="submit-btn btn">
+				Lưu
+			</button>
+		</div>
+	</form>
+</div>
+
+
+@* Đưa ảnh lên firebase *@
+<script src="~/assets/js/upload-image-firebase.js" type="module"></script>
+
+@* Dùng editor *@
+<script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/super-build/ckeditor.js"></script>
+<script src="~/assets/js/richtexteditor2.js"></script>
+
+@* Call API from https://esgoo.ne to get data*@
+<script src="https://esgoo.net/scripts/jquery.js"></script>
+<script>
+	$(document).ready(function () {
+		var savedProvince = '@Model.Province';
+		var savedDistrict = '@Model.District';
+		var savedWard = '@Model.Ward';
+
+		function loadWards(idquan, callback) {
+			$.getJSON('https://esgoo.net/api-tinhthanh/3/' + idquan + '.htm', function (data_phuong) {
+				if (data_phuong.error == 0) {
+					$("#ward").html('<option value="0">Phường Xã</option>');
+					$.each(data_phuong.data, function (key_phuong, val_phuong) {
+						var selected = (val_phuong.id == savedWard) ? ' selected' : '';
+						$("#ward").append('<option value="' + val_phuong.id + '" data-fullname="' + val_phuong.full_name + '"' + selected + '>' + val_phuong.full_name + '</option>');
+					});
+
+					if (callback) {
+						callback();
+					}
+				}
+			});
+		}
+
+		function loadDistricts(idtinh, callback) {
+			$.getJSON('https://esgoo.net/api-tinhthanh/2/' + idtinh + '.htm', function (data_quan) {
+				if (data_quan.error == 0) {
+					$("#district").html('<option value="0">Quận Huyện</option>');
+					$("#ward").html('<option value="0">Phường Xã</option>');
+					$.each(data_quan.data, function (key_quan, val_quan) {
+						var selected = (val_quan.id == savedDistrict) ? ' selected' : '';
+						$("#district").append('<option value="' + val_quan.id + '" data-fullname="' + val_quan.full_name + '"' + selected + '>' + val_quan.full_name + '</option>');
+					});
+
+					if (savedDistrict) {
+						loadWards(savedDistrict, callback);
+					} else if (callback) {
+						callback();
+					}
+				}
+			});
+		}
+
+		function loadProvinces(callback) {
+			$.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+				if (data_tinh.error == 0) {
+					$("#province").html('<option value="0">Tỉnh Thành</option>');
+					$.each(data_tinh.data, function (key_tinh, val_tinh) {
+						var selected = (val_tinh.id == savedProvince) ? ' selected' : '';
+						$("#province").append('<option value="' + val_tinh.id + '" data-fullname="' + val_tinh.full_name + '"' + selected + '>' + val_tinh.full_name + '</option>');
+					});
+
+					if (savedProvince) {
+						loadDistricts(savedProvince, callback);
+					} else if (callback) {
+						callback();
+					}
+				}
+			});
+		}
+
+		function setInitialValues() {
+			if (savedProvince) {
+				$("#province").val(savedProvince);
+				$("#province").trigger('change');
+			}
+			if (savedDistrict) {
+				$("#district").val(savedDistrict);
+				$("#district").trigger('change');
+			}
+			if (savedWard) {
+				$("#ward").val(savedWard);
+			}
+		}
+
+		loadProvinces(setInitialValues);
+
+		$("#province").change(function (e) {
+			var selectedOption = $(this).find('option:selected');
+			var idtinh = selectedOption.val();
+			var fullnameTinh = selectedOption.data('fullname');
+			$('#Province').val(fullnameTinh);
+
+			// Load districts based on selected province
+			loadDistricts(idtinh);
+		});
+
+		$("#district").change(function (e) {
+			var selectedOption = $(this).find('option:selected');
+			var idquan = selectedOption.val();
+			var fullnameQuan = selectedOption.data('fullname');
+			$('#District').val(fullnameQuan);
+
+			// Load wards based on selected district
+			loadWards(idquan);
+		});
+
+		$("#ward").change(function (e) {
+			var selectedOption = $(this).find('option:selected');
+			var fullnamePhuong = selectedOption.data('fullname');
+			$('#Ward').val(fullnamePhuong);
+		});
+	});
+</script>
+
+<script>
+	//Đợi cho document được tải hoàn chỉnh
+	document.addEventListener("DOMContentLoaded", function () {
+		// Lấy button "Close"
+		var newBtn = document.getElementById("newBtn");
+
+		// Nếu button tồn tại
+		if (newBtn) {
+			// Thêm click
+			newBtn.addEventListener("click", function () {
+				// Chuyển hướng đến URL của view khác
+				window.location.href = "/Admin/ManagerClinic/ListClinic";
+			});
+		}
+	});
+</script>

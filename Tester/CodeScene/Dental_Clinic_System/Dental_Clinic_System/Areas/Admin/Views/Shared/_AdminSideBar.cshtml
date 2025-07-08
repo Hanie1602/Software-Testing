@@ -1,0 +1,104 @@
+﻿<nav class="sidebar" style="width: 15%">
+	<p class="dashboard__logo"><span>Dental</span>Care</p>
+	<ul class="nav">
+		<li class="nav-item">
+			<a href="~/Admin/Dashboard/GetAppointmentStatus" class="">
+				<span class="menu-icon"><i class="bx bxs-dashboard"></i></span>Dashboard
+			</a>
+		</li>
+
+		<!-- =========== DROPDOWN MENU =========== -->
+		<li class="nav-item menu-items">
+			<a class="nav-link collapsed"
+			   data-bs-toggle="collapse"
+			   href="#manage-account"
+			   aria-expanded="false"
+			   aria-controls="manage-account">
+				<span class="menu-icon"><i class="bx bxs-user"></i></span>
+				<span class="menu-title Quan_ly_tai_khoan">Quản lý tài khoản</span>
+				<span class="menu-down" style="margin-left: auto">
+					<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+				</span>
+			</a>
+			<div class="collapse" id="manage-account">
+				<ul class="nav flex-column sub-menu">
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link" href="~/Admin/AccountDentist/ListAccountDentist" onclick="document.getElementById('form_nhasi').submit();">
+							<i class="fa-solid fa-stethoscope"></i> Tài khoản nha sĩ
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link" href="~/Admin/AccountPatient/ListAccountPatient" onclick="document.getElementById('form_benh_nhan').submit();">
+							<i class="fa-solid fa-hospital-user"></i> Tài khoản bệnh nhân
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link" href="~/Admin/AccountManager/ListAccountManager" onclick="document.getElementById('form_quan_ly').submit();">
+							<i class="fa-solid fa-hospital"></i> Tài khoản của quản lý
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link"
+						   href="~/Admin/AccountLocked/ListLockedAccount"><i class="fa-solid fa-ban"></i> Tài khoản bị cấm</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+
+		<li class="nav-item menu-items">
+			<a class="nav-link collapsed"
+			   data-bs-toggle="collapse"
+			   href="#manage-specialty"
+			   aria-expanded="false"
+			   aria-controls="manage-specialty">
+				<span class="menu-icon"><i class="bx bx-list-ul"></i></span>
+				<span class="menu-title Quan_ly_tai_khoan">Quản lý phòng khám</span>
+				<span class="menu-down" style="margin-left: auto">
+					<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+				</span>
+			</a>
+			<div class="collapse" id="manage-specialty">
+				<ul class="nav flex-column sub-menu">
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link" href="~/Admin/ManagerClinic/ListClinic">
+							<i class="fa-solid fa-stethoscope"></i> Phòng khám hiện tại
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link" href="~/Admin/ManagerClinic/ListClinicClosed">
+							<i class="fa-solid fa-ban"></i> Phòng khám đã đóng cửa
+						</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a href="~/Admin/ManagerSpecialty/ListSpecialty" class="Quan_ly_chuyen_khoa">
+				<span class="menu-icon"><i class="bx bxs-bookmarks"></i></span>Quản lý chuyên khoa
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="~/Admin/Transaction/TransactionHistory">
+				<span class="menu-icon"><i class="bx bx-history"></i></span>Xem
+				lịch sử giao dịch
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="~/Admin/News/NewsPost">
+				<span class="menu-icon"><i class='bx bxs-news'></i></span>
+				Đăng bài viết
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="~/Admin/ManagerClinic/ApprovalRequest">
+				<span class="menu-icon"><i class='bx bxs-user-check'></i></span>
+				Duyệt đơn hợp tác
+			</a>
+		</li>
+	</ul>
+	<div class="copyright">©️ All rights reserved | Dental Care</div>
+</nav>

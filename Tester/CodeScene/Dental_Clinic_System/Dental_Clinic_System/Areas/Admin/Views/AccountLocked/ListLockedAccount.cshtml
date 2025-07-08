@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Dental_Clinic_System.Areas.Admin.ViewModels.ManagerAccountVM>
+
+@{
+	ViewData["Title"] = "ListLockedAccount";
+	Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<!-- account management header -->
+<div class="account__management__header">
+	<div class="title">Tài khoản bị cấm</div>
+	<div class="action-btn">
+		<!-- TÌM KIẾM -->
+		<form action="~/Admin/AccountLocked/SearchLockedAccount" method="get">
+			<input type="hidden" name="role" />
+			<div class="search__bar">
+				<input type="search" placeholder="Tìm kiếm ..." name="keyword" />
+			</div>
+		</form>
+
+	</div>
+</div>
+
+
+<table class="table table-striped mt-5" style="font-size: 1.6rem">
+	<thead>
+		<tr>
+			<th class="text-center">STT</th>
+			<th>Tên đăng nhập</th>
+			<th>Email</th>
+			<th>Số điện thoại</th>
+			<th>Địa chỉ</th>
+			<th>Vai trò</th>
+			<th>Hành động</th>
+		</tr>
+	</thead>
+	<tbody id="myTableBody">
+		@if (Model != null && Model.Any())
+		{
+			int stt = 1;
+
+			@foreach (var account in Model)
+			{
+				<tr style="vertical-align: middle">
+					<td style="text-align: center">@stt</td>
+					<td>
+						@* <img src="~/assets/images/avatar.jpg" alt="" /> *@
+						@account.Username
+					</td>
+					<td>@account.Email</td>
+					<td>@account.PhoneNumber</td>
+					<td>@account.Address</td>
+					<td>@account.Role</td>
+					<td>
+						<form asp-action="UnlockAccount" asp-route-id="@account.Id" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn mở khóa tài khoản này không?');">
+							<button type="submit" class="btn btn-success">Bỏ Khóa</button>
+						</form>
+					</td>
+				</tr>
+				stt++;
+			}
+		}
+	</tbody>
+</table>
+
+
+<!-- ========== PAGINATION  ========== -->
+<ul class="pagination" id="pagination">
+</ul>

@@ -1,0 +1,207 @@
+﻿@model IEnumerable<Dental_Clinic_System.Models.Data.Dentist_Session>
+@{
+	ViewData["Title"] = "LichLamViec";
+	Layout = "_LayoutManager";
+}
+
+@section Styles {
+	<style>
+		.sidebar .nav-item a.Lich_lam_viec {
+			color: #fff;
+			background: #4880ff;
+		}
+
+		.manager__management__header {
+			justify-content: space-around;
+		}
+
+		.form-modal-styles {
+			width: 90%;
+		}
+
+		.modal-footer {
+			gap: 10px;
+			padding: 0 10px;
+		}
+
+			.modal-footer button[type="reset"] {
+				background: #ffb54a;
+				font-size: 2rem;
+				padding: 5px 10px;
+				color: #fff;
+			}
+
+				.modal-footer button[type="reset"]:hover {
+					background: #ff9c00;
+				}
+
+		.float-checkbox {
+			float: left;
+			margin-right: 10px; /* Khoảng cách giữa các checkbox */
+		}
+
+		.manager__management table {
+			width: auto;
+			min-width: 1000px;
+			margin: 0 auto;
+		}
+
+		.table .form-check-input {
+			width: 30px;
+			height: 30px;
+			display: flex;
+			position: relative;
+		}
+
+		.table th {
+			font-weight: 500;
+			padding-left: 21px;
+			padding-bottom: 3px;
+			color: seagreen;
+		}
+
+		.table td {
+			padding: 10px 15px 10px 15px;
+			display: table-cell;
+			align-content: center;
+		}
+
+		.modal-content {
+			--mdb-modal-box-shadow: 0 6px 45px -9px rgba(var(--mdb-box-shadow-color-rgb), 0.21), 0 30px 60px -6px rgba(var(--mdb-box-shadow-color-rgb), 0.12);
+			border: 0;
+			box-shadow: var(--mdb-modal-box-shadow);
+			padding: 24px 40px !important; /* Reduced padding for top/bottom and left/right */
+			border-radius: 10px; /* Adjust this value to change the roundness of the corners */
+		}
+	</style>
+}
+<div class="modal-dialog modal-dialog-centered form-modal-styles">
+	
+	<form asp-action="LichLamViec" enctype="multipart/form-data" style="font-size: 2rem" class="modal-content">
+		<!--header -->
+		<div class="manager__management__header">
+			<div class="title">Lịch làm việc</div>
+			@* <div class="action-btn">
+			<a asp-action="Create" class="add__new">+ Thêm lịch khám</a>
+			</div> *@
+		</div>
+		<!-- Table -->
+		<table class="table table-striped mt-4" style="font-size: 2rem">
+				<thead>
+					<tr>
+						<th style="padding-left: 15px;">Nha sĩ</th>
+						<th>Thứ 2</th>
+						<th>Thứ 3</th>
+						<th>Thứ 4</th>
+						<th>Thứ 5</th>
+						<th>Thứ 6</th>
+						<th>Thứ 7</th>
+						<th style="padding-left: 6px;">Chủ nhật</th>
+					</tr>
+				</thead>
+				<tbody>
+				@{
+					// var ModeList = ViewBag.DenSesList as List<Dental_Clinic_System.Models.Data.Dentist_Session>;
+					// var groupedDentist = ModeList.GroupBy(s => new { s.Dentist_ID
+					var groupedDentist = Model.GroupBy(s => new { s.Dentist_ID });
+					}
+					@foreach (var group in groupedDentist)
+					{
+						//Lấy account => Tên nha sĩ
+						var dentist = group.FirstOrDefault()?.Dentist;
+						var account = dentist?.Account;
+						//Lấy list ID của Session của dentist đã được select trước đó (theo Db)
+						var sessions = group.Where(s => s.Check == true).Select(s => s.Session_ID).ToList();
+						bool isChecked;
+						<tr style="vertical-align: middle">
+							<td>
+								@account?.LastName @account?.FirstName
+							</td>
+
+							<td>
+								@{
+									<!--Thứ 2 - sáng-->
+									isChecked = sessions != null && sessions.Contains(1);
+									<input title="Sáng Thứ 2" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 1)?.ID" @(isChecked ? "checked" : "")>
+									<!--Thứ 2 - chiều-->
+									isChecked = sessions != null && sessions.Contains(2);
+								<input title="Chiều Thứ 2" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 2)?.ID" @(isChecked ? "checked" : "")>
+								}
+							</td>
+							<td>
+								@{
+									<!--Thứ 3 - sáng-->
+									isChecked = sessions != null && sessions.Contains(3);
+								<input title="Sáng Thứ 3" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 3)?.ID" @(isChecked ? "checked" : "")>
+									<!--Thứ 3 - chiều-->
+									isChecked = sessions != null && sessions.Contains(4);
+								<input title="Chiều Thứ 3" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 4)?.ID" @(isChecked ? "checked" : "")>
+								}
+							</td>
+							<td>
+								@{
+									<!--Thứ 4 - sáng-->
+									isChecked = sessions != null && sessions.Contains(5);
+								<input title="Sáng Thứ 4" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 5)?.ID" @(isChecked ? "checked" : "")>
+									<!--Thứ 4 - chiều-->
+									isChecked = sessions != null && sessions.Contains(6);
+								<input title="Chiều Thứ 4" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 6)?.ID" @(isChecked ? "checked" : "")>
+								}
+							</td>
+							<td>
+								@{
+									<!--Thứ 5 - sáng-->
+									isChecked = sessions != null && sessions.Contains(7);
+								<input title="Sáng Thứ 5" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 7)?.ID" @(isChecked ? "checked" : "")>
+									<!--Thứ 5 - chiều-->
+									isChecked = sessions != null && sessions.Contains(8);
+								<input title="Chiều Thứ 5" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 8)?.ID" @(isChecked ? "checked" : "")>
+								}
+							</td>
+							<td>
+								@{
+									<!--Thứ 6 - sáng-->
+									isChecked = sessions != null && sessions.Contains(9);
+								<input title="Sáng Thứ 6" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 9)?.ID" @(isChecked ? "checked" : "")>
+									<!--Thứ 6 - chiều-->
+									isChecked = sessions != null && sessions.Contains(10);
+								<input title="Chiều Thứ 6" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 10)?.ID" @(isChecked ? "checked" : "")>
+								}
+							</td>
+							<td>
+								@{
+									<!--Thứ 7 - sáng-->
+									isChecked = sessions != null && sessions.Contains(11);
+								<input title="Sáng Thứ 7" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 11)?.ID" @(isChecked ? "checked" : "")>
+									<!--Thứ 7 - chiều-->
+									isChecked = sessions != null && sessions.Contains(12);
+								<input title="Chiều Thứ 7" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 12)?.ID" @(isChecked ? "checked" : "")>
+								}
+							</td>
+							<td>
+								@{
+									<!--Chủ nhật - sáng-->
+									isChecked = sessions != null && sessions.Contains(13);
+								<input title="Sáng Chủ nhật" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 13)?.ID" @(isChecked ? "checked" : "")>
+									<!--Chủ nhật - chiều-->
+									isChecked = sessions != null && sessions.Contains(14);
+								<input title="Chiều Chủ nhật" class="form-check-input float-checkbox" type="checkbox" name="SelectedDenSesList" value="@group?.FirstOrDefault(a => a.Session_ID == 14)?.ID" @(isChecked ? "checked" : "")>
+								}
+							</td>
+
+						</tr>
+					}
+				</tbody>
+			</table>
+
+		<div style="height: 20px"> </div>
+		<div class="modal-footer">
+			<button type="reset" class="btn">Đặt lại</button>
+			|
+			<button type="submit" class="submit-btn btn">
+				Cập nhật lịch làm việc
+			</button>
+		</div>
+	</form>
+</div>
+<br />

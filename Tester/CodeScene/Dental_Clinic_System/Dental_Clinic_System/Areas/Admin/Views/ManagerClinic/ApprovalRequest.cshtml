@@ -1,0 +1,113 @@
+﻿@model Dental_Clinic_System.Areas.Admin.ViewModels.BusinessPartnershipViewModel
+@{
+    ViewData["Title"] = "ApprovalRequest";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="account__management__header">
+    <div class="title">Thông Tin Hợp Tác Kinh Doanh</div>
+    <div class="action-btn">
+        <!-- TÌM KIẾM -->
+        @* <form action="~/Admin/Account/SearchLockedAccount" method="get">
+        <input type="hidden" name="role" />
+        <div class="search__bar">
+        <input type="search" placeholder="Tìm kiếm ..." name="keyword" />
+        </div>
+        </form> *@
+
+    </div>
+</div>
+
+<table class="table table-striped mt-5" style="font-size: 1.6rem">
+    <thead>
+        <tr>
+            <th class="text-center">STT</th>
+            <th>Tên Doanh Nghiệp</th>
+            <th>Số Điện Thoại</th>
+            <th>Địa Chỉ Email</th>
+            <th>Tên Người Đại Diện</th>
+            <th>Tên Phòng Khám</th>
+            <th>Địa Chỉ Phòng Khám</th>
+            <th>Tên Miền</th>
+            <th>Nội Dung</th>
+            <th class="text-center">Hành Động</th>
+        </tr>
+    </thead>
+    <tbody id="myTableBody">
+        @if (Model.BusinessPartnerships != null)
+        {
+            int count = 1;
+
+            @foreach (var order in Model.BusinessPartnerships)
+            {
+                @if (order.Status == "Chưa Duyệt") {
+                <tr style="vertical-align: middle">
+                    <td class="text-center">@count</td>
+                    <td style="word-wrap: break-word; max-width: 300px; padding: 10px;">@order.CompanyName</td>
+                    <td style="word-wrap: break-word; max-width: 300px; padding: 10px;">@order.CompanyPhonenumber</td>
+                    <td style="word-wrap: break-word; max-width: 300px; padding: 10px;">@order.CompanyEmail</td>
+                    <td style="word-wrap: break-word; max-width: 300px; padding: 10px;">@order.RepresentativeName</td>
+                    <td style="word-wrap: break-word; max-width: 300px; padding: 10px;">@order.ClinicName</td>
+                    <td style="word-wrap: break-word; max-width: 300px; padding: 10px;">@order.ClinicAddress</td>
+                    <td style="word-wrap: break-word; max-width: 300px; padding: 10px;">
+                        @if (!string.IsNullOrEmpty(order.DomainName))
+                        {
+                            <a href="@order.DomainName" target="_blank">@order.DomainName</a>
+                        }
+                    </td>
+                    <td style="word-wrap: break-word; max-width: 300px; padding: 10px;">
+                        <div class="content-preview">
+                            @(order.Content.Length > 50 ? order.Content.Substring(0, 50) : order.Content)
+                            @if (order.Content.Length > 50)
+                            {
+                                <a href="javascript:void(0);" onclick="showFullContent(this);" data-full-content="@order.Content" data-short-content="@order.Content.Substring(0, 50)">Xem Thêm</a>
+                            }
+                        </div>
+                    </td>
+                    <td class="text-center" style="display: flex; justify-content: center; align-items: center; word-wrap: break-word; max-width: 300px; padding: 10px;">
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                            <form action="@Url.Action("ProcessRequest", "ManagerClinic", new {area = "Admin"})" method="post" style="display: inline;">
+                                <input type="hidden" name="orderId" value="@order.ID" />
+                                <input type="hidden" name="orderStatus" value="Đồng Ý" />
+                                <button type="submit" class="btn btn-success" style="font-size: 1.4rem; padding: 10px 30px; width: 120px;">Đồng Ý</button>
+                            </form>
+                            <form action="@Url.Action("ProcessRequest", "ManagerClinic", new {area = "Admin"})" method="post" style="display: inline;">
+                                <input type="hidden" name="orderId" value="@order.ID" />
+                                <input type="hidden" name="orderStatus" value="Từ Chối" />
+                                <button type="submit" class="btn btn-danger" style="font-size: 1.4rem; padding: 10px 30px; width: 120px;">Từ Chối</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                count++;
+                }
+            }
+        }
+    </tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function showFullContent(element) {
+        var isExpanded = element.getAttribute('data-expanded') === 'true';
+        var fullContent = element.getAttribute('data-full-content');
+        var shortContent = element.getAttribute('data-short-content');
+
+        if (isExpanded) {
+            element.parentElement.innerHTML = shortContent + ' <a href="javascript:void(0);" onclick="showFullContent(this);" data-full-content="' + fullContent + '" data-short-content="' + shortContent + '" data-expanded="false">Xem Thêm</a>';
+        } else {
+            element.parentElement.innerHTML = fullContent + ' <a href="javascript:void(0);" onclick="showFullContent(this);" data-full-content="' + fullContent + '" data-short-content="' + shortContent + '" data-expanded="true">Thu Gọn</a>';
+        }
+    }
+
+    // function approveOrder(orderId) {
+    //     // Logic to approve order
+    //     alert('Order ' + orderId + ' approved.');
+    // }
+
+    // function rejectOrder(orderId) {
+    //     // Logic to reject order
+    //     alert('Order ' + orderId + ' rejected.');
+    // }
+</script>

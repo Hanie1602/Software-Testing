@@ -1,0 +1,93 @@
+﻿@model Dental_Clinic_System.Areas.Manager.ViewModels.ServiceVM
+@{
+    ViewData["Title"] = "Create Service";
+    Layout = "_LayoutManager";
+}
+@section Styles {
+    <style>
+        .sidebar .nav-item a.Dich_vu_kham {
+            color: #fff;
+            background: #4880ff;
+        }
+
+        .manager__management__header {
+            justify-content: space-around;
+        }
+        .form-modal-styles {
+            width: 1000px;
+        }
+
+        .modal-footer {
+            gap: 10px;
+            padding: 0 10px;
+        }
+
+        .modal-content {
+            --mdb-modal-box-shadow: 0 6px 45px -9px rgba(var(--mdb-box-shadow-color-rgb), 0.21), 0 30px 60px -6px rgba(var(--mdb-box-shadow-color-rgb), 0.12);
+            border: 0;
+            box-shadow: var(--mdb-modal-box-shadow);
+            padding: 24px 48px !important; /* Reduced padding for top/bottom and left/right */
+            border-radius: 10px; /* Adjust this value to change the roundness of the corners */
+        }
+    </style>
+}
+
+<div class="modal-dialog modal-dialog-centered form-modal-styles">
+                                        @* enctype: để thêm hình ảnh *@
+    <form asp-action="Create" enctype="multipart/form-data" class="modal-content" style="font-size: 2rem">
+        <!--header -->
+        <div class="manager__management__header">
+            <div class="title">Thêm dịch vụ làm răng</div>
+        </div>
+        <h1></h1>
+        <!--body -->
+        @* Kiểm tra dữ liệu đầu vào, dựa trên ServiceVM *@
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        
+        <div class="modal-body">
+            <div class="user-address modal-body-card">
+                <label>Dịch vụ</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="user-address modal-body-card">
+                <label>Đơn giá</label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="user-address modal-body-card">
+                <label>Phòng khám</label>
+                <select asp-for="ClinicID" class="form-control" asp-items="ViewBag.ClinicID"></select>
+            </div>
+            <div class="user-address modal-body-card">
+                <label>Chuyên khoa</label>
+                <select asp-for="SpecialtyID" class="form-control" asp-items="ViewBag.SpecialtyID">
+                    <option>--Chọn chuyên khoa--</option>
+                </select>
+            </div>
+            <div class="user-address modal-body-card">
+                <label>Mô tả dịch vụ</label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span> @* Kiểm tra Validate cho trường Name trong ServiceVM *@
+            </div>
+        </div>
+        <h1></h1>
+        <h1></h1>
+        <div class="modal-footer">
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+            |
+            <button type="submit" class="submit-btn btn">
+                Thêm mới
+            </button>
+        </div>
+    </form>
+</div>
+<br />
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+

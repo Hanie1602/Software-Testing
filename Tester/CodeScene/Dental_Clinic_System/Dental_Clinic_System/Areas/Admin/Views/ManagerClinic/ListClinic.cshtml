@@ -1,0 +1,190 @@
+﻿@model IEnumerable<Dental_Clinic_System.Areas.Admin.ViewModels.ManagerClinicVM>
+
+@{
+	ViewData["Title"] = "ListClinic";
+	Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+	.title-Name-Clinic {
+		font-size: 2.8rem;
+		font-weight: 700;
+		color: #202224;
+	}
+
+	.title-Address {
+		font-size: 2.3rem;
+	}
+
+	.img, svg {
+		vertical-align: middle;
+		height: 45%;
+	}
+
+	.modal-header, .modal-footer {
+		border: none;
+		padding: 1.5rem;
+	}
+
+
+	.modal-body {
+		padding: 2rem;
+	}
+
+	.btn-close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background: transparent;
+		border: none;
+		font-size: 1.5rem;
+	}
+
+	.sidebar .nav-item a.Quan_ly_phong_kham {
+		color: #fff;
+		background: #4880ff;
+	}
+</style>
+
+<!-- TÌM KIẾM (SEARCH)-->
+<!-- Clinic management header -->
+<div class="clinic__management__header">
+	<h1 class="title">Phòng khám hiện tại</h1>
+	<div class="action-btn">
+		<form action="~/Admin/ManagerClinic/SearchClinic" method="get">
+			<div class="search__bar">
+				<input type="search" placeholder="Tìm kiếm ..." name="search" />
+			</div>
+		</form>
+		<button type="button"
+				data-bs-toggle="modal" data-bs-target="#myModal"
+				class="add__new" id="newBtn">
+			+ Thêm
+		</button>
+	</div>
+</div>
+
+
+<!--SHOW LIST-->
+<!-- CLINIC LIST MANAGEMENT -->
+<div id="myItem" class="clinic__management__wrapper row">
+	@foreach (var clinic in Model)
+	{
+		<div class="clinic-wrap-item col-md-6">
+			<div class="clinic-wrap-item__style row">
+				<div class="img-content col-md-6">
+					<img src="@clinic.Image" alt="Clinic" />
+				</div>
+				<div class="info-content col-md-6">
+					<h2 class="title-Name-Clinic">@clinic.ClinicName</h2>
+					<div class="name">Quản lý: <span class="title-Address">@clinic.ManagerName</span></div>
+					<div class="address">
+						Địa chỉ:
+						<span class="title-Province title-Address" data-id="@clinic.Province"></span>
+					</div>
+					<div class="action">
+						<a href="tel:0123456789"><i class="fa-solid fa-phone-volume"></i></a>
+						<a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+						<!--EDIT-->
+						<a href="~/Admin/ManagerClinic/EditClinic/@clinic.Id" class="view">
+							<i class="fa-solid fa-edit"></i>
+						</a>
+
+						<!--DELETE-->
+						<form action="~/Admin/ManagerClinic/HiddenClinic" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn đóng cửa phòng khám này không?');">
+							<input type="hidden" name="name" value="@clinic.ClinicName" />
+							<input type="hidden" name="status" value="Đóng Cửa" />
+							<button class="delete">
+								<i class="fa-solid fa-xmark"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+</div>
+
+<!-- ========== PAGINATION  ========== -->
+<ul class="pagination" id="pagination">
+</ul>
+
+
+
+@section Scripts {
+	<!--Chuyển hướng Button New-->
+	<script>
+		//Đợi cho document được tải hoàn chỉnh
+		document.addEventListener("DOMContentLoaded", function () {
+			// Lấy button "+ New"
+			var newBtn = document.getElementById("newBtn");
+
+			// Nếu button tồn tại
+			if (newBtn) {
+				// Thêm click
+				newBtn.addEventListener("click", function () {
+					// Chuyển hướng đến URL của view khác
+					window.location.href = "/Admin/ManagerClinic/CreateClinic";
+				});
+			}
+		});
+	</script>
+
+
+	<!--Hiển thị các Tỉnh/Thành phố, Quận/Huyện, Phường/Xã-->
+	<script src="https://esgoo.net/scripts/jquery.js"></script>
+	<script>
+		$(document).ready(function () {
+			function loadNames() {
+				$(".title-Province").each(function () {
+					var provinceId = $(this).data("id");
+					var element = $(this);
+					$.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data) {
+						if (data.error == 0) {
+							$.each(data.data, function (key, val) {
+								if (val.id == provinceId) {
+									element.text(val.full_name);
+									return false;
+								}
+							});
+						}
+					});
+				});
+
+				$(".title-District").each(function () {
+					var districtId = $(this).data("id");
+					var element = $(this);
+					$.getJSON('https://esgoo.net/api-tinhthanh/2/' + districtId + '.htm', function (data) {
+						if (data.error == 0) {
+							$.each(data.data, function (key, val) {
+								if (val.id == districtId) {
+									element.text(val.full_name);
+									return false;
+								}
+							});
+						}
+					});
+				});
+
+				$(".title-Ward").each(function () {
+					var wardId = $(this).data("id");
+					var element = $(this);
+					$.getJSON('https://esgoo.net/api-tinhthanh/3/' + wardId + '.htm', function (data) {
+						if (data.error == 0) {
+							$.each(data.data, function (key, val) {
+								if (val.id == wardId) {
+									element.text(val.full_name);
+									return false;
+								}
+							});
+						}
+					});
+				});
+			}
+
+			loadNames();
+		});
+	</script>
+}
+

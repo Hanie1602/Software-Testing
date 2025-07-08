@@ -1,0 +1,603 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\managerspecialty\\listspecialty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\managerspecialty\\listspecialty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\managerspecialty\\editspecialty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\managerspecialty\\editspecialty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\helper\\htmlhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\helper\\htmlhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\accountdentist\\listaccountdentist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\accountdentist\\listaccountdentist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\controllers\\accountdentistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\controllers\\accountdentistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\accountdentist\\editaccountdentist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\accountdentist\\editaccountdentist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\viewmodels\\editaccountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\viewmodels\\editaccountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\viewmodels\\addclincvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\viewmodels\\addclincvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\controllers\\accountpatientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\controllers\\accountpatientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\accountpatient\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\accountpatient\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\controllers\\accountmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\controllers\\accountmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\accountmanager\\listaccountmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\accountmanager\\listaccountmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\accountmanager\\editaccountmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\accountmanager\\editaccountmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\controllers\\adminaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\controllers\\adminaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\viewmodels\\manageraccountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\viewmodels\\manageraccountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\accountpatient\\listaccountpatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\accountpatient\\listaccountpatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\controllers\\managercliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\controllers\\managercliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\dashboard\\getappointmentstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\dashboard\\getappointmentstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\helper\\dataencryptionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\helper\\dataencryptionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\helper\\claimshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\helper\\claimshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\managerclinic\\editclinic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\managerclinic\\editclinic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\managerclinic\\listclinic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\managerclinic\\listclinic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\shared\\_adminsidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\shared\\_adminsidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\wwwroot\\assets\\css\\editaccount.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\wwwroot\\assets\\css\\editaccount.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\managerclinic\\createclinic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\managerclinic\\createclinic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\managerclinic\\listclinicclosed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\managerclinic\\listclinicclosed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\adminaccount\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\adminaccount\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\viewmodels\\appointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\viewmodels\\appointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|e:\\github\\software testing\\tester\\codescene\\dental_clinic_system\\dental_clinic_system\\areas\\admin\\views\\shared\\_adminavatar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{405A9A75-3E45-40FC-8B8B-9D932116970B}|Dental_Clinic_System\\Dental_Clinic_System.csproj|solutionrelative:dental_clinic_system\\areas\\admin\\views\\shared\\_adminavatar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\appsettings.json",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\appsettings.json",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\appsettings.json",
+              "RelativeToolTip": "Dental_Clinic_System\\appsettings.json",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-08T09:12:10.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountDentistController.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountDentistController.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountDentistController.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountDentistController.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountDentistController.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAQwBkBAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T01:56:24.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListSpecialty.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerSpecialty\\ListSpecialty.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerSpecialty\\ListSpecialty.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerSpecialty\\ListSpecialty.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerSpecialty\\ListSpecialty.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAWwHIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:48:29.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListAccountDentist.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountDentist\\ListAccountDentist.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountDentist\\ListAccountDentist.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountDentist\\ListAccountDentist.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountDentist\\ListAccountDentist.cshtml",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAUwHoAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:54:37.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HtmlHelpers.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Helper\\HtmlHelpers.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Helper\\HtmlHelpers.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Helper\\HtmlHelpers.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Helper\\HtmlHelpers.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T05:29:03.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditSpecialty.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerSpecialty\\EditSpecialty.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerSpecialty\\EditSpecialty.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerSpecialty\\EditSpecialty.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerSpecialty\\EditSpecialty.cshtml",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAAE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:41:13.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditAccountDentist.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountDentist\\EditAccountDentist.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountDentist\\EditAccountDentist.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountDentist\\EditAccountDentist.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountDentist\\EditAccountDentist.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:54:15.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditAccountVM.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\ViewModels\\EditAccountVM.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\ViewModels\\EditAccountVM.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\ViewModels\\EditAccountVM.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\ViewModels\\EditAccountVM.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAswDkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T20:05:03.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddClincVM.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\ViewModels\\AddClincVM.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\ViewModels\\AddClincVM.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\ViewModels\\AddClincVM.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\ViewModels\\AddClincVM.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAA/wDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T01:50:51.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountPatientController.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountPatientController.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountPatientController.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountPatientController.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountPatientController.cs",
+              "ViewState": "AQIAALIAAAAAAAAAAAAgwMYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T20:05:24.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditAccount.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountPatient\\EditAccount.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountPatient\\EditAccount.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountPatient\\EditAccount.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountPatient\\EditAccount.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:53:43.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountManagerController.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountManagerController.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountManagerController.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountManagerController.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\AccountManagerController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAApwDAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T01:55:44.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ListAccountManager.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountManager\\ListAccountManager.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountManager\\ListAccountManager.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountManager\\ListAccountManager.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountManager\\ListAccountManager.cshtml",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAUwKoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:53:23.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditAccountManager.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountManager\\EditAccountManager.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountManager\\EditAccountManager.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountManager\\EditAccountManager.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountManager\\EditAccountManager.cshtml",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwEAAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:53:09.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T01:49:55.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminAccountController.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T01:55:15.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ManagerAccountVM.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\ViewModels\\ManagerAccountVM.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\ViewModels\\ManagerAccountVM.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\ViewModels\\ManagerAccountVM.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\ViewModels\\ManagerAccountVM.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAzwDoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T01:51:04.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ListAccountPatient.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountPatient\\ListAccountPatient.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountPatient\\ListAccountPatient.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AccountPatient\\ListAccountPatient.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\AccountPatient\\ListAccountPatient.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:53:59.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAHkCAAAAAAAAAIAwwIMCAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T20:25:10.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ManagerClinicController.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\ManagerClinicController.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\ManagerClinicController.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Controllers\\ManagerClinicController.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Controllers\\ManagerClinicController.cs",
+              "ViewState": "AQIAAPEAAAAAAAAAAAAAABEBAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T01:56:56.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetAppointmentStatus.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\Dashboard\\GetAppointmentStatus.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\Dashboard\\GetAppointmentStatus.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\Dashboard\\GetAppointmentStatus.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\Dashboard\\GetAppointmentStatus.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:49:35.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DataEncryptionExtensions.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Helper\\DataEncryptionExtensions.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Helper\\DataEncryptionExtensions.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Helper\\DataEncryptionExtensions.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Helper\\DataEncryptionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T05:23:35.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ClaimsHelper.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Helper\\ClaimsHelper.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Helper\\ClaimsHelper.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Helper\\ClaimsHelper.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Helper\\ClaimsHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T05:23:36.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:48:46.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EditClinic.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\EditClinic.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\EditClinic.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\EditClinic.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\EditClinic.cshtml",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAUwJsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:02:56.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ListClinic.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\ListClinic.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\ListClinic.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\ListClinic.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\ListClinic.cshtml",
+              "ViewState": "AQIAACIAAAAAAAAAAAAUwL4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:02:34.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:37:47.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "editAccount.css",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\editAccount.css",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\wwwroot\\assets\\css\\editAccount.css",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\editAccount.css",
+              "RelativeToolTip": "Dental_Clinic_System\\wwwroot\\assets\\css\\editAccount.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-27T02:37:12.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_AdminSideBar.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_AdminSideBar.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_AdminSideBar.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_AdminSideBar.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_AdminSideBar.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEgAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:46:41.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateClinic.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\CreateClinic.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\CreateClinic.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\CreateClinic.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\CreateClinic.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:01:38.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ListClinicClosed.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\ListClinicClosed.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\ListClinicClosed.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\ListClinicClosed.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\ManagerClinic\\ListClinicClosed.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:02:20.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAkwFgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:52:19.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AppointmentVM.cs",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\ViewModels\\AppointmentVM.cs",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\ViewModels\\AppointmentVM.cs",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\ViewModels\\AppointmentVM.cs",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\ViewModels\\AppointmentVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T01:50:24.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_AdminAvatar.cshtml",
+              "DocumentMoniker": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_AdminAvatar.cshtml",
+              "RelativeDocumentMoniker": "Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_AdminAvatar.cshtml",
+              "ToolTip": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_AdminAvatar.cshtml",
+              "RelativeToolTip": "Dental_Clinic_System\\Areas\\Admin\\Views\\Shared\\_AdminAvatar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T01:46:24.119Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1524,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

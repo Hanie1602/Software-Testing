@@ -1,0 +1,2609 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Dental_Clinic_System.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Dental_Clinic_System.q81jddnxo9.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\about.html",
+      "PackagePath": "staticwebassets\\about.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\about.css",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\accountDash.css",
+      "PackagePath": "staticwebassets\\assets\\css\\accountDash.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\authentication.css",
+      "PackagePath": "staticwebassets\\assets\\css\\authentication.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\bill.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bill.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\booking.css",
+      "PackagePath": "staticwebassets\\assets\\css\\booking.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\clinic.css",
+      "PackagePath": "staticwebassets\\assets\\css\\clinic.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\contentDash.css",
+      "PackagePath": "staticwebassets\\assets\\css\\contentDash.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\dentist.css",
+      "PackagePath": "staticwebassets\\assets\\css\\dentist.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\dentistpatients.css",
+      "PackagePath": "staticwebassets\\assets\\css\\dentistpatients.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\dentistry.css",
+      "PackagePath": "staticwebassets\\assets\\css\\dentistry.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\editAccount.css",
+      "PackagePath": "staticwebassets\\assets\\css\\editAccount.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\footer.css",
+      "PackagePath": "staticwebassets\\assets\\css\\footer.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\header.css",
+      "PackagePath": "staticwebassets\\assets\\css\\header.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\headerAd.css",
+      "PackagePath": "staticwebassets\\assets\\css\\headerAd.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\icons_mobiscroll.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\icons_mobiscroll.ttf"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\icons_mobiscroll.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\icons_mobiscroll.woff"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\invoice.css",
+      "PackagePath": "staticwebassets\\assets\\css\\invoice.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\login.css",
+      "PackagePath": "staticwebassets\\assets\\css\\login.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\manager.css",
+      "PackagePath": "staticwebassets\\assets\\css\\manager.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\mobiscroll.javascript.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\mobiscroll.javascript.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\news.css",
+      "PackagePath": "staticwebassets\\assets\\css\\news.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\patientrecord.css",
+      "PackagePath": "staticwebassets\\assets\\css\\patientrecord.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\paymentresult.css",
+      "PackagePath": "staticwebassets\\assets\\css\\paymentresult.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\profile.css",
+      "PackagePath": "staticwebassets\\assets\\css\\profile.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\register.css",
+      "PackagePath": "staticwebassets\\assets\\css\\register.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\schedule.css",
+      "PackagePath": "staticwebassets\\assets\\css\\schedule.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\sidebar.css",
+      "PackagePath": "staticwebassets\\assets\\css\\sidebar.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\spacialtyAdmin.css",
+      "PackagePath": "staticwebassets\\assets\\css\\spacialtyAdmin.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\special.css",
+      "PackagePath": "staticwebassets\\assets\\css\\special.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\specialtydash.css",
+      "PackagePath": "staticwebassets\\assets\\css\\specialtydash.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\styles.css",
+      "PackagePath": "staticwebassets\\assets\\css\\styles.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-Bold.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-Bold.woff"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-Bold.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-Bold.woff2"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-ExtraBold.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-ExtraBold.woff"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-ExtraBold.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-ExtraBold.woff2"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-Medium.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-Medium.woff"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-Medium.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-Medium.woff2"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-Regular.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-Regular.woff"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-Regular.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-Regular.woff2"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-SemiBold.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-SemiBold.woff"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\BalooPaaji2-SemiBold.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\BalooPaaji2-SemiBold.woff2"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\demo.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\demo.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\fonts\\stylesheet.css",
+      "PackagePath": "staticwebassets\\assets\\fonts\\stylesheet.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\image\\Dental Care_preview_rev_1.png",
+      "PackagePath": "staticwebassets\\assets\\image\\Dental Care_preview_rev_1.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Calling.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Calling.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\DentalCare.png",
+      "PackagePath": "staticwebassets\\assets\\images\\DentalCare.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Google.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Google.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Dai-Duong-Other-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Dai-Duong-Other-01.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Dai-Duong-Other-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Dai-Duong-Other-02.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Dai-Duong-Other-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Dai-Duong-Other-03.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Dai-Duong-Other-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Dai-Duong-Other-04.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Hoa-Su-Other-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Hoa-Su-Other-01.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Hoa-Su-Other-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Hoa-Su-Other-02.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Hoa-Su-Other-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Hoa-Su-Other-03.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Hoa-Su-Other-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Hoa-Su-Other-04.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Lac-Viet-Other-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Lac-Viet-Other-01.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Lac-Viet-Other-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Lac-Viet-Other-02.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Lac-Viet-Other-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Lac-Viet-Other-03.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Lac-Viet-Other-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Lac-Viet-Other-04.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Phuong-Dong-Other-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Phuong-Dong-Other-01.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Phuong-Dong-Other-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Phuong-Dong-Other-02.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Phuong-Dong-Other-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Phuong-Dong-Other-03.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Phuong-Dong-Other-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Phuong-Dong-Other-04.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Thang-Long-Other-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Thang-Long-Other-01.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Thang-Long-Other-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Thang-Long-Other-02.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Thang-Long-Other-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Thang-Long-Other-03.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\Nha-Khoa-Thang-Long-Other-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Nha-Khoa-Thang-Long-Other-04.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\X.png",
+      "PackagePath": "staticwebassets\\assets\\images\\X.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\about-img.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-img.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\ad-nav-01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ad-nav-01.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\ad-nav-02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ad-nav-02.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\ad-nav-03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ad-nav-03.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\ad-nav-04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ad-nav-04.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\ad-nav-05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ad-nav-05.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\arrow-left.png",
+      "PackagePath": "staticwebassets\\assets\\images\\arrow-left.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\arrow-right.png",
+      "PackagePath": "staticwebassets\\assets\\images\\arrow-right.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\avatar.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar1.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\bell.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bell.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\big-circle.png",
+      "PackagePath": "staticwebassets\\assets\\images\\big-circle.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\chevron-down.png",
+      "PackagePath": "staticwebassets\\assets\\images\\chevron-down.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-icon.svg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-special.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-special.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-special1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-special1.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-special2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-special2.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-special3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-special3.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-special4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-special4.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-special5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-special5.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-test.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-test.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-test1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-test1.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic-test2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic-test2.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic1.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic2.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\clinic3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clinic3.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\dentalClinicLogoOfficial.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dentalClinicLogoOfficial.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\dentist1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dentist1.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\dentist2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dentist2.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\dentist3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dentist3.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\dentist4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dentist4.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\dot-icon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dot-icon.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\envelope.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\envelope.svg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\facebook.png",
+      "PackagePath": "staticwebassets\\assets\\images\\facebook.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\facebookmail.png",
+      "PackagePath": "staticwebassets\\assets\\images\\facebookmail.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\forgot.png",
+      "PackagePath": "staticwebassets\\assets\\images\\forgot.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\home-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home-image.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\instagram.png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\instagrammail.png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagrammail.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\linkedin.png",
+      "PackagePath": "staticwebassets\\assets\\images\\linkedin.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\lock.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\lock.svg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\login-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\login-image.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\momo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\momo.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\news1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\news1.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\news2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\news2.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\news3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\news3.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\news4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\news4.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\note-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\note-icon.svg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\order.png",
+      "PackagePath": "staticwebassets\\assets\\images\\order.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\pending.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pending.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\register-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\register-image.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\sales.png",
+      "PackagePath": "staticwebassets\\assets\\images\\sales.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\search-01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\search-01.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\search.png",
+      "PackagePath": "staticwebassets\\assets\\images\\search.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\separate-01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\separate-01.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\separate-02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\separate-02.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\separate.png",
+      "PackagePath": "staticwebassets\\assets\\images\\separate.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\small-circle.png",
+      "PackagePath": "staticwebassets\\assets\\images\\small-circle.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\special1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\special1.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\special2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\special2.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\special3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\special3.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\special4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\special4.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\special5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\special5.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\special6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\special6.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\teeth1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\teeth1.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\teeth2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\teeth2.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\teeth3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\teeth3.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\twittermail.png",
+      "PackagePath": "staticwebassets\\assets\\images\\twittermail.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\user.png",
+      "PackagePath": "staticwebassets\\assets\\images\\user.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\user.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\user.svg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\vnpay.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vnpay.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\youtube.png",
+      "PackagePath": "staticwebassets\\assets\\images\\youtube.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\images\\youtubemail.png",
+      "PackagePath": "staticwebassets\\assets\\images\\youtubemail.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\chart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chart.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\firebase_script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\firebase_script.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\firebase_script2.js",
+      "PackagePath": "staticwebassets\\assets\\js\\firebase_script2.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\fullcalendar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\fullcalendar.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\localAPI.js",
+      "PackagePath": "staticwebassets\\assets\\js\\localAPI.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\mobiscroll-calendar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\mobiscroll-calendar.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\mobiscroll-calendar2.js",
+      "PackagePath": "staticwebassets\\assets\\js\\mobiscroll-calendar2.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\mobiscroll.javascript.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\mobiscroll.javascript.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\myswiper.js",
+      "PackagePath": "staticwebassets\\assets\\js\\myswiper.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\pagination-clinic.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pagination-clinic.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\pagination-news.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pagination-news.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\pagination.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pagination.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\richtexteditor.js",
+      "PackagePath": "staticwebassets\\assets\\js\\richtexteditor.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\richtexteditor2.js",
+      "PackagePath": "staticwebassets\\assets\\js\\richtexteditor2.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\swiper-bundle.js",
+      "PackagePath": "staticwebassets\\assets\\js\\swiper-bundle.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\text_editor.js",
+      "PackagePath": "staticwebassets\\assets\\js\\text_editor.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\timeinterval.js",
+      "PackagePath": "staticwebassets\\assets\\js\\timeinterval.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\timeinterval2.js",
+      "PackagePath": "staticwebassets\\assets\\js\\timeinterval2.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\CHANGELOG.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\langs\\README.md",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\langs\\README.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\license.md",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\license.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\accordion\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\accordion\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\default\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\default\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\document\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\document\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\js\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\js\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\langs\\README.md",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\langs\\README.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\license.md",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\license.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\accordion\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\accordion\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\default\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\default\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\document\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\document\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tinymce\\tinymce\\js\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\toastmessage.js",
+      "PackagePath": "staticwebassets\\assets\\js\\toastmessage.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\upload-image-firebase.js",
+      "PackagePath": "staticwebassets\\assets\\js\\upload-image-firebase.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\upload-image-firebaseAdmin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\upload-image-firebaseAdmin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\js\\view-information-clinic.js",
+      "PackagePath": "staticwebassets\\assets\\js\\view-information-clinic.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\CHANGELOG.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\langs\\README.md",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\langs\\README.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\license.md",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\license.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\accordion\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\accordion\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\default\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\default\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\document\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\document\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\assets\\tinymce\\js\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\assets\\tinymce\\js\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\bill.html",
+      "PackagePath": "staticwebassets\\bill.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\booking.html",
+      "PackagePath": "staticwebassets\\booking.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\clinic.html",
+      "PackagePath": "staticwebassets\\clinic.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\cliniccalender.html",
+      "PackagePath": "staticwebassets\\cliniccalender.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\clinicdentist.html",
+      "PackagePath": "staticwebassets\\clinicdentist.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\clinicdetail.html",
+      "PackagePath": "staticwebassets\\clinicdetail.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\clinicspecialty.html",
+      "PackagePath": "staticwebassets\\clinicspecialty.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\contact.html",
+      "PackagePath": "staticwebassets\\contact.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dashboard.html",
+      "PackagePath": "staticwebassets\\dashboard.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dashboardaccount.html",
+      "PackagePath": "staticwebassets\\dashboardaccount.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dashboardclinic.html",
+      "PackagePath": "staticwebassets\\dashboardclinic.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dashboardedit.html",
+      "PackagePath": "staticwebassets\\dashboardedit.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dashboardspecialty.html",
+      "PackagePath": "staticwebassets\\dashboardspecialty.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dentist.html",
+      "PackagePath": "staticwebassets\\dentist.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dentistdash.html",
+      "PackagePath": "staticwebassets\\dentistdash.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dentistdescription.html",
+      "PackagePath": "staticwebassets\\dentistdescription.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dentistpatients.html",
+      "PackagePath": "staticwebassets\\dentistpatients.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\dentistry.html",
+      "PackagePath": "staticwebassets\\dentistry.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\forgot.html",
+      "PackagePath": "staticwebassets\\forgot.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\htmlpage.html",
+      "PackagePath": "staticwebassets\\htmlpage.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\image\\DuongThuTrang_Dentist.png",
+      "PackagePath": "staticwebassets\\image\\DuongThuTrang_Dentist.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\image\\NguyenHuyHoang_Dentist.png",
+      "PackagePath": "staticwebassets\\image\\NguyenHuyHoang_Dentist.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\image\\NguyenNgocQuynh_Dentist.png",
+      "PackagePath": "staticwebassets\\image\\NguyenNgocQuynh_Dentist.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\image\\NguyenPhuHoa_Dentist.png",
+      "PackagePath": "staticwebassets\\image\\NguyenPhuHoa_Dentist.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\image\\TranHung_Dentist.png",
+      "PackagePath": "staticwebassets\\image\\TranHung_Dentist.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\image\\TranThanhBinh_Dentist.png",
+      "PackagePath": "staticwebassets\\image\\TranThanhBinh_Dentist.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\image\\TranThiNhung_Dentist.png",
+      "PackagePath": "staticwebassets\\image\\TranThiNhung_Dentist.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\image\\TranTuanAnh_Dentist.png",
+      "PackagePath": "staticwebassets\\image\\TranTuanAnh_Dentist.png"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\imagespecialty\\Image.jpg",
+      "PackagePath": "staticwebassets\\imagespecialty\\Image.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\imagespecialty\\Image02.jpg",
+      "PackagePath": "staticwebassets\\imagespecialty\\Image02.jpg"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\loginserver.html",
+      "PackagePath": "staticwebassets\\loginserver.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\manager.html",
+      "PackagePath": "staticwebassets\\manager.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\manager_update_clinic.html",
+      "PackagePath": "staticwebassets\\manager_update_clinic.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\manager_update_dentists.html",
+      "PackagePath": "staticwebassets\\manager_update_dentists.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\manager_update_schedule.css",
+      "PackagePath": "staticwebassets\\manager_update_schedule.css"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\manager_update_schedule.html",
+      "PackagePath": "staticwebassets\\manager_update_schedule.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\manager_update_services.html",
+      "PackagePath": "staticwebassets\\manager_update_services.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\managerclinic.html",
+      "PackagePath": "staticwebassets\\managerclinic.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\manageredit.html",
+      "PackagePath": "staticwebassets\\manageredit.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\managerschedule.html",
+      "PackagePath": "staticwebassets\\managerschedule.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\managerscheduleadd.html",
+      "PackagePath": "staticwebassets\\managerscheduleadd.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\managerspecialty.html",
+      "PackagePath": "staticwebassets\\managerspecialty.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\patientrecordchoose.html",
+      "PackagePath": "staticwebassets\\patientrecordchoose.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\patientsrecordconfirm.html",
+      "PackagePath": "staticwebassets\\patientsrecordconfirm.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\payment.html",
+      "PackagePath": "staticwebassets\\payment.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\profile.html",
+      "PackagePath": "staticwebassets\\profile.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\register.html",
+      "PackagePath": "staticwebassets\\register.html"
+    },
+    {
+      "Id": "E:\\Github\\Software Testing\\Tester\\CodeScene\\Dental_Clinic_System\\Dental_Clinic_System\\wwwroot\\speciality.html",
+      "PackagePath": "staticwebassets\\speciality.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Dental_Clinic_System.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Dental_Clinic_System.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Dental_Clinic_System.props",
+      "PackagePath": "build\\Dental_Clinic_System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Dental_Clinic_System.props",
+      "PackagePath": "buildMultiTargeting\\Dental_Clinic_System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Dental_Clinic_System.props",
+      "PackagePath": "buildTransitive\\Dental_Clinic_System.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

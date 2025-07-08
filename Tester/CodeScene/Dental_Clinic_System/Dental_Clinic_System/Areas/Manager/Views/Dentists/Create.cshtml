@@ -1,0 +1,148 @@
+﻿@model Dental_Clinic_System.Areas.Manager.ViewModels.AddDentistVM
+
+@{
+	ViewData["Title"] = "Create";
+	Layout = "_LayoutManager";
+}
+@section Styles {
+	<style>
+		.sidebar .nav-item a.Quan_ly_nha_si {
+			color: #fff;
+			background: #4880ff;
+		}
+
+		.manager__management__header {
+			justify-content: space-around;
+		}
+
+		.form-modal-styles {
+			width: 1000px;
+		}
+
+		.modal-footer {
+			gap: 10px;
+			padding: 0 10px;
+			
+		}
+		.form-modal-styles .modal-body .modal-body-card2 {
+			flex: 0 30%;
+			padding: 0 10px;
+		}
+
+		.form-modal-styles .modal-body .modal-body-card3 {
+			flex: 0 20%;
+			padding: 0 10px;
+		}
+
+		.form-modal-styles .modal-body .user-address {
+			flex: 0 0 50%;
+		}
+		.modal-content {
+
+			--mdb-modal-box-shadow: 0 6px 45px -9px rgba(var(--mdb-box-shadow-color-rgb), 0.21), 0 30px 60px -6px rgba(var(--mdb-box-shadow-color-rgb), 0.12);
+			border: 0;
+			box-shadow: var(--mdb-modal-box-shadow);
+			padding: 24px 48px !important; /* Reduced padding for top/bottom and left/right */
+			border-radius: 10px; /* Adjust this value to change the roundness of the corners */
+		}
+	</style>
+}
+
+<div class="modal-dialog modal-dialog-centered form-modal-styles">
+	@* enctype: để thêm hình ảnh *@
+	<form asp-action="Create" enctype="multipart/form-data" class="modal-content" style="font-size: 2rem">
+		<!--header -->
+		<div class="manager__management__header">
+			<div class="title">Thêm nha sĩ</div>
+		</div>
+		<br />
+		<!--body -->
+		@* Kiểm tra dữ liệu đầu vào, dựa trên ServiceVM *@
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+		<div class="modal-body ">
+			<div class="modal-body-card">
+				<label for="username">Tên đăng nhập</label>
+				<input asp-for="Username" type="text" required class="form-control" />
+			</div>
+			<div class="modal-body-card">
+				<label for="Password">Mật khẩu</label>
+				<input asp-for="Password" type="password" required class="form-control" />
+			</div>
+			<div class="modal-body-card">
+				<label for="LastName">Họ (Tên đệm)</label>
+				<input asp-for="LastName" type="text" required class="form-control" />
+			</div>
+			<div class="modal-body-card2">
+				<label for="FirstName">Tên</label>
+				<input asp-for="FirstName" type="text" required class="form-control" />
+			</div>
+			<div class="modal-body-card3">
+				<label for="Gender">Giới tính</label>
+				@* <input type="text" name="Gender" id="gender" required /> *@
+
+				<select asp-for="Gender" required class="form-control">
+					<option value="Nam">Nam</option>
+					<option value="Nữ">Nữ</option>
+				</select>
+			</div>
+			<div class="modal-body-card">
+				<label for="Email">Email</label>
+				<input type="email" asp-for="Email" required class="form-control" />
+			</div>
+			<div class="modal-body-card">
+				<label for="PhoneNumber">Số điện thoại</label>
+				<input type="tel" asp-for="PhoneNumber" required class="form-control" />
+			</div>
+			<div class="user-address modal-body-card">
+				<label for="DegreeID">Bằng cấp</label>
+				<select asp-items="ViewBag.DegreeID" asp-for="DegreeID" required class="form-control"></select>
+			</div>
+			<div class="user-address modal-body-card">
+				<label>Chuyên khoa</label>
+				@{
+					var specialtyList = ((SelectList)ViewBag.Specialty).ToList();
+				}
+
+				@foreach (var specialty in specialtyList)
+				{
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="SpecialtyIDs" value="@specialty.Value" id="specialty_@specialty.Value">
+						<label class="form-check-label" for="specialty_@specialty.Value">
+							@specialty.Text
+						</label>
+					</div>
+				}
+			</div>
+			
+			<div class="user-pic modal-body-card">
+				<label for="Description">Mô tả nha sĩ</label>
+				<div id="container">
+					<div id="editor">
+						<textarea asp-for="Description" class="form-control" ></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-footer">
+			<div>
+				<a asp-action="Index">Back to List</a>
+			</div>
+			|
+			<button type="submit" class="submit-btn btn">
+				Thêm mới
+			</button>
+		</div>
+	</form>
+</div>
+<br />
+
+
+
+
+@section Scripts {
+	@* Dùng editor *@
+	<script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/super-build/ckeditor.js"></script>
+	<script src="~/assets/js/richtexteditor2.js"></script>
+}
+

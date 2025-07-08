@@ -1,0 +1,112 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet"
+          href="https://kit.fontawesome.com/53f42380b0.css"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="~/assets/css/sidebar.css" />
+    <link rel="stylesheet" href="~/assets/css/headerAd.css" />
+    <link rel="stylesheet" href="~/assets/css/accountDash.css" />
+    <link rel="stylesheet" href="~/assets/css/contentDash.css" />
+    <link rel="stylesheet" href="~/assets/css/specialtydash.css" />
+    @RenderSection("Scripts", required: false)
+</head>
+
+<body>
+    <div class="dashboard__container d-flex">
+
+        @if (ViewBag.ToastMessageSuccess != null)
+        {
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    showSuccessToasts('@ViewBag.ToastMessageSuccess');
+                });
+            </script>
+        }
+        else if (ViewBag.ToastMessage != null)
+        {
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    showErrorToasts('@ViewBag.ToastMessage');
+                });
+            </script>
+        }
+        else if (TempData["ToastMessageSuccessTempData"] != null)
+        {
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    showSuccessToasts('@TempData["ToastMessageSuccessTempData"]');
+                });
+            </script>
+        }
+        else if (TempData["ToastMessageFailTempData"] != null)
+        {
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    showErrorToasts('@TempData["ToastMessageFailTempData"]');
+                });
+            </script>
+        }
+        else if (TempData["ToastMessageTempData"] != null)
+        {
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    showErrorToasts('@TempData["ToastMessageTempData"]');
+                });
+            </script>
+        }
+
+        @Html.Partial("_AdminSideBar")
+
+        <div class="container-fluid" style="width: 85%; padding: 0">
+           
+            @Html.Partial("_AdminAvatar")
+            <div class="account__management">
+
+                @RenderBody()
+
+            </div>
+        </div>
+
+        <div id="toasts"></div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/53f42380b0.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/super-build/ckeditor.js"></script>
+    <script src="~/assets/js/firebase_script.js" type="module"></script>
+    <script src="~/assets/js/pagination.js"></script>
+    <script src="~/assets/js/pagination-clinic.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/assets/js/toastmessage.js"></script>
+
+
+
+
+</body>
+</html>

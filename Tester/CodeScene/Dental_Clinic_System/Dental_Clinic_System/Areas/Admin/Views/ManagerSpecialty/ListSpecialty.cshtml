@@ -1,0 +1,215 @@
+﻿@using System.Globalization
+@using Dental_Clinic_System.Helper
+@model IEnumerable<Dental_Clinic_System.Areas.Admin.ViewModels.ManagerSpecialtyVM>
+
+@{
+	ViewData["Title"] = "ListSpecialty";
+	Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+	<div class="alert alert-danger" role="alert">
+		@Html.ValidationMessage("Name")
+		@Html.ValidationMessage("Deposit")
+	</div>
+}
+
+
+<!--TÌM KIẾM (SEARCH)-->
+<div class="account__management__header">
+	<h1 class="title mb-0">Quản lý chuyên khoa</h1>
+	<div class="action-btn">
+		<form action="~/Admin/ManagerSpecialty/SeachSpecialty" method="post">
+			<div class="search__bar">
+				<input type="search" placeholder="Tìm kiếm ..." name="search" />
+			</div>
+		</form>
+		<button type="button"
+				data-bs-toggle="modal"
+				data-bs-target="#myModalAdd"
+				class="add__new">
+			+ Thêm
+		</button>
+	</div>
+
+	<!--THÊM MỚI CHUYÊN KHOA (ADD)-->
+	<!-- =========== MODAL FOR ADD =========== -->
+	<div class="modal fade"
+		 id="myModalAdd"
+		 tabindex="-1"
+		 aria-labelledby="mainTitle"
+		 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered form-modal-styles">
+			<form id="uploadForm" action="~/Admin/ManagerSpecialty/AddSpecialty" method="POST" class="modal-content" onsubmit="return validateForm()">
+				<div class="modal-header">
+					<h1 class="modal-title fs-10" id="mainTitle">
+						Thêm mới chuyên khoa
+					</h1>
+					<button type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="special-name">
+						<label for="name">Tên chuyên khoa</label>
+						<input type="text" name="name" id="name" required />
+					</div>
+					<div class="special-deposis">
+						<label for="deposis">Tiền cọc</label>
+						<input type="number" id="deposis" name="deposit" step="0.01" required />
+					</div>
+					<div class="clinic-image">
+						<label>Hình ảnh</label>
+						<input type="file" id="imageInput" class="form-control" required />
+						<input name="image" type="hidden" id="imageUrl" class="form-control" />
+						<img src="" alt="" id="imagePreview" style="display: block; max-width: 100px; text-align: center; border-radius: 10px;" />
+					</div>
+					<div class="special-desc">
+						<label for="descSpecialty">Mô tả</label>
+						<div id="container">
+							<div id="editor">
+								<textarea name="description" id="description" class="form-control"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button"
+							class="close-btn btn"
+							data-bs-dismiss="modal">
+						Đóng
+					</button>
+					<button type="submit" class="submit-btn btn">Lưu</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>
+
+<!--VIEW-->
+<!-- Modal Structure -->
+<div class="modal fade" id="viewSpecialtyModal" tabindex="-1" aria-labelledby="viewSpecialtyModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="viewSpecialtyModalLabel">Chi tiết chuyên khoa</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="mb-3">
+					<label for="viewName" class="form-label">Tên chuyên khoa</label>
+					<input type="text" id="viewName" class="form-control" readonly />
+				</div>
+				<div class="mb-3">
+					<label for="viewDeposit" class="form-label">Tiền cọc</label>
+					<input type="number" id="viewDeposit" class="form-control" readonly />
+				</div>
+				<div class="mb-3">
+					<label for="viewDesc" class="form-label">Mô tả</label>
+					<textarea id="viewDesc" class="form-control" rows="4" readonly></textarea>
+				</div>
+				<div class="mb-3">
+					<div class="text-center">
+						<img id="viewImage" src="" alt="Specialty Image" style="max-width: 100%; border-radius: 10px;" />
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 1.2rem; background-color: #dc3545; border-color: #dc3545;">Đóng</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--SHOW LIST-->
+<!-- =========== TABLE =========== -->
+<table class="table table-striped mt-5" style="font-size: 1.7rem">
+	<thead style="text-align: center;">
+		<tr>
+			<th class="text-center">STT</th>
+			<th style="width: 14%;">Chuyên Khoa</th>
+			<th style="width: 10%;">Hình ảnh</th>
+			<th style="width: 50%;">Mô tả</th>
+			<th style="width: 10%;">Tiền đặt cọc</th>
+			<th>Hành động</th>
+		</tr>
+	</thead>
+	<tbody>
+		@if (Model != null && Model.Any())
+		{
+			int stt = 1;
+
+			@foreach (var account in Model)
+			{
+				<tr style="vertical-align: middle">
+					<td style="text-align: center;">@stt</td>
+					<td>@account.Name</td>
+					<td style="text-align: center;"><img src="@account.Image" alt="" style="max-width: 300px; max-height: 300px;" /></td>
+					<td>@HtmlHelpers.StripHtmlTags(TruncateDescription(account.Description, 130))</td>
+					<td style="text-align: center;">
+						@string.Format(new CultureInfo("vi-VN"), "{0:#,##0.} đ", account.Deposit)
+					</td>
+					<td style="text-align: center;">
+						<!-- VIEW -->
+						<button type="button" class="btn btn-view btn-icon" onclick="viewSpecialty(@account.Id)">
+							<i class="fa-solid fa-eye"></i>
+						</button>
+
+						<!--EDIT-->
+						<a href="@Url.Action("EditSpecialty", new { id = account.Id })" class="btn btn-primary btn-icon">
+							<i class="bx bxs-edit"></i>
+						</a>
+
+						<!--DELETE-->
+						<button type="button" class="btn btn-danger btn-icon" onclick="location.href='@Url.Action("DeleteSpecialty", new {id = account.Id})'">
+							<i class="bx bxs-trash"></i>
+						</button>
+					</td>
+				</tr>
+				stt++;
+			}
+		}
+	</tbody>
+</table>
+
+<script>
+	function viewSpecialty(id) {
+		$.ajax({
+			url: '@Url.Action("ViewSpecialty", "ManagerSpecialty")',
+			type: 'GET',
+			data: { id: id },
+			success: function (data) {
+				$('#viewName').val(data.name);
+				$('#viewDeposit').val(data.deposit);
+				$('#viewDesc').val(data.description);
+				$('#viewImage').attr('src', data.image);
+				$('#viewSpecialtyModal').modal('show');
+			}
+		});
+	}
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+@functions {
+	public string TruncateDescription(string? description, int maxLength)
+	{
+		if (string.IsNullOrEmpty(description)) return description;
+		return description.Length <= maxLength ? description : description.Substring(0, maxLength) + "...";
+	}
+}
+
+@* Đưa ảnh lên firebase *@
+<script src="~/assets/js/upload-image-firebaseAdmin.js" type="module"></script>
+
+@* Dùng editor *@
+<script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/super-build/ckeditor.js"></script>
+<script src="~/assets/js/richtexteditor2.js"></script>
+
+@* Chỉnh sửa UI *@
+<link rel="stylesheet" href="~/assets/css/spacialtyAdmin.css" />

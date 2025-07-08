@@ -1,0 +1,306 @@
+﻿@model IEnumerable<Dental_Clinic_System.Areas.Admin.ViewModels.ManagerClinicVM>
+
+@{
+	ViewData["Title"] = "ListClinicClosed";
+	Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+	.title-Name-Clinic {
+		font-size: 2.8rem;
+		font-weight: 700;
+		color: #202224;
+	}
+
+	.title-Address {
+		font-size: 2.3rem;
+	}
+
+	.img, svg {
+		vertical-align: middle;
+		height: 45%;
+	}
+
+	.modal-header, .modal-footer {
+		border: none;
+		padding: 1.5rem;
+	}
+
+	.modal-body {
+		padding: 2rem;
+	}
+
+	.btn-close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background: transparent;
+		border: none;
+		font-size: 1.5rem;
+	}
+
+	.sidebar .nav-item a.Quan_ly_phong_kham {
+		color: #fff;
+		background: #4880ff;
+	}
+
+	.unlock {
+		background-color: #ff4c4c;
+		border: none;
+		border-radius: 8px;
+		color: white;
+		cursor: pointer;
+		padding: 10px;
+		font-size: 16px;
+		outline: none;
+	}
+
+		.unlock:hover {
+			background-color: #e60000;
+		}
+
+	/* New styles for centering the modal */
+	.modal-dialog {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+	}
+
+	.modal-content {
+		margin: auto;
+	}
+
+	.form-group label {
+		font-weight: bold;
+	}
+
+	.modal-title {
+		font-size: 2rem;
+		/* font-weight: bold; */
+	}
+</style>
+
+<!-- TÌM KIẾM (SEARCH)-->
+<!-- Clinic management header -->
+<div class="clinic__management__header">
+	<h1 class="title">Phòng khám đã đóng cửa</h1>
+	<div class="action-btn">
+		<form action="~/Admin/ManagerClinic/ListClinicClosed" method="get">
+			<div class="search__bar">
+				<input type="search" placeholder="Tìm kiếm ..." name="search" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<!--VIEW-->
+<div class="modal fade" id="clinicDetailsModal" tabindex="-1" role="dialog" aria-labelledby="clinicDetailsModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="clinicDetailsModalLabel">Chi tiết phòng khám</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="clinicName">Tên phòng khám</label>
+							<input type="text" class="form-control" id="clinicName" readonly>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="clinicManagerName">Quản lý</label>
+							<input type="text" class="form-control" id="clinicManagerName" readonly>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="clinicEmail">Email</label>
+							<input type="text" class="form-control" id="clinicEmail" readonly>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="clinicPhoneNumber">Số điện thoại</label>
+							<input type="text" class="form-control" id="clinicPhoneNumber" readonly>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="clinicBasis">Cơ sở</label>
+							<input type="text" class="form-control" id="clinicBasis" readonly>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="clinicProvince">Tỉnh/Thành phố</label>
+							<input type="text" class="form-control" id="clinicProvince" readonly>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="clinicDistrict">Quận/Huyện</label>
+							<input type="text" class="form-control" id="clinicDistrict" readonly>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="clinicWard">Phường/Xã</label>
+							<input type="text" class="form-control" id="clinicWard" readonly>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="clinicAddress">Địa chỉ</label>
+						<input type="text" class="form-control" id="clinicAddress" readonly>
+					</div>
+					<div class="form-group">
+						<label for="clinicImage">Hình ảnh</label>
+						<img id="clinicImage" class="img-fluid" alt="Clinic Image">
+					</div>
+					<div class="form-group">
+						<label for="clinicDescription">Mô tả</label>
+						<textarea class="form-control" id="clinicDescription" rows="3" readonly></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--SHOW LIST-->
+<!-- CLINIC LIST MANAGEMENT -->
+<div id="myItem" class="clinic__management__wrapper row">
+	@foreach (var clinic in Model)
+	{
+		<div class="clinic-wrap-item col-md-6">
+			<div class="clinic-wrap-item__style row">
+				<div class="img-content col-md-6">
+					<img src="@clinic.Image" alt="Clinic" />
+				</div>
+				<div class="info-content col-md-6">
+					<h2 class="title-Name-Clinic">@clinic.ClinicName</h2>
+					<div class="name">Quản lý: <span class="title-Address">@clinic.ManagerName</span></div>
+					<div class="address">
+						Địa chỉ:
+						<span class="title-Province title-Address" data-id="@clinic.Province"></span>
+					</div>
+					<div class="action">
+						<a href="tel:0123456789"><i class="fa-solid fa-phone-volume"></i></a>
+						<a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+						<!--VIEW BUTTON-->
+						<button type="button" class="btn btn-view btn-icon" onclick="viewClinicClosed(@clinic.Id)">
+							<i class="fa-solid fa-eye"></i>
+						</button>
+
+						<!--UNLOCK-->
+						<form action="~/Admin/ManagerClinic/UnlockClinic" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn mở lại phòng khám này không?');">
+							<input type="hidden" name="name" value="@clinic.ClinicName" />
+							<input type="hidden" name="status" value="Hoạt Động" />
+							<button class="unlock">
+								<i class="fa-solid fa-unlock" style="color:white"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+</div>
+
+<!-- ========== PAGINATION  ========== -->
+<ul class="pagination" id="pagination">
+</ul>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+@section Scripts {
+	<!--Hiển thị các Tỉnh/Thành phố, Quận/Huyện, Phường/Xã-->
+	<script src="https://esgoo.net/scripts/jquery.js"></script>
+	<script>
+		$(document).ready(function () {
+			function loadNames() {
+				$(".title-Province").each(function () {
+					var provinceId = $(this).data("id");
+					var element = $(this);
+					$.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data) {
+						if (data.error == 0) {
+							$.each(data.data, function (key, val) {
+								if (val.id == provinceId) {
+									element.text(val.full_name);
+									return false;
+								}
+							});
+						}
+					});
+				});
+
+				$(".title-District").each(function () {
+					var districtId = $(this).data("id");
+					var element = $(this);
+					$.getJSON('https://esgoo.net/api-tinhthanh/2/' + districtId + '.htm', function (data) {
+						if (data.error == 0) {
+							$.each(data.data, function (key, val) {
+								if (val.id == districtId) {
+									element.text(val.full_name);
+									return false;
+								}
+							});
+						}
+					});
+				});
+
+				$(".title-Ward").each(function () {
+					var wardId = $(this).data("id");
+					var element = $(this);
+					$.getJSON('https://esgoo.net/api-tinhthanh/3/' + wardId + '.htm', function (data) {
+						if (data.error == 0) {
+							$.each(data.data, function (key, val) {
+								if (val.id == wardId) {
+									element.text(val.full_name);
+									return false;
+								}
+							});
+						}
+					});
+				});
+			}
+
+			loadNames();
+		});
+	</script>
+
+	<script>
+		function viewClinicClosed(clinicId) {
+			// Sử dụng AJAX để lấy thông tin chi tiết về phòng khám
+			$.ajax({
+				url: '@Url.Action("ViewClinic", "ManagerClinic", new { Area = "Admin" })',
+				type: 'GET',
+				data: { id: clinicId },
+				success: function (data) {
+					// Điền vào các fields với dữ liệu
+					$('#clinicName').val(data.name);
+					$('#clinicPhoneNumber').val(data.phoneNumber);
+					$('#clinicEmail').val(data.email);
+					$('#clinicManagerName').val(data.managerName);
+					$('#clinicProvince').val(data.province);
+					$('#clinicDistrict').val(data.district);
+					$('#clinicWard').val(data.ward);
+					$('#clinicBasis').val(data.basis);
+					$('#clinicAddress').val(data.address);
+					$('#clinicDescription').val(data.description);
+					$('#clinicImage').attr('src', data.image);
+					$('#clinicStatus').val(data.clinicStatus);
+
+					//Hiển thị modal
+					$('#clinicDetailsModal').modal('show');
+				}
+			});
+		}
+	</script>
+
+}
+

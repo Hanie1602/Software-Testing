@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Create News Post";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div style="padding: 40px;">
+    <form asp-area="admin" asp-controller="news" asp-action="CreateNewsPost" method="post">
+        <label for="newsTitle">Title</label>
+        <input type="text" name="newsTitle" id="newsTitle"/>
+        <input type="hidden" value="@ViewBag.AdminID" name="adminID">
+        <div id="container">
+            <textarea id="editor" name="content"></textarea>
+        </div>
+        <div style="margin-top: 1%;">
+            <button type="submit" class="btn btn-primary" style="font-size: 15px;">Xác Nhận</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<script src="https://kit.fontawesome.com/53f42380b0.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/super-build/ckeditor.js"></script>
+<script src="~/assets/js/richtexteditor.js"></script>

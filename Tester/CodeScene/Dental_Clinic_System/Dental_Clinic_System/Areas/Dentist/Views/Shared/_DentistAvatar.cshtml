@@ -1,0 +1,14 @@
+﻿<nav class="nav__header d-flex flex-row justify-content-end pt-5 pb-4">
+	<div>
+		<div class="d-flex align-items-center nav__header__profile">
+			<img src="@ViewBag.DentistAvatar" alt="" />
+			<p>
+				Chào mừng, Nha sĩ <br />
+				<span>@ViewBag.DentistName</span>
+			</p>
+			<a asp-area="dentist" asp-controller="dentistaccount" asp-action="logout">
+				<i class="bx bx-log-out" style="color: red; transform: rotate(180deg)"></i>
+			</a>
+		</div>
+	</div>
+</nav>

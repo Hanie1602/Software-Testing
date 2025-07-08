@@ -1,0 +1,130 @@
+﻿@model IEnumerable<Dental_Clinic_System.Models.Data.Dentist>
+
+@{
+	ViewData["Title"] = "Quản lý nha sĩ";
+	Layout = "_LayoutManager";
+}
+@section Styles {
+	<style>
+		.form-container {
+			display: flex;
+			gap: 5px; /* Khoảng cách giữa các form */
+		}
+
+		.sidebar .nav-item a.Quan_ly_nha_si {
+			color: #fff;
+			background: #4880ff;
+		}
+
+		a.button-link {
+			display: inline-block;
+			padding: 5px 10px;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			text-decoration: none;
+			color: inherit;
+			border-radius: 6px;
+		}
+
+		.manager__management table a.button-link i {
+			vertical-align: middle;
+		}
+
+		.manager__management table a.button-link:first-child,
+		.manager__management .submit-btn {
+			background: #4880ff;
+			color: white;
+		}
+
+			.manager__management table a.button-link:first-child:hover,
+			.manager__management .submit-btn:hover {
+				background: #3b6cd9;
+			}
+
+		.manager__management table a.button-link:last-child,
+		.manager__management .close-btn {
+			margin-left: 5px;
+			background: rgb(255, 66, 66);
+			color: white;
+		}
+
+			.manager__management table a.button-link:last-child:hover,
+			.manager__management .close-btn:hover {
+				background: #f81f1f;
+			}
+	</style>
+}
+
+<!-- account management header -->
+<div class="manager__management__header">
+	<div class="title">Quản lý nha sĩ</div>
+	<div class="action-btn">
+		<form asp-action="Search">
+			<div class="search__bar">
+				<input type="search" placeholder="Tìm kiếm ..." name="keyword" />
+			</div>
+		</form>
+		<a asp-controller="Dentists" asp-action="Create" class="add__new">+ New</a>
+	</div>
+</div>
+
+<!-- Table -->
+<table class="table table-striped mt-5" style="font-size: 1.6rem">
+	<thead>
+		<tr>
+			<th class="text-center">STT</th>
+			<th>Tên nha sĩ</th>
+			<th>Giới tính</th>
+			<th>Email</th>
+			<th>Số điện thoại</th>
+			<th>Bằng cấp</th>
+			<th>Trạng thái</th>
+			<th>Hành động</th>
+		</tr>
+	</thead>
+	<tbody id="myTableBody">
+		@{
+			int index = 0;
+		}
+		@foreach (var item in Model)
+		{
+			<tr style="vertical-align: middle">
+				<td class="text-center">
+					<a asp-action="Details" asp-route-id="@item.ID">@(++index)</a>
+				</td>
+				<td>
+					@item.Account.LastName @item.Account.FirstName
+				</td>
+				<td>
+					@item.Account.Gender
+				</td>
+				<td>
+					@item.Account.Email
+				</td>
+				<td>
+					@item.Account.PhoneNumber
+				</td>
+				<td>
+					@item.Degree?.Name
+				</td>
+				<td>
+					@item.Account.AccountStatus
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.ID" class="button-link">
+						<i class="bx bxs-edit"></i>
+					</a>
+					<a asp-action="Delete" asp-route-id="@item.ID" class="button-link">
+						<i class="bx bxs-trash"></i>
+					</a>
+				</td>
+
+			</tr>
+		}
+	</tbody>
+</table>
+
+<!-- ========== PAGINATION  ========== -->
+<ul id="pagination" class="pagination">
+</ul>

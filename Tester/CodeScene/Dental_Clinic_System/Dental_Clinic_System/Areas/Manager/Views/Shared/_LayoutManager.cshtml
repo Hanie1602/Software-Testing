@@ -1,0 +1,104 @@
+﻿@{
+	Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Manager</title>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap"
+		  rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		  crossorigin="anonymous" />
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+	<!-- MDB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.min.css"
+		  rel="stylesheet" />
+
+	<link rel="stylesheet" href="~/assets/css/mobiscroll.javascript.min.css" />
+	<link rel="stylesheet" href="~/assets/css/sidebar.css" />
+	<link rel="stylesheet" href="~/assets/css/headerAd.css" />
+	<link rel="stylesheet" href="~/assets/css/manager.css" />
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	@RenderSection("Styles", required: false)
+</head>
+
+<body>
+		<div class="dashboard__container d-flex">
+			<nav class="sidebar" style="width: 15%">
+				<p class="dashboard__logo"><span>Dental</span>Care</p>
+				<ul class="nav">
+					<li class="nav-item">
+						<a asp-controller="Dentists" asp-action="Index" class="Quan_ly_nha_si">
+							<span class="menu-icon"><i class="bx bxs-user"></i></span>Nha sĩ</a>
+					</li>
+					<li class="nav-item">
+					<a asp-controller="Schedules" asp-action="Index" class="Lich_lam_viec">
+							<span class="menu-icon"
+								><i class="fa-solid fa-calendar-days"></i></span
+							>Lịch trình</a>
+					</li>
+					<li class="nav-item">
+					<a asp-controller="Service" asp-action="Index" class="Dich_vu_kham">
+						<span class="menu-icon"><i class="fa-solid fa-notes-medical"></i></span
+							>Dịch vụ làm răng</a>
+					</li>
+					<li class="nav-item">
+					<a asp-controller="Clinics" asp-action="Edit" asp-route-id="1" class="Quan_ly_phong_kham">
+						<span class="menu-icon"
+								><i class="fa-solid fa-house-chimney-medical"></i></span
+							>Phòng khám</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="container-fluid" style="width: 85%; padding: 0">
+				
+				@* Icon account + Dropdown here *@
+				<nav class="nav__header d-flex flex-row justify-content-end">
+					<a href="#!">
+						<div class="d-flex align-items-center nav__header__profile">
+							<img src="~/assets/images/avatar.jpg" alt="" />
+							<p>
+								<span>Hoapooh</span> <br />
+								Clinic Manager
+							</p>
+							<i class="bx bx-chevron-down-circle"></i>
+						</div>
+					</a>
+				</nav>
+				<div class="manager__management">
+					@RenderBody()
+				</div>
+			</div>
+		</div>
+		
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/53f42380b0.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="~/assets/js/pagination.js"></script>
+
+	<!-- MDB -->
+	<script type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.umd.min.js"></script>
+		@await RenderSectionAsync("Scripts", required: false)
+	</body>
+
+</html>

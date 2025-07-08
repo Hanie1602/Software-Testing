@@ -1,0 +1,70 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+	string currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
+<nav class="sidebar" style="width: 15%">
+	@* <p class="dashboard__logo"><span>Dental</span>Care</p> *@
+	<a href="/dentist">
+		<center>
+		<img class="w-50" src="https://firebasestorage.googleapis.com/v0/b/auth-demo-123e3.appspot.com/o/Dental%20Care%20Logo%2Flogo_0_new.png?alt=media&token=3f7b9792-4ed0-4cf0-b54c-578f209028ae" alt="Dental Care logo">
+		</center>
+	</a>
+	<ul class="nav">
+		<li class="nav-item">
+			<a asp-area="dentist" asp-controller="dentistdetail" asp-action="dentistschedule" class="@(currentAction != "DentistDescription" && currentAction != "PatientAppointments" ? "active" : "")">
+				<span class="menu-icon"><i class="bx bxs-dashboard"></i></span>Lịch làm việc
+			</a>
+		</li>
+		<li class="nav-item">
+			<a asp-area="dentist" asp-controller="dentistdetail" asp-action="dentistdescription" class="@(currentAction == "DentistDescription" ? "active" : "")">
+				<span class="menu-icon"><i class="bx bxs-user"></i></span>Thêm mô
+				tả bản thân
+			</a>
+		</li>
+		<li class="nav-item menu-items">
+			<a asp-area="dentist" asp-controller="dentistdetail" asp-action="patientappointments" class="@(currentAction == "PatientAppointments" ? "active" : "")">
+				<span class="menu-icon"><i class="bx bx-list-ul"></i></span>Quản
+				lý bệnh nhân
+			</a>
+			<div class="collapse" id="manage-account">
+				<ul class="nav flex-column sub-menu">
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link" href="javascript:void(0);" onclick="document.getElementById('form_nhasi').submit();">
+							<i class="fa-solid fa-stethoscope"></i> Tài khoản nha sĩ
+						</a>
+						<form id="form_nhasi" action="~/Admin/Admin/ListAccount" method="get">
+							<input type="hidden" name="Role" value="Nha sĩ">
+						</form>
+					</li>
+
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link" href="javascript:void(0);" onclick="document.getElementById('form_benh_nhan').submit();">
+							<i class="fa-solid fa-hospital-user"></i> Tài khoản bệnh nhân
+						</a>
+						<form id="form_benh_nhan" action="~/Admin/Admin/ListAccount" method="get">
+							<input type="hidden" name="Role" value="Bệnh nhân" />
+						</form>
+					</li>
+
+					<li class="nav-item">
+						<a style="padding-left: 40px; font-size: 1.4rem" class="nav-link" href="javascript:void(0);" onclick="document.getElementById('form_quan_ly').submit();">
+							<i class="fa-solid fa-hospital"></i> Tài khoản quản lý
+						</a>
+						<form id="form_quan_ly" action="~/Admin/Admin/ListAccount" method="get">
+							<input type="hidden" name="Role" value="Quản lý" />
+						</form>
+					</li>
+
+					<li class="nav-item">
+						<form>
+							<a style="padding-left: 40px; font-size: 1.4rem"
+							   class="nav-link"
+							   href="#!"><i class="fa-solid fa-ban"></i> Tài khoản bị cấm</a>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</nav>
